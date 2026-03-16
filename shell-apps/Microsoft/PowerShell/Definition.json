@@ -1,0 +1,27 @@
+{
+    "name": "PowerShell LTS",
+    "description": "PowerShell is a cross-platform task automation solution made up of a command-line shell, a scripting language, and a configuration management framework.",
+    "isPublic": true,
+    "publisher": "Microsoft",
+    "detectScript": "#detectScript",
+    "installScript": "#installScript",
+    "uninstallScript": "#uninstallScript",
+    "fileUnzip": false,
+    "versions": [
+        {
+            "name": "#version",
+            "isPreview": false,
+            "installScriptOverride": null,
+            "file": {
+                "sourceUrl": "#sourceUrl",
+                "sha256": "#sha256"
+            }
+        }
+    ],
+    "source": {
+        "import": true,
+        "type": "Evergreen",
+        "app": "MicrosoftPowerShell",
+        "filter": "$_.Architecture -eq \"x64\" -and $_.Type -eq \"msi\" -and $_.Release -eq \"LTS\""
+    }
+}

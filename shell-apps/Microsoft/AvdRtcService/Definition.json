@@ -1,0 +1,27 @@
+{
+    "name": "Remote Desktop WebRTC Redirector Service",
+    "description": "The Remote Desktop WebRTC Redirector Service for Teams for Azure Virtual Desktop.",
+    "isPublic": true,
+    "publisher": "Microsoft",
+    "detectScript": "#detectScript",
+    "installScript": "#installScript",
+    "uninstallScript": "#uninstallScript",
+    "fileUnzip": false,
+    "versions": [
+        {
+            "name": "#version",
+            "isPreview": false,
+            "installScriptOverride": null,
+            "file": {
+                "sourceUrl": "#sourceUrl",
+                "sha256": "#sha256"
+            }
+        }
+    ],
+    "source": {
+        "import": true,
+        "type": "Evergreen",
+        "app": "MicrosoftWvdRtcService",
+        "filter": "$_.Architecture -eq \"x64\""
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "name": "Windows App",
+    "description": "Securely connect to Windows across Windows 365, Azure Virtual Desktop, Microsoft Dev Box, and more.",
+    "isPublic": true,
+    "publisher": "Microsoft",
+    "detectScript": "#detectScript",
+    "installScript": "#installScript",
+    "uninstallScript": "#uninstallScript",
+    "fileUnzip": false,
+    "versions": [
+        {
+            "name": "#version",
+            "isPreview": false,
+            "installScriptOverride": null,
+            "file": {
+                "sourceUrl": "#sourceUrl",
+                "sha256": "#sha256"
+            }
+        }
+    ],
+    "source": {
+        "import": true,
+        "type": "Evergreen",
+        "app": "MicrosoftWindowsApp",
+        "filter": "$_.Architecture -eq \"x64\""
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "name": "Azure CLI",
+    "description": "Azure CLI is a cross-platform command-line tool for managing Azure resources with interactive commands or scripts.",
+    "isPublic": true,
+    "publisher": "Microsoft",
+    "detectScript": "#detectScript",
+    "installScript": "#installScript",
+    "uninstallScript": "#uninstallScript",
+    "fileUnzip": false,
+    "versions": [
+        {
+            "name": "#version",
+            "isPreview": false,
+            "installScriptOverride": null,
+            "file": {
+                "sourceUrl": "#sourceUrl",
+                "sha256": "#sha256"
+            }
+        }
+    ],
+    "source": {
+        "import": true,
+        "type": "Evergreen",
+        "app": "MicrosoftAzureCLI",
+        "filter": "$_.Architecture -eq \"x64\""
+    }
+}

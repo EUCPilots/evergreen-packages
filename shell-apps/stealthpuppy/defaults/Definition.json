@@ -1,0 +1,27 @@
+{
+    "name": "Windows Enterprise Defaults",
+    "description": "Make Windows images enterprise ready with optimisations and better defaults.",
+    "isPublic": true,
+    "publisher": "stealthpuppy",
+    "detectScript": "#detectScript",
+    "installScript": "#installScript",
+    "uninstallScript": "#uninstallScript",
+    "fileUnzip": false,
+    "versions": [
+        {
+            "name": "#version",
+            "isPreview": false,
+            "installScriptOverride": null,
+            "file": {
+                "sourceUrl": "#sourceUrl",
+                "sha256": "#sha256"
+            }
+        }
+    ],
+    "source": {
+        "import": true,
+        "type": "Evergreen",
+        "app": "WindowsEnterpriseDefaults",
+        "filter": "$_.Type -eq \"zip\""
+    }
+}
