@@ -1,0 +1,16 @@
+{
+  "PackageInformation": {
+    "SetupType": "EXE",
+    "SetupFile": "npp.8.9.2.Installer.x64.exe",
+    "Version": "8.9.2"
+  },
+  "LogPath": "C:\\ProgramData\\Microsoft\\IntuneManagementExtension\\Logs",
+  "InstallTasks": {
+    "StopProcess": [],
+    "ArgumentList": "/S"
+  },
+  "PostInstall": {
+    "Remove": [],
+    "CopyFile": []
+  }
+}

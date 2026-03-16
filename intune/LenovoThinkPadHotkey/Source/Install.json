@@ -1,0 +1,15 @@
+{
+  "PackageInformation": {
+    "SetupType": "EXE",
+    "SetupFile": "setup.exe",
+    "Version": "10.6.5.2"
+  },
+  "LogPath": "C:\\ProgramData\\Microsoft\\IntuneManagementExtension\\Logs",
+  "InstallTasks": {
+    "ArgumentList": "/S"
+  },
+  "PostInstall": {
+    "Remove": [],
+    "CopyFile": []
+  }
+}

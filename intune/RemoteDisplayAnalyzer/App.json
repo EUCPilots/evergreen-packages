@@ -1,0 +1,54 @@
+{
+  "Application": {
+    "Name": "RemoteDisplayAnalyzer",
+    "Filter": "Get-EvergreenApp -Name \"RDAnalyzer\" | Select-Object -First 1",
+    "Title": "Remote Display Analyzer",
+    "Language": "en-US",
+    "Architecture": "x64"
+  },
+  "PackageInformation": {
+    "SetupType": "EXE",
+    "SetupFile": "RemoteDisplayAnalyzer.exe",
+    "Version": "2602.039.1",
+    "SourceFolder": "Source",
+    "OutputFolder": "Package",
+    "IconFile": "https://github.com/aaronparker/icons/raw/main/companyportal/Display.png"
+  },
+  "Information": {
+    "DisplayName": "Remote Display Analyzer x86",
+    "Description": "The easiest tool to analyze and change display protocol settings on the fly.",
+    "Publisher": "Bram Wolfs",
+    "InformationURL": "https://rdanalyzer.com/",
+    "PrivacyURL": "https://rdanalyzer.com/",
+    "Categories": [],
+    "PSPackageFactoryGuid": "85af2526-0088-4b78-969b-834ff39ace56"
+  },
+  "Program": {
+    "InstallTemplate": "powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1",
+    "InstallCommand": "powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1",
+    "UninstallCommand": "powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Uninstall.ps1",
+    "InstallExperience": "system",
+    "DeviceRestartBehavior": "suppress",
+    "AllowAvailableUninstall": false
+  },
+  "RequirementRule": {
+    "MinimumRequiredOperatingSystem": "W10_1809",
+    "Architecture": "x64"
+  },
+  "CustomRequirementRule": [],
+  "DetectionRule": [
+    {
+      "Type": "File",
+      "DetectionMethod": "Version",
+      "Path": "C:\\Program Files\\RemoteDisplayAnalyzer",
+      "FileOrFolder": "RemoteDisplayAnalyzer.exe",
+      "Operator": "greaterThanOrEqual",
+      "VersionValue": "2602.039.1",
+      "Check32BitOn64System": "false"
+    }
+  ],
+  "Dependencies": [],
+  "Supersedence": [],
+  "Assignments": []
+}
+
