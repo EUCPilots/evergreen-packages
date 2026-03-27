@@ -21,7 +21,7 @@
     "InformationURL": "https://developer.microsoft.com/en-us/microsoft-edge/webview2",
     "PrivacyURL": "https://go.microsoft.com/fwlink/?LinkId=521839",
     "Categories": [],
-    "PSPackageFactoryGuid": "8d6b09d2-466b-4430-a102-9ea9cfb6ddbc"
+    "PSPackageFactoryGuid": "fa9bac3a-695b-4e7c-82d7-529afb82532a"
   },
   "Program": {
     "InstallTemplate": "powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1",

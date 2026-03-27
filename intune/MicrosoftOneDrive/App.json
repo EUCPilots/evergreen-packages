@@ -21,7 +21,7 @@
     "InformationURL": "https://support.microsoft.com/en-us/onedrive",
     "PrivacyURL": "https://privacy.microsoft.com/privacystatement",
     "Categories": [],
-    "PSPackageFactoryGuid": "17d5ae82-382e-4f2f-92d9-130fec56964b"
+    "PSPackageFactoryGuid": "39475a5a-f9aa-447b-8905-b8c85ebc76e6"
   },
   "Program": {
     "InstallTemplate": "powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1",

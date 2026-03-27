@@ -23,7 +23,7 @@
     "PrivacyURL": "https://www.adobe.com/privacy.html",
     "FeaturedApp": false,
     "Categories": [],
-    "PSPackageFactoryGuid": "a0042672-7240-4312-892e-39623320c0a3"
+    "PSPackageFactoryGuid": "a5124837-b8c3-4f88-9c8b-668849728328"
   },
   "Program": {
     "InstallTemplate": "powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1",

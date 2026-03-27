@@ -21,7 +21,7 @@
     "InformationURL": "https://docs.citrix.com/en-us/citrix-workspace-app-for-windows.html",
     "PrivacyURL": "https://www.citrix.com/about/legal/",
     "Categories": [],
-    "PSPackageFactoryGuid": "973ab12e-8862-46c2-b807-63da783e68b0"
+    "PSPackageFactoryGuid": "4719e5cd-59c4-4887-96e9-c6644d8948ef"
   },
   "Program": {
     "InstallTemplate": "powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1",
