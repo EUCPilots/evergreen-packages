@@ -1,6 +1,6 @@
 <Configuration ID="5ba1990d-65f2-412c-92a1-66a9a0c2f67e">
   <Info Description="Microsoft 365 Apps for business including Word, Excel, PowerPoint, Outlook (classic), OneNote, OneDrive, Teams." />
-  <Add OfficeClientEdition="64" Channel="MonthlyEnterprise" MigrateArch="TRUE">
+  <Add OfficeClientEdition="64" Channel="#Channel" MigrateArch="TRUE">
     <Product ID="O365BusinessRetail">
       <Language ID="MatchOS" />
       <Language ID="MatchPreviousMSI" />
