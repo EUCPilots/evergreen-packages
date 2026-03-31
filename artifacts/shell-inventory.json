@@ -1,0 +1,443 @@
+[
+    {
+        "DefJsonPath":  "C:\\projects\\_EUCPilots\\evergreen-packages\\shell-apps\\Adobe\\AcrobatReader\\Definition.json",
+        "Title":  "Acrobat Reader DC",
+        "Source":  "shell-apps",
+        "Json":  {
+                     "name":  "Acrobat Reader DC",
+                     "description":  "Adobe Acrobat Reader DC is a free PDF viewer that allows you to view, print, and annotate PDF documents.",
+                     "isPublic":  true,
+                     "publisher":  "Adobe",
+                     "detectScript":  "#detectScript",
+                     "installScript":  "#installScript",
+                     "uninstallScript":  "#uninstallScript",
+                     "fileUnzip":  false,
+                     "versions":  "",
+                     "source":  "@{import=True; type=Evergreen; app=AdobeAcrobatReaderDC; filter=$_.Architecture -eq \"x64\" -and $_.Language -eq \"MUI\"}"
+                 },
+        "Path":  "C:\\projects\\_EUCPilots\\evergreen-packages\\shell-apps\\Adobe\\AcrobatReader",
+        "Publisher":  "Adobe",
+        "PublisherFolder":  "Adobe",
+        "Folder":  "AcrobatReader"
+    },
+    {
+        "DefJsonPath":  "C:\\projects\\_EUCPilots\\evergreen-packages\\shell-apps\\dotPDN\\Paint.NET\\Definition.json",
+        "Title":  "Paint.NET",
+        "Source":  "shell-apps",
+        "Json":  {
+                     "name":  "Paint.NET",
+                     "description":  "Paint.NET is a free image and photo editing software for Windows.",
+                     "isPublic":  true,
+                     "publisher":  "dotPDN",
+                     "detectScript":  "#detectScript",
+                     "installScript":  "#installScript",
+                     "uninstallScript":  "#uninstallScript",
+                     "fileUnzip":  false,
+                     "versions":  "",
+                     "source":  "@{import=True; type=Evergreen; app=PaintDotNetOfflineInstaller; filter=$_.Architecture -eq \"x64\" -and $_.URI -match \"winmsi\"}"
+                 },
+        "Path":  "C:\\projects\\_EUCPilots\\evergreen-packages\\shell-apps\\dotPDN\\Paint.NET",
+        "Publisher":  "dotPDN",
+        "PublisherFolder":  "dotPDN",
+        "Folder":  "Paint.NET"
+    },
+    {
+        "DefJsonPath":  "C:\\projects\\_EUCPilots\\evergreen-packages\\shell-apps\\Foxit\\PDFReader\\Definition.json",
+        "Title":  "Foxit PDF Reader",
+        "Source":  "shell-apps",
+        "Json":  {
+                     "name":  "Foxit PDF Reader",
+                     "description":  "Foxit PDF Reader is a free PDF viewer that allows you to view, print, and annotate PDF documents.",
+                     "isPublic":  true,
+                     "publisher":  "Foxit Software",
+                     "detectScript":  "#detectScript",
+                     "installScript":  "#installScript",
+                     "uninstallScript":  "#uninstallScript",
+                     "fileUnzip":  false,
+                     "versions":  "",
+                     "source":  "@{import=True; type=Evergreen; app=FoxitReader; filter=$_.Type -eq \"exe\"}"
+                 },
+        "Path":  "C:\\projects\\_EUCPilots\\evergreen-packages\\shell-apps\\Foxit\\PDFReader",
+        "Publisher":  "Foxit Software",
+        "PublisherFolder":  "Foxit",
+        "Folder":  "PDFReader"
+    },
+    {
+        "DefJsonPath":  "C:\\projects\\_EUCPilots\\evergreen-packages\\shell-apps\\Google\\Chrome\\Definition.json",
+        "Title":  "Chrome",
+        "Source":  "shell-apps",
+        "Json":  {
+                     "name":  "Chrome",
+                     "description":  "The browser built by Google. Browse with the power of Google.",
+                     "isPublic":  true,
+                     "publisher":  "Google",
+                     "detectScript":  "#detectScript",
+                     "installScript":  "#installScript",
+                     "uninstallScript":  "#uninstallScript",
+                     "fileUnzip":  false,
+                     "versions":  "",
+                     "source":  "@{import=True; type=Evergreen; app=GoogleChrome; filter=$_.Channel -eq \"Stable\" -and $_.Architecture -eq \"x64\" -and $_.Type -eq \"msi\"}"
+                 },
+        "Path":  "C:\\projects\\_EUCPilots\\evergreen-packages\\shell-apps\\Google\\Chrome",
+        "Publisher":  "Google",
+        "PublisherFolder":  "Google",
+        "Folder":  "Chrome"
+    },
+    {
+        "DefJsonPath":  "C:\\projects\\_EUCPilots\\evergreen-packages\\shell-apps\\JGraph\\draw.io\\Definition.json",
+        "Title":  "draw.io",
+        "Source":  "shell-apps",
+        "Json":  {
+                     "name":  "draw.io",
+                     "description":  "Work offline on your diagrams and save locally using the draw.io Desktop app for Windows.",
+                     "isPublic":  true,
+                     "publisher":  "JGraph",
+                     "detectScript":  "#detectScript",
+                     "installScript":  "#installScript",
+                     "uninstallScript":  "#uninstallScript",
+                     "fileUnzip":  false,
+                     "versions":  "",
+                     "source":  "@{import=True; type=Evergreen; app=JGraphDrawIO; filter=$_.Architecture -eq \"x86\" -and $_.Type -eq \"msi\"}"
+                 },
+        "Path":  "C:\\projects\\_EUCPilots\\evergreen-packages\\shell-apps\\JGraph\\draw.io",
+        "Publisher":  "JGraph",
+        "PublisherFolder":  "JGraph",
+        "Folder":  "draw.io"
+    },
+    {
+        "DefJsonPath":  "C:\\projects\\_EUCPilots\\evergreen-packages\\shell-apps\\Microsoft\\AvdMultimediaRedirection\\Definition.json",
+        "Title":  "Multimedia Redirection Extensions",
+        "Source":  "shell-apps",
+        "Json":  {
+                     "name":  "Multimedia Redirection Extensions",
+                     "description":  "This extension enables multimedia redirection for Azure Virtual Desktop, allowing for enhanced media playback performance.",
+                     "isPublic":  true,
+                     "publisher":  "Microsoft",
+                     "detectScript":  "#detectScript",
+                     "installScript":  "#installScript",
+                     "uninstallScript":  "#uninstallScript",
+                     "fileUnzip":  false,
+                     "versions":  "",
+                     "source":  "@{import=True; type=Evergreen; app=MicrosoftWvdMultimediaRedirection; filter=$_.Architecture -eq \"x64\"}"
+                 },
+        "Path":  "C:\\projects\\_EUCPilots\\evergreen-packages\\shell-apps\\Microsoft\\AvdMultimediaRedirection",
+        "Publisher":  "Microsoft",
+        "PublisherFolder":  "Microsoft",
+        "Folder":  "AvdMultimediaRedirection"
+    },
+    {
+        "DefJsonPath":  "C:\\projects\\_EUCPilots\\evergreen-packages\\shell-apps\\Microsoft\\AvdRtcService\\Definition.json",
+        "Title":  "Remote Desktop WebRTC Redirector Service",
+        "Source":  "shell-apps",
+        "Json":  {
+                     "name":  "Remote Desktop WebRTC Redirector Service",
+                     "description":  "The Remote Desktop WebRTC Redirector Service for Teams for Azure Virtual Desktop.",
+                     "isPublic":  true,
+                     "publisher":  "Microsoft",
+                     "detectScript":  "#detectScript",
+                     "installScript":  "#installScript",
+                     "uninstallScript":  "#uninstallScript",
+                     "fileUnzip":  false,
+                     "versions":  "",
+                     "source":  "@{import=True; type=Evergreen; app=MicrosoftWvdRtcService; filter=$_.Architecture -eq \"x64\"}"
+                 },
+        "Path":  "C:\\projects\\_EUCPilots\\evergreen-packages\\shell-apps\\Microsoft\\AvdRtcService",
+        "Publisher":  "Microsoft",
+        "PublisherFolder":  "Microsoft",
+        "Folder":  "AvdRtcService"
+    },
+    {
+        "DefJsonPath":  "C:\\projects\\_EUCPilots\\evergreen-packages\\shell-apps\\Microsoft\\AzureCLI\\Definition.json",
+        "Title":  "Azure CLI",
+        "Source":  "shell-apps",
+        "Json":  {
+                     "name":  "Azure CLI",
+                     "description":  "Azure CLI is a cross-platform command-line tool for managing Azure resources with interactive commands or scripts.",
+                     "isPublic":  true,
+                     "publisher":  "Microsoft",
+                     "detectScript":  "#detectScript",
+                     "installScript":  "#installScript",
+                     "uninstallScript":  "#uninstallScript",
+                     "fileUnzip":  false,
+                     "versions":  "",
+                     "source":  "@{import=True; type=Evergreen; app=MicrosoftAzureCLI; filter=$_.Architecture -eq \"x64\"}"
+                 },
+        "Path":  "C:\\projects\\_EUCPilots\\evergreen-packages\\shell-apps\\Microsoft\\AzureCLI",
+        "Publisher":  "Microsoft",
+        "PublisherFolder":  "Microsoft",
+        "Folder":  "AzureCLI"
+    },
+    {
+        "DefJsonPath":  "C:\\projects\\_EUCPilots\\evergreen-packages\\shell-apps\\Microsoft\\Edge\\Definition.json",
+        "Title":  "Edge",
+        "Source":  "shell-apps",
+        "Json":  {
+                     "name":  "Edge",
+                     "description":  "Microsoft Edge is a cross-platform web browser developed by Microsoft, based on the Chromium open-source project.",
+                     "isPublic":  true,
+                     "publisher":  "Microsoft",
+                     "detectScript":  "#detectScript",
+                     "installScript":  "#installScript",
+                     "uninstallScript":  "#uninstallScript",
+                     "fileUnzip":  false,
+                     "versions":  "",
+                     "source":  "@{import=True; type=Evergreen; app=MicrosoftEdge; filter=$_.Channel -eq \"Stable\" -and $_.Architecture -eq \"x64\"}"
+                 },
+        "Path":  "C:\\projects\\_EUCPilots\\evergreen-packages\\shell-apps\\Microsoft\\Edge",
+        "Publisher":  "Microsoft",
+        "PublisherFolder":  "Microsoft",
+        "Folder":  "Edge"
+    },
+    {
+        "DefJsonPath":  "C:\\projects\\_EUCPilots\\evergreen-packages\\shell-apps\\Microsoft\\EdgeWebView2\\Definition.json",
+        "Title":  "Edge WebView2",
+        "Source":  "shell-apps",
+        "Json":  {
+                     "name":  "Edge WebView2",
+                     "description":  "Microsoft Edge WebView2 is a control that allows you to embed web content in your applications using the Edge rendering engine.",
+                     "isPublic":  true,
+                     "publisher":  "Microsoft",
+                     "detectScript":  "#detectScript",
+                     "installScript":  "#installScript",
+                     "uninstallScript":  "#uninstallScript",
+                     "fileUnzip":  false,
+                     "versions":  "",
+                     "source":  "@{import=True; type=Evergreen; app=MicrosoftEdgeWebView2Runtime; filter=$_.Channel -eq \"Stable\" -and $_.Architecture -eq \"x64\"}"
+                 },
+        "Path":  "C:\\projects\\_EUCPilots\\evergreen-packages\\shell-apps\\Microsoft\\EdgeWebView2",
+        "Publisher":  "Microsoft",
+        "PublisherFolder":  "Microsoft",
+        "Folder":  "EdgeWebView2"
+    },
+    {
+        "DefJsonPath":  "C:\\projects\\_EUCPilots\\evergreen-packages\\shell-apps\\Microsoft\\FSLogixApps\\Definition.json",
+        "Title":  "FSLogix Apps",
+        "Source":  "shell-apps",
+        "Json":  {
+                     "name":  "FSLogix Apps",
+                     "description":  "FSLogix Apps is a set of solutions that enhance the user experience in virtual desktop environments by providing advanced profile management, application masking, and Office 365 containerization.",
+                     "isPublic":  true,
+                     "publisher":  "Microsoft",
+                     "detectScript":  "#detectScript",
+                     "installScript":  "#installScript",
+                     "uninstallScript":  "#uninstallScript",
+                     "fileUnzip":  false,
+                     "versions":  "",
+                     "source":  "@{import=True; type=Evergreen; app=MicrosoftFSLogixApps; filter=$_.Channel -eq \"Production\"}"
+                 },
+        "Path":  "C:\\projects\\_EUCPilots\\evergreen-packages\\shell-apps\\Microsoft\\FSLogixApps",
+        "Publisher":  "Microsoft",
+        "PublisherFolder":  "Microsoft",
+        "Folder":  "FSLogixApps"
+    },
+    {
+        "DefJsonPath":  "C:\\projects\\_EUCPilots\\evergreen-packages\\shell-apps\\Microsoft\\NETLTS\\Definition.json",
+        "Title":  ".NET LTS",
+        "Source":  "shell-apps",
+        "Json":  {
+                     "name":  ".NET LTS",
+                     "description":  ".NET platform that receives support and updates for an extended period, ensuring stability and security for applications built on it.",
+                     "isPublic":  true,
+                     "publisher":  "Microsoft",
+                     "detectScript":  "#detectScript",
+                     "installScript":  "#installScript",
+                     "uninstallScript":  "#uninstallScript",
+                     "fileUnzip":  false,
+                     "versions":  "",
+                     "source":  "@{import=True; type=Evergreen; app=Microsoft.NET; filter=$_.Installer -eq \"windowsdesktop\" -and $_.Architecture -eq \"x64\" -and $_.Channel -match \"LTS\"}"
+                 },
+        "Path":  "C:\\projects\\_EUCPilots\\evergreen-packages\\shell-apps\\Microsoft\\NETLTS",
+        "Publisher":  "Microsoft",
+        "PublisherFolder":  "Microsoft",
+        "Folder":  "NETLTS"
+    },
+    {
+        "DefJsonPath":  "C:\\projects\\_EUCPilots\\evergreen-packages\\shell-apps\\Microsoft\\OneDrive\\Definition.json",
+        "Title":  "OneDrive",
+        "Source":  "shell-apps",
+        "Json":  {
+                     "name":  "OneDrive",
+                     "description":  "OneDrive is a file hosting service that allows users to store files and data in the cloud.",
+                     "isPublic":  true,
+                     "publisher":  "Microsoft",
+                     "detectScript":  "#detectScript",
+                     "installScript":  "#installScript",
+                     "uninstallScript":  "#uninstallScript",
+                     "fileUnzip":  false,
+                     "versions":  "",
+                     "source":  "@{import=True; type=Evergreen; app=MicrosoftOneDrive; filter=$_.Ring -eq \"Production\" -and $_.Architecture -eq \"x64\" -and $_.Throttle -eq \"100\"}"
+                 },
+        "Path":  "C:\\projects\\_EUCPilots\\evergreen-packages\\shell-apps\\Microsoft\\OneDrive",
+        "Publisher":  "Microsoft",
+        "PublisherFolder":  "Microsoft",
+        "Folder":  "OneDrive"
+    },
+    {
+        "DefJsonPath":  "C:\\projects\\_EUCPilots\\evergreen-packages\\shell-apps\\Microsoft\\PowerShell\\Definition.json",
+        "Title":  "PowerShell LTS",
+        "Source":  "shell-apps",
+        "Json":  {
+                     "name":  "PowerShell LTS",
+                     "description":  "PowerShell is a cross-platform task automation solution made up of a command-line shell, a scripting language, and a configuration management framework.",
+                     "isPublic":  true,
+                     "publisher":  "Microsoft",
+                     "detectScript":  "#detectScript",
+                     "installScript":  "#installScript",
+                     "uninstallScript":  "#uninstallScript",
+                     "fileUnzip":  false,
+                     "versions":  "",
+                     "source":  "@{import=True; type=Evergreen; app=MicrosoftPowerShell; filter=$_.Architecture -eq \"x64\" -and $_.Type -eq \"msi\" -and $_.Release -eq \"LTS\"}"
+                 },
+        "Path":  "C:\\projects\\_EUCPilots\\evergreen-packages\\shell-apps\\Microsoft\\PowerShell",
+        "Publisher":  "Microsoft",
+        "PublisherFolder":  "Microsoft",
+        "Folder":  "PowerShell"
+    },
+    {
+        "DefJsonPath":  "C:\\projects\\_EUCPilots\\evergreen-packages\\shell-apps\\Microsoft\\PowerToys\\Definition.json",
+        "Title":  "PowerToys",
+        "Source":  "shell-apps",
+        "Json":  {
+                     "name":  "PowerToys",
+                     "description":  "PowerToys is a set of utilities for power users to tune and streamline their Windows experience for greater productivity.",
+                     "isPublic":  true,
+                     "publisher":  "Microsoft",
+                     "detectScript":  "#detectScript",
+                     "installScript":  "#installScript",
+                     "uninstallScript":  "#uninstallScript",
+                     "fileUnzip":  false,
+                     "versions":  "",
+                     "source":  "@{import=True; type=Evergreen; app=MicrosoftPowerToys; filter=$_.Architecture -eq \"x64\" -and $_.InstallerType -eq \"Default\"}"
+                 },
+        "Path":  "C:\\projects\\_EUCPilots\\evergreen-packages\\shell-apps\\Microsoft\\PowerToys",
+        "Publisher":  "Microsoft",
+        "PublisherFolder":  "Microsoft",
+        "Folder":  "PowerToys"
+    },
+    {
+        "DefJsonPath":  "C:\\projects\\_EUCPilots\\evergreen-packages\\shell-apps\\Microsoft\\SQLServerManagementStudio\\Definition.json",
+        "Title":  "SQL Server Management Studio",
+        "Source":  "shell-apps",
+        "Json":  {
+                     "name":  "SQL Server Management Studio",
+                     "description":  "SQL Server Management Studio (SSMS) is an integrated environment for managing any SQL infrastructure, from SQL Server to Azure SQL Database.",
+                     "isPublic":  true,
+                     "publisher":  "Microsoft",
+                     "detectScript":  "#detectScript",
+                     "installScript":  "#installScript",
+                     "uninstallScript":  "#uninstallScript",
+                     "fileUnzip":  false,
+                     "versions":  "",
+                     "source":  "@{import=True; type=Evergreen; app=MicrosoftSsms; filter=$_.Type -eq \"exe\"}"
+                 },
+        "Path":  "C:\\projects\\_EUCPilots\\evergreen-packages\\shell-apps\\Microsoft\\SQLServerManagementStudio",
+        "Publisher":  "Microsoft",
+        "PublisherFolder":  "Microsoft",
+        "Folder":  "SQLServerManagementStudio"
+    },
+    {
+        "DefJsonPath":  "C:\\projects\\_EUCPilots\\evergreen-packages\\shell-apps\\Microsoft\\Teams\\Definition.json",
+        "Title":  "Teams",
+        "Source":  "shell-apps",
+        "Json":  {
+                     "name":  "Teams",
+                     "description":  "Microsoft Teams is a collaboration app that helps your team stay organized and has conversations all in one place.",
+                     "isPublic":  true,
+                     "publisher":  "Microsoft",
+                     "detectScript":  "#detectScript",
+                     "installScript":  "#installScript",
+                     "uninstallScript":  "#uninstallScript",
+                     "fileUnzip":  false,
+                     "versions":  "",
+                     "source":  "@{import=True; type=Evergreen; app=MicrosoftTeams; filter=$_.Architecture -eq \"x64\" -and $_.Release -eq \"Enterprise\"}"
+                 },
+        "Path":  "C:\\projects\\_EUCPilots\\evergreen-packages\\shell-apps\\Microsoft\\Teams",
+        "Publisher":  "Microsoft",
+        "PublisherFolder":  "Microsoft",
+        "Folder":  "Teams"
+    },
+    {
+        "DefJsonPath":  "C:\\projects\\_EUCPilots\\evergreen-packages\\shell-apps\\Microsoft\\VisualStudioCode\\Definition.json",
+        "Title":  "Visual Studio Code",
+        "Source":  "shell-apps",
+        "Json":  {
+                     "name":  "Visual Studio Code",
+                     "description":  "Visual Studio Code is a code editor redefined and optimized for building and debugging modern web and cloud applications.",
+                     "isPublic":  true,
+                     "publisher":  "Microsoft",
+                     "detectScript":  "#detectScript",
+                     "installScript":  "#installScript",
+                     "uninstallScript":  "#uninstallScript",
+                     "fileUnzip":  false,
+                     "versions":  "",
+                     "source":  "@{import=True; type=Evergreen; app=MicrosoftVisualStudioCode; filter=$_.Architecture -eq \"x64\" -and $_.Channel -eq \"Stable\" -and $_.Platform -eq \"win32-x64\"}"
+                 },
+        "Path":  "C:\\projects\\_EUCPilots\\evergreen-packages\\shell-apps\\Microsoft\\VisualStudioCode",
+        "Publisher":  "Microsoft",
+        "PublisherFolder":  "Microsoft",
+        "Folder":  "VisualStudioCode"
+    },
+    {
+        "DefJsonPath":  "C:\\projects\\_EUCPilots\\evergreen-packages\\shell-apps\\Microsoft\\WindowsApp\\Definition.json",
+        "Title":  "Windows App",
+        "Source":  "shell-apps",
+        "Json":  {
+                     "name":  "Windows App",
+                     "description":  "Securely connect to Windows across Windows 365, Azure Virtual Desktop, Microsoft Dev Box, and more.",
+                     "isPublic":  true,
+                     "publisher":  "Microsoft",
+                     "detectScript":  "#detectScript",
+                     "installScript":  "#installScript",
+                     "uninstallScript":  "#uninstallScript",
+                     "fileUnzip":  false,
+                     "versions":  "",
+                     "source":  "@{import=True; type=Evergreen; app=MicrosoftWindowsApp; filter=$_.Architecture -eq \"x64\"}"
+                 },
+        "Path":  "C:\\projects\\_EUCPilots\\evergreen-packages\\shell-apps\\Microsoft\\WindowsApp",
+        "Publisher":  "Microsoft",
+        "PublisherFolder":  "Microsoft",
+        "Folder":  "WindowsApp"
+    },
+    {
+        "DefJsonPath":  "C:\\projects\\_EUCPilots\\evergreen-packages\\shell-apps\\stealthpuppy\\defaults\\Definition.json",
+        "Title":  "Windows Enterprise Defaults",
+        "Source":  "shell-apps",
+        "Json":  {
+                     "name":  "Windows Enterprise Defaults",
+                     "description":  "Make Windows images enterprise ready with optimisations and better defaults.",
+                     "isPublic":  true,
+                     "publisher":  "stealthpuppy",
+                     "detectScript":  "#detectScript",
+                     "installScript":  "#installScript",
+                     "uninstallScript":  "#uninstallScript",
+                     "fileUnzip":  false,
+                     "versions":  "",
+                     "source":  "@{import=True; type=Evergreen; app=WindowsEnterpriseDefaults; filter=$_.Type -eq \"zip\"}"
+                 },
+        "Path":  "C:\\projects\\_EUCPilots\\evergreen-packages\\shell-apps\\stealthpuppy\\defaults",
+        "Publisher":  "stealthpuppy",
+        "PublisherFolder":  "stealthpuppy",
+        "Folder":  "defaults"
+    },
+    {
+        "DefJsonPath":  "C:\\projects\\_EUCPilots\\evergreen-packages\\shell-apps\\Zoom\\Workplace\\Definition.json",
+        "Title":  "Zoom Workplace",
+        "Source":  "shell-apps",
+        "Json":  {
+                     "name":  "Zoom Workplace",
+                     "description":  "Zoom Workplace is a collaboration platform that brings together chat, video, and file sharing in one place.",
+                     "isPublic":  true,
+                     "publisher":  "Zoom",
+                     "detectScript":  "#detectScript",
+                     "installScript":  "#installScript",
+                     "uninstallScript":  "#uninstallScript",
+                     "fileUnzip":  false,
+                     "versions":  "",
+                     "source":  "@{import=True; type=Evergreen; app=Zoom; filter=$_.Architecture -eq \"x64\" -and $_.Type -eq \"msi\" -and $_.Platform -eq \"Desktop\"}"
+                 },
+        "Path":  "C:\\projects\\_EUCPilots\\evergreen-packages\\shell-apps\\Zoom\\Workplace",
+        "Publisher":  "Zoom",
+        "PublisherFolder":  "Zoom",
+        "Folder":  "Workplace"
+    }
+]

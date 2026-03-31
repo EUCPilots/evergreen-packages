@@ -1,0 +1,188 @@
+{
+    "ShellOnly":  [
+                      {
+                          "Status":  "shell-only",
+                          "Publisher":  "Adobe",
+                          "ProductName":  "AcrobatReader",
+                          "Variant":  null,
+                          "Title":  "Acrobat Reader DC",
+                          "Folder":  "AcrobatReader"
+                      },
+                      {
+                          "Status":  "shell-only",
+                          "Publisher":  "dotPDN",
+                          "ProductName":  "Paint.NET",
+                          "Variant":  null,
+                          "Title":  "Paint.NET",
+                          "Folder":  "Paint.NET"
+                      },
+                      {
+                          "Status":  "shell-only",
+                          "Publisher":  "Foxit Software",
+                          "ProductName":  "PDFReader",
+                          "Variant":  null,
+                          "Title":  "Foxit PDF Reader",
+                          "Folder":  "PDFReader"
+                      },
+                      {
+                          "Status":  "shell-only",
+                          "Publisher":  "Google",
+                          "ProductName":  "Chrome",
+                          "Variant":  null,
+                          "Title":  "Chrome",
+                          "Folder":  "Chrome"
+                      },
+                      {
+                          "Status":  "shell-only",
+                          "Publisher":  "JGraph",
+                          "ProductName":  "draw.io",
+                          "Variant":  null,
+                          "Title":  "draw.io",
+                          "Folder":  "draw.io"
+                      },
+                      {
+                          "Status":  "shell-only",
+                          "Publisher":  "Microsoft",
+                          "ProductName":  "AvdMultimediaRedirection",
+                          "Variant":  null,
+                          "Title":  "Multimedia Redirection Extensions",
+                          "Folder":  "AvdMultimediaRedirection"
+                      },
+                      {
+                          "Status":  "shell-only",
+                          "Publisher":  "Microsoft",
+                          "ProductName":  "AvdRtcService",
+                          "Variant":  null,
+                          "Title":  "Remote Desktop WebRTC Redirector Service",
+                          "Folder":  "AvdRtcService"
+                      },
+                      {
+                          "Status":  "shell-only",
+                          "Publisher":  "Microsoft",
+                          "ProductName":  "AzureCLI",
+                          "Variant":  null,
+                          "Title":  "Azure CLI",
+                          "Folder":  "AzureCLI"
+                      },
+                      {
+                          "Status":  "shell-only",
+                          "Publisher":  "Microsoft",
+                          "ProductName":  "Edge",
+                          "Variant":  null,
+                          "Title":  "Edge",
+                          "Folder":  "Edge"
+                      },
+                      {
+                          "Status":  "shell-only",
+                          "Publisher":  "Microsoft",
+                          "ProductName":  "EdgeWebView2",
+                          "Variant":  null,
+                          "Title":  "Edge WebView2",
+                          "Folder":  "EdgeWebView2"
+                      },
+                      {
+                          "Status":  "shell-only",
+                          "Publisher":  "Microsoft",
+                          "ProductName":  "FSLogixApps",
+                          "Variant":  null,
+                          "Title":  "FSLogix Apps",
+                          "Folder":  "FSLogixApps"
+                      },
+                      {
+                          "Status":  "shell-only",
+                          "Publisher":  "Microsoft",
+                          "ProductName":  "NETLTS",
+                          "Variant":  null,
+                          "Title":  ".NET LTS",
+                          "Folder":  "NETLTS"
+                      },
+                      {
+                          "Status":  "shell-only",
+                          "Publisher":  "Microsoft",
+                          "ProductName":  "OneDrive",
+                          "Variant":  null,
+                          "Title":  "OneDrive",
+                          "Folder":  "OneDrive"
+                      },
+                      {
+                          "Status":  "shell-only",
+                          "Publisher":  "Microsoft",
+                          "ProductName":  "PowerShell",
+                          "Variant":  null,
+                          "Title":  "PowerShell LTS",
+                          "Folder":  "PowerShell"
+                      },
+                      {
+                          "Status":  "shell-only",
+                          "Publisher":  "Microsoft",
+                          "ProductName":  "PowerToys",
+                          "Variant":  null,
+                          "Title":  "PowerToys",
+                          "Folder":  "PowerToys"
+                      },
+                      {
+                          "Status":  "shell-only",
+                          "Publisher":  "Microsoft",
+                          "ProductName":  "SQLServerManagementStudio",
+                          "Variant":  null,
+                          "Title":  "SQL Server Management Studio",
+                          "Folder":  "SQLServerManagementStudio"
+                      },
+                      {
+                          "Status":  "shell-only",
+                          "Publisher":  "Microsoft",
+                          "ProductName":  "Teams",
+                          "Variant":  null,
+                          "Title":  "Teams",
+                          "Folder":  "Teams"
+                      },
+                      {
+                          "Status":  "shell-only",
+                          "Publisher":  "Microsoft",
+                          "ProductName":  "VisualStudioCode",
+                          "Variant":  null,
+                          "Title":  "Visual Studio Code",
+                          "Folder":  "VisualStudioCode"
+                      },
+                      {
+                          "Status":  "shell-only",
+                          "Publisher":  "Microsoft",
+                          "ProductName":  "WindowsApp",
+                          "Variant":  null,
+                          "Title":  "Windows App",
+                          "Folder":  "WindowsApp"
+                      },
+                      {
+                          "Status":  "shell-only",
+                          "Publisher":  "stealthpuppy",
+                          "ProductName":  "defaults",
+                          "Variant":  null,
+                          "Title":  "Windows Enterprise Defaults",
+                          "Folder":  "defaults"
+                      },
+                      {
+                          "Status":  "shell-only",
+                          "Publisher":  "Zoom",
+                          "ProductName":  "Workplace",
+                          "Variant":  null,
+                          "Title":  "Zoom Workplace",
+                          "Folder":  "Workplace"
+                      }
+                  ],
+    "SourceRoot":  "C:\\projects\\_EUCPilots\\evergreen-packages",
+    "Timestamp":  "2026-03-31T20:08:01.6635999+11:00",
+    "Matched":  {
+
+                },
+    "Summary":  {
+                    "ShellOnly":  21,
+                    "TotalShellApps":  21,
+                    "TotalIntune":  0,
+                    "Matched":  0,
+                    "IntuneOnly":  0,
+                    "Expected_Total":  21
+                },
+    "IntuneOnly":  {
+
+                   }
+}

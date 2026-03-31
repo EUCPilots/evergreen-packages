@@ -1,0 +1,662 @@
+[
+    {
+        "Title": "Adobe Acrobat Reader DC",
+        "Json": {
+            "Application": "@{Name=AdobeAcrobatReaderDC; Filter=Get-EvergreenApp -Name \"AdobeAcrobatReaderDC\" | Where-Object { $_.Language -eq \"MUI\" -and $_.Architecture -eq \"x64\" } | Select-Object -First 1; Title=Adobe Acrobat Reader DC; Language=English; Architecture=x64}",
+            "PackageInformation": "@{SetupType=EXE; SetupFile=AcroRdrDCx642500121288_MUI.exe; Version=25.001.21288; SourceFolder=Source; OutputFolder=Package; IconFile=https://github.com/aaronparker/icons/raw/main/companyportal/Adobe-AcrobatReader.png}",
+            "Information": "@{DisplayName=Adobe Acrobat Reader DC x64; Description=Adobe Acrobat Reader is the free, trusted global standard for viewing, printing, e-signing, sharing, and annotating PDFs. View PDFs, Leave comments or annotate PDFs, Fill, e-sign, and lock your forms, Collaborate better with PDFs.; Publisher=Adobe; InformationURL=https://www.adobe.com/acrobat/pdf-reader.html; PrivacyURL=https://www.adobe.com/privacy.html; FeaturedApp=False; Categories=System.Object[]; PSPackageFactoryGuid=a0042672-7240-4312-892e-39623320c0a3}",
+            "Program": "@{InstallTemplate=powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1; InstallCommand=powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1; UninstallCommand=msiexec.exe /X \"{AC76BA86-1033-FF00-7760-BC15014EA700}\" /quiet; InstallExperience=system; DeviceRestartBehavior=basedOnReturnCode; AllowAvailableUninstall=False}",
+            "RequirementRule": "@{MinimumRequiredOperatingSystem=W10_1809; Architecture=x64}",
+            "CustomRequirementRule": "",
+            "DetectionRule": "",
+            "Dependencies": "",
+            "Supersedence": "",
+            "Assignments": ""
+        },
+        "Source": "intune",
+        "Path": "C:\\projects\\_EUCPilots\\evergreen-packages\\intune\\AdobeAcrobatReaderDCMUI",
+        "AppJsonPath": "C:\\projects\\_EUCPilots\\evergreen-packages\\intune\\AdobeAcrobatReaderDCMUI\\App.json",
+        "Folder": "AdobeAcrobatReaderDCMUI",
+        "Publisher": "Adobe"
+    },
+    {
+        "Title": "Adobe Acrobat Reader DC (VDI install)",
+        "Json": {
+            "Application": "@{Name=AdobeAcrobatReaderDC; Filter=Get-EvergreenApp -Name \"AdobeAcrobatReaderDC\" | Where-Object { $_.Language -eq \"MUI\" -and $_.Architecture -eq \"x64\" } | Select-Object -First 1; Title=Adobe Acrobat Reader DC (VDI install); PrePackageCmd= -sfx_o\"#Path\" -sfx_ne; Language=English; Architecture=x64}",
+            "PackageInformation": "@{SetupType=EXE; SetupFile=AcroRdrDCx642500121288_MUI.exe; Version=25.001.21288; SourceFolder=Source; OutputFolder=Package; IconFile=https://github.com/aaronparker/icons/raw/main/companyportal/Adobe-AcrobatReader.png}",
+            "Information": "@{DisplayName=Adobe Acrobat Reader DC (VDI install) x64; Description=Adobe Acrobat Reader is the free, trusted global standard for viewing, printing, e-signing, sharing, and annotating PDFs. View PDFs, Leave comments or annotate PDFs, Fill, e-sign, and lock your forms, Collaborate better with PDFs.; Publisher=Adobe; InformationURL=https://www.adobe.com/acrobat/pdf-reader.html; PrivacyURL=https://www.adobe.com/privacy.html; FeaturedApp=False; Categories=System.Object[]; PSPackageFactoryGuid=a5124837-b8c3-4f88-9c8b-668849728328}",
+            "Program": "@{InstallTemplate=powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1; InstallCommand=powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1; UninstallCommand=msiexec.exe /X \"{AC76BA86-1033-FF00-7760-BC15014EA700}\" /quiet; InstallExperience=system; DeviceRestartBehavior=suppress; AllowAvailableUninstall=False}",
+            "RequirementRule": "@{MinimumRequiredOperatingSystem=W10_1809; Architecture=x64}",
+            "CustomRequirementRule": "",
+            "DetectionRule": "",
+            "Dependencies": "",
+            "Supersedence": "",
+            "Assignments": ""
+        },
+        "Source": "intune",
+        "Path": "C:\\projects\\_EUCPilots\\evergreen-packages\\intune\\AdobeAcrobatReaderDCMUIVDI",
+        "AppJsonPath": "C:\\projects\\_EUCPilots\\evergreen-packages\\intune\\AdobeAcrobatReaderDCMUIVDI\\App.json",
+        "Folder": "AdobeAcrobatReaderDCMUIVDI",
+        "Publisher": "Adobe"
+    },
+    {
+        "Title": "Audacity",
+        "Json": {
+            "Application": "@{Name=Audacity; Filter=Get-EvergreenApp -Name \"Audacity\" | Where-Object { $_.Architecture -eq \"x64\" } | Select-Object -First 1; Title=Audacity; Language=en-US; Architecture=x64}",
+            "PackageInformation": "@{SetupType=EXE; SetupFile=audacity-win-3.7.7-64bit.exe; Version=3.7.7; SourceFolder=Source; OutputFolder=Package; IconFile=https://github.com/aaronparker/icons/raw/main/companyportal/Audacity.png}",
+            "Information": "@{DisplayName=Audacity x64; Description=Audacity is an easy-to-use, multi-track audio editor and recorder for Windows, macOS, GNU/Linux and other operating systems.; Publisher=Audacity; InformationURL=https://www.audacityteam.org/; PrivacyURL=https://www.audacityteam.org/; Categories=System.Object[]; PSPackageFactoryGuid=328af5bc-34e3-4a9e-93eb-398f594388d6}",
+            "Program": "@{InstallTemplate=powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1; InstallCommand=powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1; UninstallCommand=\"C:\\Program Files\\Audacity\\unins000.exe\" /VERYSILENT; InstallExperience=system; DeviceRestartBehavior=basedOnReturnCode; AllowAvailableUninstall=False}",
+            "RequirementRule": "@{MinimumRequiredOperatingSystem=W10_1809; Architecture=x64}",
+            "CustomRequirementRule": "",
+            "DetectionRule": "",
+            "Dependencies": "",
+            "Supersedence": "",
+            "Assignments": ""
+        },
+        "Source": "intune",
+        "Path": "C:\\projects\\_EUCPilots\\evergreen-packages\\intune\\Audacity",
+        "AppJsonPath": "C:\\projects\\_EUCPilots\\evergreen-packages\\intune\\Audacity\\App.json",
+        "Folder": "Audacity",
+        "Publisher": "Audacity"
+    },
+    {
+        "Title": "Citrix Workspace app Current Release",
+        "Json": {
+            "Application": "@{Name=CitrixWorkspaceApp; Filter=Get-EvergreenApp -Name \"CitrixWorkspaceApp\" | Where-Object { $_.Stream -eq \"Current\"} | Select-Object -First 1; Title=Citrix Workspace app Current Release; Language=en-US; Architecture=x86}",
+            "PackageInformation": "@{SetupType=EXE; SetupFile=CitrixWorkspaceApp24.5.0.131.exe; Version=24.5.0.131; SourceFolder=Source; OutputFolder=Package; IconFile=https://github.com/aaronparker/icons/raw/main/companyportal/Citrix-WorkspaceApp.png}",
+            "Information": "@{DisplayName=Citrix Workspace app Current Release; Description=When powered by Citrix Workspace services, the new Citrix Workspace app gives users instant access to all their SaaS and web apps, their files and mobile apps, and their virtual apps and desktops from an easy-to-use, all-in-one interface. Citrix Workspace app is a single point of entry to all workspace services for users. Users get seamless and secure access to all the apps that they need to stay productive, including features such as embedded browsing and single sign-on.; Publisher=Citrix; InformationURL=https://docs.citrix.com/en-us/citrix-workspace-app-for-windows.html; PrivacyURL=https://www.citrix.com/about/legal/; Categories=System.Object[]; PSPackageFactoryGuid=4719e5cd-59c4-4887-96e9-c6644d8948ef}",
+            "Program": "@{InstallTemplate=powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1; InstallCommand=powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1; UninstallCommand=powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Uninstall.ps1; InstallExperience=system; DeviceRestartBehavior=basedOnReturnCode; AllowAvailableUninstall=False}",
+            "RequirementRule": "@{MinimumRequiredOperatingSystem=W10_1809; Architecture=x64}",
+            "CustomRequirementRule": "",
+            "DetectionRule": "  ",
+            "Dependencies": "",
+            "Supersedence": "",
+            "Assignments": ""
+        },
+        "Source": "intune",
+        "Path": "C:\\projects\\_EUCPilots\\evergreen-packages\\intune\\CitrixWorkspaceAppCurrent",
+        "AppJsonPath": "C:\\projects\\_EUCPilots\\evergreen-packages\\intune\\CitrixWorkspaceAppCurrent\\App.json",
+        "Folder": "CitrixWorkspaceAppCurrent",
+        "Publisher": "Citrix"
+    },
+    {
+        "Title": "Citrix Workspace app LTSR",
+        "Json": {
+            "Application": "@{Name=CitrixWorkspaceApp; Filter=Get-EvergreenApp -Name \"CitrixWorkspaceApp\" | Where-Object { $_.Stream -eq \"LTSR\" } | Select-Object -First 1; Title=Citrix Workspace app LTSR; Language=en-US; Architecture=x86}",
+            "PackageInformation": "@{SetupType=EXE; SetupFile=CitrixWorkspaceApp24.2.0.172.exe; Version=24.2.0.172; SourceFolder=Source; OutputFolder=Package; IconFile=https://github.com/aaronparker/icons/raw/main/companyportal/Citrix-WorkspaceApp.png}",
+            "Information": "@{DisplayName=Citrix Workspace app LTSR; Description=When powered by Citrix Workspace services, the new Citrix Workspace app gives users instant access to all their SaaS and web apps, their files and mobile apps, and their virtual apps and desktops from an easy-to-use, all-in-one interface. Citrix Workspace app is a single point of entry to all workspace services for users. Users get seamless and secure access to all the apps that they need to stay productive, including features such as embedded browsing and single sign-on.; Publisher=Citrix; InformationURL=https://docs.citrix.com/en-us/citrix-workspace-app-for-windows.html; PrivacyURL=https://www.citrix.com/about/legal/; Categories=System.Object[]; PSPackageFactoryGuid=973ab12e-8862-46c2-b807-63da783e68b0}",
+            "Program": "@{InstallTemplate=powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1; InstallCommand=powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1; UninstallCommand=powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Uninstall.ps1; InstallExperience=system; DeviceRestartBehavior=suppress; AllowAvailableUninstall=False}",
+            "RequirementRule": "@{MinimumRequiredOperatingSystem=W10_1809; Architecture=x64}",
+            "CustomRequirementRule": "",
+            "DetectionRule": "  ",
+            "Dependencies": "",
+            "Supersedence": "",
+            "Assignments": ""
+        },
+        "Source": "intune",
+        "Path": "C:\\projects\\_EUCPilots\\evergreen-packages\\intune\\CitrixWorkspaceAppLTSR",
+        "AppJsonPath": "C:\\projects\\_EUCPilots\\evergreen-packages\\intune\\CitrixWorkspaceAppLTSR\\App.json",
+        "Folder": "CitrixWorkspaceAppLTSR",
+        "Publisher": "Citrix"
+    },
+    {
+        "Title": "Cyberduck",
+        "Json": {
+            "Application": "@{Name=Cyberduck; Filter=Get-EvergreenApp -Name \"Cyberduck\"; Title=Cyberduck; Language=en-US; Architecture=x64}",
+            "PackageInformation": "@{SetupType=EXE; SetupFile=Cyberduck-Installer-9.4.1.44384.exe; Version=9.4.1.44384; SourceFolder=Source; OutputFolder=Package; IconFile=https://github.com/aaronparker/icons/raw/main/companyportal/Iterate-Cyberduck1.png}",
+            "Information": "@{DisplayName=Cyberduck; Description=Cyberduck is a libre server and cloud storage browser for Mac and Windows with support for FTP, SFTP, WebDAV, Amazon S3, OpenStack Swift, Backblaze B2, Microsoft Azure \u0026 OneDrive, Google Drive and Dropbox.; Publisher=iterate; InformationURL=https://cyberduck.io/; PrivacyURL=https://cyberduck.io/privacy; Categories=System.Object[]; PSPackageFactoryGuid=d270031c-f5c9-4e20-9d78-f475e28ac22c}",
+            "Program": "@{InstallTemplate=powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1; InstallCommand=powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1; UninstallCommand=msiexec.exe /X \"{8FF1F756-1F7C-41C1-880E-B03218DFDD72}\" /quiet; InstallExperience=system; DeviceRestartBehavior=suppress; AllowAvailableUninstall=False}",
+            "RequirementRule": "@{MinimumRequiredOperatingSystem=W10_1809; Architecture=x64}",
+            "CustomRequirementRule": "",
+            "DetectionRule": "",
+            "Dependencies": "",
+            "Supersedence": "",
+            "Assignments": ""
+        },
+        "Source": "intune",
+        "Path": "C:\\projects\\_EUCPilots\\evergreen-packages\\intune\\Cyberduck",
+        "AppJsonPath": "C:\\projects\\_EUCPilots\\evergreen-packages\\intune\\Cyberduck\\App.json",
+        "Folder": "Cyberduck",
+        "Publisher": "iterate"
+    },
+    {
+        "Title": "Foxit PDF Reader",
+        "Json": {
+            "Application": "@{Name=FoxitReader; Filter=Get-EvergreenApp -Name \"FoxitReader\" -ErrorAction \"SilentlyContinue\" | Where-Object { $_.Type -eq \"exe\" } | Select-Object -First 1; Title=Foxit PDF Reader; Language=en-US; Architecture=x86}",
+            "PackageInformation": "@{SetupType=MSI; SetupFile=FoxitPDFReader20251_enu_Setup.msi; Version=2025.2.0.33046; SourceFolder=Source; OutputFolder=Package; IconFile=https://github.com/aaronparker/icons/raw/main/companyportal/FoxitReader.png}",
+            "Information": "@{DisplayName=Foxit PDF Reader; Description=View, annotate, form fill, and sign PDF across desktop, mobile, and web - no matter if you\u0027re at the office, home, or on the go.; Publisher=Foxit Software Inc.; InformationURL=https://www.foxit.com/pdf-reader/; PrivacyURL=https://www.foxit.com/company/privacy-policy.html; Categories=System.Object[]; PSPackageFactoryGuid=f0c70a2c-6616-4ec3-a203-895e0f15d18a}",
+            "Program": "@{InstallTemplate=powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1; InstallCommand=powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1; UninstallCommand=MsiExec.exe /X \"{F398C64A-E282-11EC-8A9F-54BF64A63C26}\" /quiet; InstallExperience=system; DeviceRestartBehavior=suppress; AllowAvailableUninstall=False}",
+            "RequirementRule": "@{MinimumRequiredOperatingSystem=W10_1809; Architecture=All}",
+            "CustomRequirementRule": "",
+            "DetectionRule": "",
+            "Dependencies": "",
+            "Supersedence": "",
+            "Assignments": ""
+        },
+        "Source": "intune",
+        "Path": "C:\\projects\\_EUCPilots\\evergreen-packages\\intune\\FoxitReader",
+        "AppJsonPath": "C:\\projects\\_EUCPilots\\evergreen-packages\\intune\\FoxitReader\\App.json",
+        "Folder": "FoxitReader",
+        "Publisher": "Foxit Software Inc."
+    },
+    {
+        "Title": "Google Chrome",
+        "Json": {
+            "Application": "@{Name=GoogleChrome; Filter=Get-EvergreenApp -Name \"GoogleChrome\" | Where-Object { $_.Channel -eq \"stable\" -and $_.Architecture -eq \"x64\" } | Select-Object -First 1; Title=Google Chrome; Language=en-US; Architecture=x64}",
+            "PackageInformation": "@{SetupType=MSI; SetupFile=googlechromestandaloneenterprise64.msi; Version=146.0.7680.72; SourceFolder=Source; OutputFolder=Package; IconFile=https://github.com/aaronparker/icons/raw/main/companyportal/Google-Chrome.png}",
+            "Information": "@{DisplayName=Google Chrome x64; Description=The browser built by Google. Browse with the power of Google. With Google apps like Gmail, Google Pay, and Google Assistant, Chrome can help you stay productive and get more out of your browser.; Publisher=Google; InformationURL=https://www.google.com/chrome/; PrivacyURL=https://www.google.com.au/intl/en_au/chrome/privacy/; Categories=System.Object[]; PSPackageFactoryGuid=8c8cc1f6-398c-4c0c-b285-b9141dc60a75}",
+            "Program": "@{InstallTemplate=powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1; InstallCommand=powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1; UninstallCommand=powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Uninstall.ps1; InstallExperience=system; DeviceRestartBehavior=basedOnReturnCode; AllowAvailableUninstall=False}",
+            "RequirementRule": "@{MinimumRequiredOperatingSystem=W10_1809; Architecture=x64}",
+            "CustomRequirementRule": "",
+            "DetectionRule": "",
+            "Dependencies": "",
+            "Supersedence": "",
+            "Assignments": ""
+        },
+        "Source": "intune",
+        "Path": "C:\\projects\\_EUCPilots\\evergreen-packages\\intune\\GoogleChrome",
+        "AppJsonPath": "C:\\projects\\_EUCPilots\\evergreen-packages\\intune\\GoogleChrome\\App.json",
+        "Folder": "GoogleChrome",
+        "Publisher": "Google"
+    },
+    {
+        "Title": "Greenshot",
+        "Json": {
+            "Application": "@{Name=Greenshot; Filter=Get-EvergreenApp -Name \"Greenshot\" | Where-Object { $_.Architecture -eq \"x86\" -and $_.Uri -match \"Greenshot-INSTALLER-\" } | Select-Object -First 1; Title=Greenshot; Language=en-US; Architecture=x86}",
+            "PackageInformation": "@{SetupType=EXE; SetupFile=Greenshot-INSTALLER-1.3.312-RELEASE.exe; Version=1.3.312; SourceFolder=Source; OutputFolder=Package; IconFile=https://github.com/aaronparker/icons/raw/main/companyportal/Greenshot.png}",
+            "Information": "@{DisplayName=Greenshot x86; Description=Greenshot is a light-weight screenshot software tool for Windows with the following key features:\n\n* Quickly create screenshots of a selected region, window or full screen\n* Easily annotate, highlight or obfuscate parts of the screenshot\n* Export the screenshot in various ways: save to file, send to printer, copy to clipboard, attach to e-mail, send Office programs or upload to photo sites; Publisher=Greenshot; InformationURL=https://getgreenshot.org/; PrivacyURL=https://getgreenshot.org/privacy-policy/; FeaturedApp=False; Categories=System.Object[]; PSPackageFactoryGuid=11613277-9517-41c1-81a7-55e2820b8910}",
+            "Program": "@{InstallTemplate=powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1; InstallCommand=powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1; UninstallCommand=powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Uninstall.ps1; InstallExperience=system; DeviceRestartBehavior=suppress; AllowAvailableUninstall=False}",
+            "RequirementRule": "@{MinimumRequiredOperatingSystem=W10_1809; Architecture=x64}",
+            "CustomRequirementRule": "",
+            "DetectionRule": "",
+            "Dependencies": "",
+            "Supersedence": "",
+            "Assignments": ""
+        },
+        "Source": "intune",
+        "Path": "C:\\projects\\_EUCPilots\\evergreen-packages\\intune\\Greenshot",
+        "AppJsonPath": "C:\\projects\\_EUCPilots\\evergreen-packages\\intune\\Greenshot\\App.json",
+        "Folder": "Greenshot",
+        "Publisher": "Greenshot"
+    },
+    {
+        "Title": "Windows Enterprise Defaults",
+        "Json": {
+            "Application": "@{Name=ImageCustomise; Filter=Get-EvergreenApp -Name \"WindowsEnterpriseDefaults\" | Where-Object { $_.Type -eq \"intunewin\" } | Select-Object -First 1; Title=Windows Enterprise Defaults; Language=en-US; Architecture=x64}",
+            "PackageInformation": "@{SetupType=EXE; SetupFile=Install-Defaults.ps1; Version=2510.27.242; SourceFolder=Source; OutputFolder=Package; IconFile=https://github.com/aaronparker/icons/raw/main/companyportal/Package.png}",
+            "Information": "@{DisplayName=Windows Enterprise Defaults x86; Description=Customisations to **make Windows 10 \u0026 Windows 11 enterprise-ready** by configuring a clean OS default state, uninstalling unnecessary in-box AppX apps, and improving the end-user experience by updating the default user profile and default Start menu. Includes support for localising Windows and setting a time zone.; Publisher=stealthpuppy; InformationURL=https://stealthpuppy.com/image-customise/; PrivacyURL=https://stealthpuppy.com/image-customise/; Categories=System.Object[]; PSPackageFactoryGuid=9fddd581-f505-4760-9bb3-2365db204b38}",
+            "Program": "@{InstallTemplate=C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy RemoteSigned -File .\\Install-Defaults.ps1; InstallCommand=C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy RemoteSigned -File .\\Install-Defaults.ps1; UninstallCommand=C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy RemoteSigned -File .\\Remove-Defaults.ps1; InstallExperience=system; DeviceRestartBehavior=suppress; AllowAvailableUninstall=False}",
+            "RequirementRule": "@{MinimumRequiredOperatingSystem=W10_1809; Architecture=All}",
+            "CustomRequirementRule": "",
+            "DetectionRule": "",
+            "Dependencies": "",
+            "Supersedence": "",
+            "Assignments": ""
+        },
+        "Source": "intune",
+        "Path": "C:\\projects\\_EUCPilots\\evergreen-packages\\intune\\ImageCustomise",
+        "AppJsonPath": "C:\\projects\\_EUCPilots\\evergreen-packages\\intune\\ImageCustomise\\App.json",
+        "Folder": "ImageCustomise",
+        "Publisher": "stealthpuppy"
+    },
+    {
+        "Title": "ImageGlass",
+        "Json": {
+            "Application": "@{Name=ImageGlass; Filter=Get-EvergreenApp -Name \"ImageGlass\" | Where-Object { $_.Architecture -eq \"x64\" -and $_.Uri -match \"x64.msi$\" } | Select-Object -First 1; Title=ImageGlass; Language=en-US; Architecture=x64}",
+            "PackageInformation": "@{SetupType=MSI; SetupFile=ImageGlass_9.4.1.15_x64.msi; Version=9.4.1.15; SourceFolder=Source; OutputFolder=Package; IconFile=https://github.com/aaronparker/icons/raw/main/companyportal/ImageGlass.png}",
+            "Information": "@{DisplayName=ImageGlass x64; Description=Free - Open Source Image Viewer. A simple-to-use program that comes packed with basic functions and a nice minimal modern user interface.; Publisher=Dương Diệu Pháp; InformationURL=https://imageglass.org/; PrivacyURL=https://imageglass.org/; Categories=System.Object[]; PSPackageFactoryGuid=dffc288c-a3c7-4319-9306-4b1e77f37238}",
+            "Program": "@{InstallTemplate=powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1; InstallCommand=powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1; UninstallCommand=MsiExec.exe /X \"{15872342-C9E9-4C65-9586-35B4EFDB806B}\" /quiet; InstallExperience=system; DeviceRestartBehavior=suppress; AllowAvailableUninstall=False}",
+            "RequirementRule": "@{MinimumRequiredOperatingSystem=W10_1809; Architecture=x64}",
+            "CustomRequirementRule": "",
+            "DetectionRule": "",
+            "Dependencies": "",
+            "Supersedence": "",
+            "Assignments": ""
+        },
+        "Source": "intune",
+        "Path": "C:\\projects\\_EUCPilots\\evergreen-packages\\intune\\ImageGlass",
+        "AppJsonPath": "C:\\projects\\_EUCPilots\\evergreen-packages\\intune\\ImageGlass\\App.json",
+        "Folder": "ImageGlass",
+        "Publisher": "Dương Diệu Pháp"
+    },
+    {
+        "Title": "Microsoft .NET Desktop Runtime LTS",
+        "Json": {
+            "Application": "@{Name=Microsoft.NETLTS; Filter=Get-EvergreenApp -Name \"Microsoft.NET\" | Where-Object { $_.Installer -eq \"windowsdesktop\" -and $_.Architecture -eq \"x64\" -and $_.Channel -eq \"LTS\" } | Select-Object -First 1; Title=Microsoft .NET Desktop Runtime LTS; Language=en-US; Architecture=x64}",
+            "PackageInformation": "@{SetupType=EXE; SetupFile=windowsdesktop-runtime-10.0.4-win-x64.exe; Version=10.0.4; SourceFolder=Source; OutputFolder=Package; IconFile=https://github.com/aaronparker/icons/raw/main/companyportal/Microsoft-NET.png}",
+            "Information": "@{DisplayName=Microsoft .NET Desktop Runtime LTS x64; Description=The .NET Desktop Runtime LTS enables you to run existing Windows desktop applications. This release includes the .NET Runtime; you don\u0027t need to install it separately.; Publisher=Microsoft; InformationURL=https://dotnet.microsoft.com/en-us/; PrivacyURL=https://privacy.microsoft.com/privacystatement; Categories=System.Object[]; PSPackageFactoryGuid=a91c2def-1212-44c6-8b10-91a0aefac41c}",
+            "Program": "@{InstallTemplate=powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1; InstallCommand=powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1; UninstallCommand=MsiExec.exe /X \"{089A177D-98AE-4195-A115-D3C45613B875}\" /quiet; InstallExperience=system; DeviceRestartBehavior=basedOnReturnCode; AllowAvailableUninstall=False}",
+            "RequirementRule": "@{MinimumRequiredOperatingSystem=W10_1809; Architecture=x64}",
+            "CustomRequirementRule": "",
+            "DetectionRule": " ",
+            "Dependencies": "",
+            "Supersedence": "",
+            "Assignments": ""
+        },
+        "Source": "intune",
+        "Path": "C:\\projects\\_EUCPilots\\evergreen-packages\\intune\\Microsoft.NETLTS",
+        "AppJsonPath": "C:\\projects\\_EUCPilots\\evergreen-packages\\intune\\Microsoft.NETLTS\\App.json",
+        "Folder": "Microsoft.NETLTS",
+        "Publisher": "Microsoft"
+    },
+    {
+        "Title": "Microsoft .NET Desktop Runtime Current",
+        "Json": {
+            "Application": "@{Name=Microsoft.NETCurrent; Filter=Get-EvergreenApp -Name \"Microsoft.NET\" | Where-Object { $_.Installer -eq \"windowsdesktop\" -and $_.Architecture -eq \"x64\" -and $_.Channel -eq \"STS\" } | Select-Object -First 1; Title=Microsoft .NET Desktop Runtime Current; Language=en-US; Architecture=x64}",
+            "PackageInformation": "@{SetupType=EXE; SetupFile=windowsdesktop-runtime-9.0.14-win-x64.exe; Version=9.0.14; SourceFolder=Source; OutputFolder=Package; IconFile=https://github.com/aaronparker/icons/raw/main/companyportal/Microsoft-NET.png}",
+            "Information": "@{DisplayName=Microsoft .NET Desktop Runtime Current x64; Description=The .NET Desktop Runtime Current enables you to run existing Windows desktop applications. This release includes the .NET Runtime; you don\u0027t need to install it separately.; Publisher=Microsoft; InformationURL=https://dotnet.microsoft.com/en-us/; PrivacyURL=https://privacy.microsoft.com/privacystatement; Categories=System.Object[]; PSPackageFactoryGuid=c4b654e8-799b-407b-bd5d-9ac1be1464b8}",
+            "Program": "@{InstallTemplate=powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1; InstallCommand=powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1; UninstallCommand=MsiExec.exe /X \"{089A177D-98AE-4195-A115-D3C45613B875}\" /quiet; InstallExperience=system; DeviceRestartBehavior=basedOnReturnCode; AllowAvailableUninstall=False}",
+            "RequirementRule": "@{MinimumRequiredOperatingSystem=W10_1809; Architecture=x64}",
+            "CustomRequirementRule": "",
+            "DetectionRule": " ",
+            "Dependencies": "",
+            "Supersedence": "",
+            "Assignments": ""
+        },
+        "Source": "intune",
+        "Path": "C:\\projects\\_EUCPilots\\evergreen-packages\\intune\\Microsoft.NETSTS",
+        "AppJsonPath": "C:\\projects\\_EUCPilots\\evergreen-packages\\intune\\Microsoft.NETSTS\\App.json",
+        "Folder": "Microsoft.NETSTS",
+        "Publisher": "Microsoft"
+    },
+    {
+        "Title": "Microsoft Azure Pipelines Agent",
+        "Json": {
+            "Application": "@{Name=MicrosoftAzurePipelinesAgent; Filter=Get-EvergreenApp -Name \"MicrosoftAzurePipelinesAgent\" | Select-Object -First 1; Title=Microsoft Azure Pipelines Agent; Language=en-US; Architecture=x64}",
+            "PackageInformation": "@{SetupType=EXE; SetupFile=System.Object[]; Version=4.269.0; SourceFolder=Source; OutputFolder=Package; IconFile=https://github.com/aaronparker/icons/raw/main/companyportal/Microsoft-AzurePipelines.png}",
+            "Information": "@{DisplayName=Microsoft Azure Pipelines Agent x64; Description=The Microsoft Azure Pipelines Agent used to deploy to target machines and create a self hosted pipelines runner in Azure Pipelines.; Publisher=Microsoft; InformationURL=https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/agents; PrivacyURL=https://go.microsoft.com/fwlink/?LinkId=521839; Categories=System.Object[]; PSPackageFactoryGuid=7d817892-9628-470b-a11d-266341ccba00}",
+            "Program": "@{InstallTemplate=powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1; InstallCommand=powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1; UninstallCommand=powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Uninstall.ps1; InstallExperience=system; DeviceRestartBehavior=suppress; AllowAvailableUninstall=False}",
+            "RequirementRule": "@{MinimumRequiredOperatingSystem=W10_1809; Architecture=x64}",
+            "CustomRequirementRule": "",
+            "DetectionRule": "",
+            "Dependencies": "",
+            "Supersedence": "",
+            "Assignments": ""
+        },
+        "Source": "intune",
+        "Path": "C:\\projects\\_EUCPilots\\evergreen-packages\\intune\\MicrosoftAzurePipelinesAgent",
+        "AppJsonPath": "C:\\projects\\_EUCPilots\\evergreen-packages\\intune\\MicrosoftAzurePipelinesAgent\\App.json",
+        "Folder": "MicrosoftAzurePipelinesAgent",
+        "Publisher": "Microsoft"
+    },
+    {
+        "Title": "Microsoft Edge",
+        "Json": {
+            "Application": "@{Name=MicrosoftEdge; Filter=Get-EvergreenApp -Name \"MicrosoftEdge\" | Where-Object { $_.Architecture -eq \"x64\" -and $_.Channel -eq \"Stable\" -and $_.Release -eq \"Enterprise\" } | Sort-Object -Property @{ Expression = { [System.Version]$_.Version }; Descending = $true } | Select-Object -First 1; Title=Microsoft Edge; Language=en-US; Architecture=x64}",
+            "PackageInformation": "@{SetupType=MSI; SetupFile=MicrosoftEdgeEnterpriseX64.msi; Version=145.0.3800.97; SourceFolder=Source; OutputFolder=Package; IconFile=https://github.com/aaronparker/icons/raw/main/companyportal/Microsoft-Edge.png}",
+            "Information": "@{DisplayName=Microsoft Edge x64; Description=Microsoft Edge is the fast and secure browser that helps you protect your data and save time and money.; Publisher=Microsoft; InformationURL=https://www.microsoft.com/en-us/edge/features; PrivacyURL=https://go.microsoft.com/fwlink/?LinkId=521839; Categories=System.Object[]; PSPackageFactoryGuid=8d6b09d2-466b-4430-a102-9ea9cfb6ddbc}",
+            "Program": "@{InstallTemplate=powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1; InstallCommand=powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1; UninstallCommand=powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Uninstall.ps1; InstallExperience=system; DeviceRestartBehavior=basedOnReturnCode; AllowAvailableUninstall=False}",
+            "RequirementRule": "@{MinimumRequiredOperatingSystem=W10_1809; Architecture=x64}",
+            "CustomRequirementRule": "",
+            "DetectionRule": "",
+            "Dependencies": "",
+            "Supersedence": "",
+            "Assignments": ""
+        },
+        "Source": "intune",
+        "Path": "C:\\projects\\_EUCPilots\\evergreen-packages\\intune\\MicrosoftEdge",
+        "AppJsonPath": "C:\\projects\\_EUCPilots\\evergreen-packages\\intune\\MicrosoftEdge\\App.json",
+        "Folder": "MicrosoftEdge",
+        "Publisher": "Microsoft"
+    },
+    {
+        "Title": "Microsoft Edge WebView2 Runtime",
+        "Json": {
+            "Application": "@{Name=MicrosoftEdgeWebView2Runtime; Filter=Get-EvergreenApp -Name \"MicrosoftEdgeWebView2Runtime\" | Where-Object { $_.Architecture -eq \"x64\" -and $_.Channel -eq \"Stable\" } | Sort-Object -Property @{ Expression = { [System.Version]$_.Version }; Descending = $true } | Select-Object -First 1; Title=Microsoft Edge WebView2 Runtime; Language=en-US; Architecture=x64}",
+            "PackageInformation": "@{SetupType=MSI; SetupFile=MicrosoftEdgeWebView2RuntimeInstallerX64.exe; Version=145.0.3800.97; SourceFolder=Source; OutputFolder=Package; IconFile=https://github.com/aaronparker/icons/raw/main/companyportal/Microsoft-Edge.png}",
+            "Information": "@{DisplayName=Microsoft Edge WebView2 Runtime x64; Description=Embed web content (HTML, CSS, and JavaScript) in your native applications with Microsoft Edge WebView2; Publisher=Microsoft; InformationURL=https://developer.microsoft.com/en-us/microsoft-edge/webview2; PrivacyURL=https://go.microsoft.com/fwlink/?LinkId=521839; Categories=System.Object[]; PSPackageFactoryGuid=fa9bac3a-695b-4e7c-82d7-529afb82532a}",
+            "Program": "@{InstallTemplate=powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1; InstallCommand=powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1; UninstallCommand=powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Uninstall.ps1; InstallExperience=system; DeviceRestartBehavior=basedOnReturnCode; AllowAvailableUninstall=False}",
+            "RequirementRule": "@{MinimumRequiredOperatingSystem=W10_1809; Architecture=x64}",
+            "CustomRequirementRule": "",
+            "DetectionRule": "",
+            "Dependencies": "",
+            "Supersedence": "",
+            "Assignments": ""
+        },
+        "Source": "intune",
+        "Path": "C:\\projects\\_EUCPilots\\evergreen-packages\\intune\\MicrosoftEdgeWebView2",
+        "AppJsonPath": "C:\\projects\\_EUCPilots\\evergreen-packages\\intune\\MicrosoftEdgeWebView2\\App.json",
+        "Folder": "MicrosoftEdgeWebView2",
+        "Publisher": "Microsoft"
+    },
+    {
+        "Title": "Microsoft FSLogix Apps",
+        "Json": {
+            "Application": "@{Name=MicrosoftFSLogixApps; Filter=Get-EvergreenApp -Name \"MicrosoftFSLogixApps\" | Where-Object { $_.Channel -eq \"Production\" } | Select-Object -First 1; Title=Microsoft FSLogix Apps; Language=en-US; Architecture=x64}",
+            "PackageInformation": "@{SetupType=EXE; SetupFile=System.Object[]; Version=26.01; SourceFolder=Source; OutputFolder=Package; IconFile=https://github.com/aaronparker/icons/raw/main/companyportal/MicrosoftFSLogixApps.png}",
+            "Information": "@{DisplayName=Microsoft FSLogix Apps; Description=FSLogix enhances and enables user profiles in Windows remote computing environments.; Publisher=Microsoft; InformationURL=https://learn.microsoft.com/en-us/fslogix/install-ht; PrivacyURL=https://privacy.microsoft.com/privacystatement; Categories=System.Object[]; PSPackageFactoryGuid=1930b1f6-22fc-4932-88bb-bc995bed7457}",
+            "Program": "@{InstallTemplate=powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1; InstallCommand=powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1; UninstallCommand=MsiExec.exe /X \"{089A177D-98AE-4195-A115-D3C45613B875}\" /quiet; InstallExperience=system; DeviceRestartBehavior=suppress; AllowAvailableUninstall=False}",
+            "RequirementRule": "@{MinimumRequiredOperatingSystem=W10_1809; Architecture=x64}",
+            "CustomRequirementRule": "",
+            "DetectionRule": "  ",
+            "Dependencies": "",
+            "Supersedence": "",
+            "Assignments": ""
+        },
+        "Source": "intune",
+        "Path": "C:\\projects\\_EUCPilots\\evergreen-packages\\intune\\MicrosoftFSLogixApps",
+        "AppJsonPath": "C:\\projects\\_EUCPilots\\evergreen-packages\\intune\\MicrosoftFSLogixApps\\App.json",
+        "Folder": "MicrosoftFSLogixApps",
+        "Publisher": "Microsoft"
+    },
+    {
+        "Title": "Microsoft OneDrive",
+        "Json": {
+            "Application": "@{Name=MicrosoftOneDrive; Filter=Get-EvergreenApp -Name \"MicrosoftOneDrive\" | Where-Object { $_.Architecture -eq \"x64\" -and $_.Ring -eq \"Production\" -and $_.Throttle -eq \"100\" } | Select-Object -First 1; Title=Microsoft OneDrive; Language=en-US; Architecture=x64}",
+            "PackageInformation": "@{SetupType=EXE; SetupFile=OneDriveSetup.exe; Version=24.078.0416.0003; SourceFolder=Source; OutputFolder=Package; IconFile=https://github.com/aaronparker/icons/raw/main/companyportal/Microsoft-OneDrive.png}",
+            "Information": "@{DisplayName=Microsoft OneDrive AMD64; Description=With Microsoft OneDrive, you can easily and securely store and access your files from all your devices. You can work with others regardless of whether they\u0027re inside or outside your organization and terminate that sharing whenever you want.; Publisher=Microsoft; InformationURL=https://support.microsoft.com/en-us/onedrive; PrivacyURL=https://privacy.microsoft.com/privacystatement; Categories=System.Object[]; PSPackageFactoryGuid=39475a5a-f9aa-447b-8905-b8c85ebc76e6}",
+            "Program": "@{InstallTemplate=powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1; InstallCommand=powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1; UninstallCommand=powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Uninstall.ps1; InstallExperience=system; DeviceRestartBehavior=suppress; AllowAvailableUninstall=False}",
+            "RequirementRule": "@{MinimumRequiredOperatingSystem=W10_1809; Architecture=x64}",
+            "CustomRequirementRule": "",
+            "DetectionRule": "",
+            "Dependencies": "",
+            "Supersedence": "",
+            "Assignments": ""
+        },
+        "Source": "intune",
+        "Path": "C:\\projects\\_EUCPilots\\evergreen-packages\\intune\\MicrosoftOneDrive",
+        "AppJsonPath": "C:\\projects\\_EUCPilots\\evergreen-packages\\intune\\MicrosoftOneDrive\\App.json",
+        "Folder": "MicrosoftOneDrive",
+        "Publisher": "Microsoft"
+    },
+    {
+        "Title": "Microsoft OneDrive (VDI install)",
+        "Json": {
+            "Application": "@{Name=MicrosoftOneDrive; Filter=Get-EvergreenApp -Name \"MicrosoftOneDrive\" | Where-Object { $_.Architecture -eq \"x64\" -and $_.Ring -eq \"Production\" -and $_.Throttle -eq \"100\" } | Select-Object -First 1; Title=Microsoft OneDrive (VDI install); Language=en-US; Architecture=x64}",
+            "PackageInformation": "@{SetupType=EXE; SetupFile=OneDriveSetup.exe; Version=24.078.0416.0003; SourceFolder=Source; OutputFolder=Package; IconFile=https://github.com/aaronparker/icons/raw/main/companyportal/Microsoft-OneDrive.png}",
+            "Information": "@{DisplayName=Microsoft OneDrive (VDI install) AMD64; Description=Per-machine install for virtual desktop infrastructure. With Microsoft OneDrive, you can easily and securely store and access your files from all your devices. You can work with others regardless of whether they\u0027re inside or outside your organization and terminate that sharing whenever you want.; Publisher=Microsoft; InformationURL=https://learn.microsoft.com/en-us/sharepoint/per-machine-installation; PrivacyURL=https://privacy.microsoft.com/privacystatement; Categories=System.Object[]; PSPackageFactoryGuid=17d5ae82-382e-4f2f-92d9-130fec56964b}",
+            "Program": "@{InstallTemplate=powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1; InstallCommand=powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1; UninstallCommand=powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Uninstall.ps1; InstallExperience=system; DeviceRestartBehavior=suppress; AllowAvailableUninstall=False}",
+            "RequirementRule": "@{MinimumRequiredOperatingSystem=W10_1809; Architecture=x64}",
+            "CustomRequirementRule": "",
+            "DetectionRule": " ",
+            "Dependencies": "",
+            "Supersedence": "",
+            "Assignments": ""
+        },
+        "Source": "intune",
+        "Path": "C:\\projects\\_EUCPilots\\evergreen-packages\\intune\\MicrosoftOneDriveVDI",
+        "AppJsonPath": "C:\\projects\\_EUCPilots\\evergreen-packages\\intune\\MicrosoftOneDriveVDI\\App.json",
+        "Folder": "MicrosoftOneDriveVDI",
+        "Publisher": "Microsoft"
+    },
+    {
+        "Title": "Microsoft PowerShell",
+        "Json": {
+            "Application": "@{Name=MicrosoftPowerShell; Filter=Get-EvergreenApp -Name \"MicrosoftPowerShell\" | Where-Object { $_.Release -eq \"Stable\" -and $_.Architecture -eq \"x64\" -and $_.Type -eq \"msi\" }; Title=Microsoft PowerShell; Language=en-US; Architecture=x64}",
+            "PackageInformation": "@{SetupType=MSI; SetupFile=PowerShell-7.5.3-win-x64.exe; Version=7.5.3; SourceFolder=Source; OutputFolder=Package; IconFile=https://github.com/aaronparker/icons/raw/main/companyportal/Microsoft-PowerShellCore.png}",
+            "Information": "@{DisplayName=Microsoft PowerShell x64; Description=PowerShell is a cross-platform task automation solution made up of a command-line shell, a scripting language, and a configuration management framework. PowerShell runs on Windows, Linux, and macOS.; Publisher=Microsoft; InformationURL=https://aka.ms/PowerShell-docs; PrivacyURL=https://privacy.microsoft.com/privacystatement; Categories=System.Object[]; PSPackageFactoryGuid=27e8b145-6434-44b7-a1d7-90172bec588a}",
+            "Program": "@{InstallTemplate=powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1; InstallCommand=powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1; UninstallCommand=powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Uninstall.ps1; InstallExperience=system; DeviceRestartBehavior=suppress; AllowAvailableUninstall=False}",
+            "RequirementRule": "@{MinimumRequiredOperatingSystem=W10_1809; Architecture=x64}",
+            "CustomRequirementRule": "",
+            "DetectionRule": "",
+            "Dependencies": "",
+            "Supersedence": "",
+            "Assignments": ""
+        },
+        "Source": "intune",
+        "Path": "C:\\projects\\_EUCPilots\\evergreen-packages\\intune\\MicrosoftPowerShell",
+        "AppJsonPath": "C:\\projects\\_EUCPilots\\evergreen-packages\\intune\\MicrosoftPowerShell\\App.json",
+        "Folder": "MicrosoftPowerShell",
+        "Publisher": "Microsoft"
+    },
+    {
+        "Title": "Microsoft PowerToys",
+        "Json": {
+            "Application": "@{Name=MicrosoftPowerToys; Filter=Get-EvergreenApp -Name \"MicrosoftPowerToys\" | Where-Object { $_.Architecture -eq \"x64\" } | Select-Object -First 1; Title=Microsoft PowerToys; Language=en-US; Architecture=x64}",
+            "PackageInformation": "@{SetupType=EXE; SetupFile=PowerToysSetup-0.97.2-x64.exe; Version=0.97.2; SourceFolder=Source; OutputFolder=Package; IconFile=https://github.com/microsoft/PowerToys/raw/v0.58.0/installer/MSIX/Images/logo.png}",
+            "Information": "@{DisplayName=Microsoft PowerToys x64; Description=Microsoft PowerToys is a set of utilities for power users to tune and streamline their Windows experience for greater productivity.; Publisher=Microsoft; InformationURL=https://aka.ms/powertoys-docs; PrivacyURL=https://privacy.microsoft.com/privacystatement; Categories=System.Object[]; PSPackageFactoryGuid=3c006ea7-a6e8-4ef4-8364-c93bd9bedb99}",
+            "Program": "@{InstallTemplate=powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1; InstallCommand=powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1; UninstallCommand=powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Uninstall.ps1; InstallExperience=system; DeviceRestartBehavior=suppress; AllowAvailableUninstall=False}",
+            "RequirementRule": "@{MinimumRequiredOperatingSystem=W10_1809; Architecture=x64}",
+            "CustomRequirementRule": "",
+            "DetectionRule": "",
+            "Dependencies": "",
+            "Supersedence": "",
+            "Assignments": ""
+        },
+        "Source": "intune",
+        "Path": "C:\\projects\\_EUCPilots\\evergreen-packages\\intune\\MicrosoftPowerToys",
+        "AppJsonPath": "C:\\projects\\_EUCPilots\\evergreen-packages\\intune\\MicrosoftPowerToys\\App.json",
+        "Folder": "MicrosoftPowerToys",
+        "Publisher": "Microsoft"
+    },
+    {
+        "Title": "Microsoft SQL Server Management Studio",
+        "Json": {
+            "Application": "@{Name=MicrosoftSsmsEnu; Filter=Get-EvergreenApp -Name \"MicrosoftSsms\" | Where-Object { $_.Type -eq \"exe\" } | Select-Object -First 1; Title=Microsoft SQL Server Management Studio; Language=en-US; Architecture=x64}",
+            "PackageInformation": "@{SetupType=EXE; SetupFile=SSMS-Setup-ENU.exe; Version=20.1.10.0; SourceFolder=Source; OutputFolder=Package; IconFile=https://github.com/aaronparker/icons/raw/main/companyportal/Microsoft-SSMS.png}",
+            "Information": "@{DisplayName=Microsoft SQL Server Management Studio; Description=SQL Server Management Studio (SSMS) is an integrated environment for managing any SQL infrastructure, from SQL Server to Azure SQL Database. SSMS provides tools to configure, monitor, and administer instances of SQL Server and databases. Use SSMS to deploy, monitor, and upgrade the data-tier components used by your applications, and build queries and scripts.; Publisher=Microsoft; InformationURL=https://docs.microsoft.com/en-au/sql/ssms/download-sql-server-management-studio-ssms; PrivacyURL=https://go.microsoft.com/fwlink/?LinkId=521839; Categories=System.Object[]; PSPackageFactoryGuid=73c06042-b651-4074-9cce-1dc28bf5cb4e}",
+            "Program": "@{InstallTemplate=powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1; InstallCommand=powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1; UninstallCommand=msiexec.exe /X \"{03FFD0DE-C109-45D1-9C19-C010A02CFC73}\" /quiet; InstallExperience=system; DeviceRestartBehavior=suppress; AllowAvailableUninstall=False}",
+            "RequirementRule": "@{MinimumRequiredOperatingSystem=W10_1809; Architecture=x64}",
+            "CustomRequirementRule": "",
+            "DetectionRule": "",
+            "Dependencies": "",
+            "Supersedence": "",
+            "Assignments": ""
+        },
+        "Source": "intune",
+        "Path": "C:\\projects\\_EUCPilots\\evergreen-packages\\intune\\MicrosoftSsmsEnu",
+        "AppJsonPath": "C:\\projects\\_EUCPilots\\evergreen-packages\\intune\\MicrosoftSsmsEnu\\App.json",
+        "Folder": "MicrosoftSsmsEnu",
+        "Publisher": "Microsoft"
+    },
+    {
+        "Title": "Microsoft Visual Studio Code",
+        "Json": {
+            "Application": "@{Name=MicrosoftVisualStudioCode; Filter=Get-EvergreenApp -Name \"MicrosoftVisualStudioCode\" | Where-Object { $_.Channel -eq \"Stable\" -and $_.Architecture -eq \"x64\" -and $_.Platform -eq \"win32-x64\" } | Select-Object -First 1; Title=Microsoft Visual Studio Code; Language=en-US; Architecture=x64}",
+            "PackageInformation": "@{SetupType=EXE; SetupFile=VSCodeSetup-x64-1.111.0.exe; Version=1.111.0; SourceFolder=Source; OutputFolder=Package; IconFile=https://github.com/aaronparker/icons/raw/main/companyportal/Microsoft-VSCode.png}",
+            "Information": "@{DisplayName=Microsoft Visual Studio Code x64; Description=Visual Studio Code is a lightweight but powerful source code editor which runs on your desktop and is available for Windows, macOS and Linux. It comes with built-in support for JavaScript, TypeScript and Node.js and has a rich ecosystem of extensions for other languages (such as C++, C#, Java, Python, PHP, Go) and runtimes (such as .NET and Unity).; Publisher=Microsoft; InformationURL=https://code.visualstudio.com/; PrivacyURL=https://privacy.microsoft.com/privacystatement; Categories=System.Object[]; PSPackageFactoryGuid=e7835fa1-1fcb-4abc-a88e-cbc6bf7c09fd}",
+            "Program": "@{InstallTemplate=powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1; InstallCommand=powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1; UninstallCommand=msiexec.exe /X \"{AC76BA86-1033-1033-7760-BC15014EA700}\" /quiet; InstallExperience=system; DeviceRestartBehavior=suppress; AllowAvailableUninstall=False}",
+            "RequirementRule": "@{MinimumRequiredOperatingSystem=W10_1809; Architecture=x64}",
+            "CustomRequirementRule": "",
+            "DetectionRule": "",
+            "Dependencies": "",
+            "Supersedence": "",
+            "Assignments": ""
+        },
+        "Source": "intune",
+        "Path": "C:\\projects\\_EUCPilots\\evergreen-packages\\intune\\MicrosoftVisualStudioCode",
+        "AppJsonPath": "C:\\projects\\_EUCPilots\\evergreen-packages\\intune\\MicrosoftVisualStudioCode\\App.json",
+        "Folder": "MicrosoftVisualStudioCode",
+        "Publisher": "Microsoft"
+    },
+    {
+        "Title": "Microsoft Remote Desktop",
+        "Json": {
+            "Application": "@{Name=MicrosoftWvdRemoteDesktop; Filter=Get-EvergreenApp -Name \"MicrosoftWvdRemoteDesktop\" | Where-Object { $_.Channel -eq \"Public\" -and $_.Architecture -eq \"x64\" } | Select-Object -First 1; Title=Microsoft Remote Desktop; Language=en-US; Architecture=x64}",
+            "PackageInformation": "@{SetupType=MSI; SetupFile=RemoteDesktop_1.2.7046.0_x64.msi; Version=1.2.7046.0; SourceFolder=Source; OutputFolder=Package; IconFile=https://github.com/aaronparker/icons/raw/main/companyportal/Microsoft-RemoteDesktop2.png}",
+            "Information": "@{DisplayName=Microsoft Remote Desktop x64; Description=The Microsoft Remote Desktop client is used to connect to Azure Virtual Desktop to access your desktops and applications. This article shows you how to connect to Azure Virtual Desktop with the Remote Desktop client for Windows.; Publisher=Microsoft; InformationURL=https://learn.microsoft.com/en-us/azure/virtual-desktop/users/connect-windows; PrivacyURL=https://privacy.microsoft.com/privacystatement; Categories=System.Object[]; PSPackageFactoryGuid=a32b45f9-05dd-4f55-9992-118c40b3404d}",
+            "Program": "@{InstallTemplate=powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1; InstallCommand=powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1; UninstallCommand=msiexec.exe /X \"{435AF226-840F-49ED-8F03-4B1356F7740F}\" /quiet; InstallExperience=system; DeviceRestartBehavior=suppress; AllowAvailableUninstall=False}",
+            "RequirementRule": "@{MinimumRequiredOperatingSystem=W10_1809; Architecture=x64}",
+            "CustomRequirementRule": "",
+            "DetectionRule": "",
+            "Dependencies": "",
+            "Supersedence": "",
+            "Assignments": ""
+        },
+        "Source": "intune",
+        "Path": "C:\\projects\\_EUCPilots\\evergreen-packages\\intune\\MicrosoftWvdRemoteDesktop",
+        "AppJsonPath": "C:\\projects\\_EUCPilots\\evergreen-packages\\intune\\MicrosoftWvdRemoteDesktop\\App.json",
+        "Folder": "MicrosoftWvdRemoteDesktop",
+        "Publisher": "Microsoft"
+    },
+    {
+        "Title": "Mozilla Firefox",
+        "Json": {
+            "Application": "@{Name=MozillaFirefox; Filter=Get-EvergreenApp -Name \"MozillaFirefox\" -ErrorAction \"SilentlyContinue\" -WarningAction \"SilentlyContinue\" | Where-Object { $_.Channel -eq \"Current\" -and $_.Architecture -eq \"x64\" -and $_.Type -eq \"msi\" -and $_.Language -eq \"en-US\" }; Title=Mozilla Firefox; Language=en-US; Architecture=x64}",
+            "PackageInformation": "@{SetupType=MSI; SetupFile=Firefox Setup 140.0.4.msi; Version=140.0.4; SourceFolder=Source; OutputFolder=Package; IconFile=https://github.com/aaronparker/icons/raw/main/companyportal/Mozilla-Firefox.png}",
+            "Information": "@{DisplayName=Mozilla Firefox x64; Description=Get the browser that protects what\u0027s important. No shady privacy policies or back doors for advertisers. Just a lightning fast browser that doesn\u0027t sell you out.; Publisher=Mozilla; InformationURL=https://www.mozilla.org/firefox/new/; PrivacyURL=https://www.mozilla.org/en-US/privacy/; Categories=System.Object[]; PSPackageFactoryGuid=f06d95c9-d407-4852-a0b8-0fdb1db80a50}",
+            "Program": "@{InstallTemplate=powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1; InstallCommand=powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1; UninstallCommand=C:\\Program Files\\Mozilla Firefox\\uninstall\\helper.exe /S; InstallExperience=system; DeviceRestartBehavior=suppress; AllowAvailableUninstall=False}",
+            "RequirementRule": "@{MinimumRequiredOperatingSystem=W10_1809; Architecture=x64}",
+            "CustomRequirementRule": "",
+            "DetectionRule": "",
+            "Dependencies": "",
+            "Supersedence": "",
+            "Assignments": ""
+        },
+        "Source": "intune",
+        "Path": "C:\\projects\\_EUCPilots\\evergreen-packages\\intune\\MozillaFirefox",
+        "AppJsonPath": "C:\\projects\\_EUCPilots\\evergreen-packages\\intune\\MozillaFirefox\\App.json",
+        "Folder": "MozillaFirefox",
+        "Publisher": "Mozilla"
+    },
+    {
+        "Title": "Notepad++",
+        "Json": {
+            "Application": "@{Name=NotepadPlusPlus; Filter=Get-EvergreenApp -Name \"NotepadPlusPlus\" -ErrorAction \"SilentlyContinue\" -WarningAction \"SilentlyContinue\" | Where-Object { $_.Architecture -eq \"x64\" -and $_.Type -eq \"exe\" }; Title=Notepad++; Language=en-US; Architecture=x64}",
+            "PackageInformation": "@{SetupType=EXE; SetupFile=npp.8.9.2.Installer.x64.exe; Version=8.9.2; SourceFolder=Source; OutputFolder=Package; IconFile=https://github.com/aaronparker/icons/raw/main/companyportal/NotepadPP.png}",
+            "Information": "@{DisplayName=Notepad++ x64; Description=Notepad++ is a free source code editor and Notepad replacement that supports several languages. By optimizing as many routines as possible without losing user friendliness, Notepad++ is trying to reduce the world carbon dioxide emissions. When using less CPU power, the PC can throttle down and reduce power consumption, resulting in a greener environment.; Publisher=Don Ho; InformationURL=https://notepad-plus-plus.org/; PrivacyURL=https://www.mozilla.org/en-US/privacy/; Categories=System.Object[]; PSPackageFactoryGuid=5ba4f47a-db61-4646-879c-88ee8fdb2c74}",
+            "Program": "@{InstallTemplate=powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1; InstallCommand=powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1; UninstallCommand=powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Uninstall.ps1; InstallExperience=system; DeviceRestartBehavior=suppress; AllowAvailableUninstall=False}",
+            "RequirementRule": "@{MinimumRequiredOperatingSystem=W10_1809; Architecture=x64}",
+            "CustomRequirementRule": "",
+            "DetectionRule": "",
+            "Dependencies": "",
+            "Supersedence": "",
+            "Assignments": ""
+        },
+        "Source": "intune",
+        "Path": "C:\\projects\\_EUCPilots\\evergreen-packages\\intune\\Notepad++",
+        "AppJsonPath": "C:\\projects\\_EUCPilots\\evergreen-packages\\intune\\Notepad++\\App.json",
+        "Folder": "Notepad++",
+        "Publisher": "Don Ho"
+    },
+    {
+        "Title": "Paint.NET",
+        "Json": {
+            "Application": "@{Name=PaintDotNetOfflineInstaller; Filter=Get-EvergreenApp -Name \"PaintDotNetOfflineInstaller\" | Where-Object { $_.Architecture -eq \"x64\" -and $_.URI -match \"winmsi\" } | Select-Object -First 1; Title=Paint.NET; Language=en-US; Architecture=x64}",
+            "PackageInformation": "@{SetupType=MSI; SetupFile=paint.net.5.1.12.winmsi.x64.msi; Version=5.1.12; SourceFolder=Source; OutputFolder=Package; IconFile=https://github.com/aaronparker/icons/raw/main/companyportal/Paint.Net.png}",
+            "Information": "@{DisplayName=Paint.NET x64; Description=Paint.NET is image and photo editing software for PCs that run Windows. It features an intuitive and innovative user interface with support for layers, unlimited undo, special effects, and a wide variety of useful and powerful tools.; Publisher=dotPDN LLC.; InformationURL=https://www.getpaint.net/; PrivacyURL=https://www.getpaint.net/privacy.html; Categories=System.Object[]; PSPackageFactoryGuid=8217c760-01fe-4e0e-8389-76bd2bce5620}",
+            "Program": "@{InstallTemplate=powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1; InstallCommand=powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1; UninstallCommand=MsiExec.exe /X \"{E56D2CED-CCAE-4902-A559-17B452752DA5}\" /quiet; InstallExperience=system; DeviceRestartBehavior=suppress; AllowAvailableUninstall=False}",
+            "RequirementRule": "@{MinimumRequiredOperatingSystem=W10_1809; Architecture=x64}",
+            "CustomRequirementRule": "",
+            "DetectionRule": "",
+            "Dependencies": "",
+            "Supersedence": "",
+            "Assignments": ""
+        },
+        "Source": "intune",
+        "Path": "C:\\projects\\_EUCPilots\\evergreen-packages\\intune\\PaintDotNetOfflineInstaller",
+        "AppJsonPath": "C:\\projects\\_EUCPilots\\evergreen-packages\\intune\\PaintDotNetOfflineInstaller\\App.json",
+        "Folder": "PaintDotNetOfflineInstaller",
+        "Publisher": "dotPDN LLC."
+    },
+    {
+        "Title": "PuTTY",
+        "Json": {
+            "Application": "@{Name=PuTTY; Filter=Get-EvergreenApp -Name \"PuTTY\" -ErrorAction \"SilentlyContinue\" -WarningAction \"SilentlyContinue\" | Where-Object { $_.Architecture -eq \"x64\" -and $_.Type -eq \"msi\" }; Title=PuTTY; Language=en-US; Architecture=x64}",
+            "PackageInformation": "@{SetupType=MSI; SetupFile=putty-64bit-0.83-installer.msi; Version=0.83; SourceFolder=Source; OutputFolder=Package; IconFile=https://github.com/aaronparker/icons/raw/main/companyportal/NotepadPP.png}",
+            "Information": "@{DisplayName=PuTTY x64; Description=PuTTY is an SSH and telnet client, developed originally by Simon Tatham for the Windows platform. PuTTY is open source software that is available with source code and is developed and supported by a group of volunteers.; Publisher=Simon Tatham; InformationURL=https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html; PrivacyURL=; Categories=System.Object[]; PSPackageFactoryGuid=15b9121c-d5a3-4f32-b60a-4199634b5a12}",
+            "Program": "@{InstallTemplate=powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1; InstallCommand=powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1; UninstallCommand=MsiExec.exe /X \"{DDC95F26-92B1-4546-9678-5DC68DF76BA0}\" /quiet; InstallExperience=system; DeviceRestartBehavior=suppress; AllowAvailableUninstall=False}",
+            "RequirementRule": "@{MinimumRequiredOperatingSystem=W10_1809; Architecture=x64}",
+            "CustomRequirementRule": "",
+            "DetectionRule": "",
+            "Dependencies": "",
+            "Supersedence": "",
+            "Assignments": ""
+        },
+        "Source": "intune",
+        "Path": "C:\\projects\\_EUCPilots\\evergreen-packages\\intune\\PuTTY",
+        "AppJsonPath": "C:\\projects\\_EUCPilots\\evergreen-packages\\intune\\PuTTY\\App.json",
+        "Folder": "PuTTY",
+        "Publisher": "Simon Tatham"
+    },
+    {
+        "Title": "Remote Display Analyzer",
+        "Json": {
+            "Application": "@{Name=RemoteDisplayAnalyzer; Filter=Get-EvergreenApp -Name \"RDAnalyzer\" | Select-Object -First 1; Title=Remote Display Analyzer; Language=en-US; Architecture=x64}",
+            "PackageInformation": "@{SetupType=EXE; SetupFile=RemoteDisplayAnalyzer.exe; Version=2602.039.1; SourceFolder=Source; OutputFolder=Package; IconFile=https://github.com/aaronparker/icons/raw/main/companyportal/Display.png}",
+            "Information": "@{DisplayName=Remote Display Analyzer x86; Description=The easiest tool to analyze and change display protocol settings on the fly.; Publisher=Bram Wolfs; InformationURL=https://rdanalyzer.com/; PrivacyURL=https://rdanalyzer.com/; Categories=System.Object[]; PSPackageFactoryGuid=85af2526-0088-4b78-969b-834ff39ace56}",
+            "Program": "@{InstallTemplate=powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1; InstallCommand=powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1; UninstallCommand=powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Uninstall.ps1; InstallExperience=system; DeviceRestartBehavior=suppress; AllowAvailableUninstall=False}",
+            "RequirementRule": "@{MinimumRequiredOperatingSystem=W10_1809; Architecture=x64}",
+            "CustomRequirementRule": "",
+            "DetectionRule": "",
+            "Dependencies": "",
+            "Supersedence": "",
+            "Assignments": ""
+        },
+        "Source": "intune",
+        "Path": "C:\\projects\\_EUCPilots\\evergreen-packages\\intune\\RemoteDisplayAnalyzer",
+        "AppJsonPath": "C:\\projects\\_EUCPilots\\evergreen-packages\\intune\\RemoteDisplayAnalyzer\\App.json",
+        "Folder": "RemoteDisplayAnalyzer",
+        "Publisher": "Bram Wolfs"
+    },
+    {
+        "Title": "Tracker Software PDF-XChange Editor",
+        "Json": {
+            "Application": "@{Name=TrackerSoftwarePDFXChangeEditor; Filter=Get-EvergreenApp -Name \"TrackerSoftwarePDFXChangeEditor\" | Where-Object { $_.Architecture -eq \"x64\" } | Select-Object -First 1; Title=Tracker Software PDF-XChange Editor; Language=en-US; Architecture=x64}",
+            "PackageInformation": "@{SetupType=MSI; SetupFile=EditorV10.x64.msi; Version=10.8.4.409; SourceFolder=Source; OutputFolder=Package; IconFile=https://github.com/aaronparker/icons/raw/main/companyportal/PDFXChangeEditor.png}",
+            "Information": "@{DisplayName=Tracker Software PDF-XChange Editor x64; Description=PDF-XChange Editor - one of the fastest and most feature-rich options available worldwide to create, view, edit and annotate PDF files. PDF-XChange Lite, our award-winning technology that installs as a virtual printer, is included with this product. It can be used to print-to-PDF from Windows applications and features an optimized hybrid engine that significantly increases the quality of conversion for images and image-based text characters.; Publisher=Tracker Software; InformationURL=https://www.tracker-software.com/product/pdf-xchange-editor; PrivacyURL=https://www.tracker-software.com/privacy-policy; Categories=System.Object[]; PSPackageFactoryGuid=91579d95-539c-43df-b26d-30f110451f1f}",
+            "Program": "@{InstallTemplate=powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1; InstallCommand=powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1; UninstallCommand=MsiExec.exe /X \"{2B1A32F0-ABD0-42C4-A123-7CC642AA3B5E}\" /quiet; InstallExperience=system; DeviceRestartBehavior=suppress; AllowAvailableUninstall=False}",
+            "RequirementRule": "@{MinimumRequiredOperatingSystem=W10_1809; Architecture=x64}",
+            "CustomRequirementRule": "",
+            "DetectionRule": "",
+            "Dependencies": "",
+            "Supersedence": "",
+            "Assignments": ""
+        },
+        "Source": "intune",
+        "Path": "C:\\projects\\_EUCPilots\\evergreen-packages\\intune\\TrackerSoftwarePDFXChangeEditor",
+        "AppJsonPath": "C:\\projects\\_EUCPilots\\evergreen-packages\\intune\\TrackerSoftwarePDFXChangeEditor\\App.json",
+        "Folder": "TrackerSoftwarePDFXChangeEditor",
+        "Publisher": "Tracker Software"
+    },
+    {
+        "Title": "VideoLAN VLC media player",
+        "Json": {
+            "Application": "@{Name=VideoLanVlcPlayer; Filter=Get-EvergreenApp -Name \"VideoLanVlcPlayer\" -ErrorAction \"SilentlyContinue\" | Where-Object { $_.Architecture -eq \"x64\" -and $_.Type -eq \"MSI\" } | Select-Object -First 1; Title=VideoLAN VLC media player; Language=en-US; Architecture=x64}",
+            "PackageInformation": "@{SetupType=MSI; SetupFile=vlc-3.0.23-win64.msi; Version=3.0.23; SourceFolder=Source; OutputFolder=Package; IconFile=https://github.com/aaronparker/icons/raw/main/companyportal/VLC.png}",
+            "Information": "@{DisplayName=VideoLAN VLC media player x64; Description=VLC is a free and open source cross-platform multimedia player and framework that plays most multimedia files as well as DVDs, Audio CDs, VCDs, and various streaming protocols.; Publisher=VideoLAN; InformationURL=https://www.videolan.org/vlc/features.html; PrivacyURL=https://www.videolan.org/; Categories=System.Object[]; PSPackageFactoryGuid=f0cb1af5-7fa9-4aea-9ef7-2dd543c2c5b2}",
+            "Program": "@{InstallTemplate=powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1; InstallCommand=powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1; UninstallCommand=MsiExec.exe /X \"{1BB20266-7C52-4909-B075-22156F75D22C}\" /quiet; InstallExperience=system; DeviceRestartBehavior=suppress; AllowAvailableUninstall=False}",
+            "RequirementRule": "@{MinimumRequiredOperatingSystem=W10_1809; Architecture=x64}",
+            "CustomRequirementRule": "",
+            "DetectionRule": "",
+            "Dependencies": "",
+            "Supersedence": "",
+            "Assignments": ""
+        },
+        "Source": "intune",
+        "Path": "C:\\projects\\_EUCPilots\\evergreen-packages\\intune\\VideoLanVlcPlayer",
+        "AppJsonPath": "C:\\projects\\_EUCPilots\\evergreen-packages\\intune\\VideoLanVlcPlayer\\App.json",
+        "Folder": "VideoLanVlcPlayer",
+        "Publisher": "VideoLAN"
+    },
+    {
+        "Title": "Zoom Meetings Client",
+        "Json": {
+            "Application": "@{Name=Zoom Meetings; Filter=Get-EvergreenApp -Name \"Zoom\" | Where-Object { $_.Platform -eq \"Desktop\" -and $_.Type -eq \"msi\" -and $_.Architecture -eq \"x64\" } | Select-Object -First 1; Title=Zoom Meetings Client; Language=en-US; Architecture=x64}",
+            "PackageInformation": "@{SetupType=MSI; SetupFile=ZoomInstallerFull.msi; Version=6.7.8.32670; SourceFolder=Source; OutputFolder=Package; IconFile=https://github.com/aaronparker/icons/raw/main/companyportal/Zoom.png}",
+            "Information": "@{DisplayName=Zoom Meetings Client x64; Description=Simplified video conferencing and messaging across any device. Phone, Meetings, Chat, Whiteboard and more for your desktop.; Publisher=Zoom; InformationURL=https://explore.zoom.us/en/products/meetings/; PrivacyURL=https://explore.zoom.us/privacy; Categories=System.Object[]; PSPackageFactoryGuid=b964ee87-b4dd-40f1-845b-3776a5ea79de}",
+            "Program": "@{InstallTemplate=powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1; InstallCommand=powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1; UninstallCommand=powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Uninstall.ps1; InstallExperience=system; DeviceRestartBehavior=suppress; AllowAvailableUninstall=False}",
+            "RequirementRule": "@{MinimumRequiredOperatingSystem=W10_1809; Architecture=x64}",
+            "CustomRequirementRule": "",
+            "DetectionRule": "",
+            "Dependencies": "",
+            "Supersedence": "",
+            "Assignments": ""
+        },
+        "Source": "intune",
+        "Path": "C:\\projects\\_EUCPilots\\evergreen-packages\\intune\\ZoomMeetings",
+        "AppJsonPath": "C:\\projects\\_EUCPilots\\evergreen-packages\\intune\\ZoomMeetings\\App.json",
+        "Folder": "ZoomMeetings",
+        "Publisher": "Zoom"
+    },
+    {
+        "Title": "Zoom Rooms Client",
+        "Json": {
+            "Application": "@{Name=Zoom Rooms; Filter=Get-EvergreenApp -Name \"Zoom\" | Where-Object { $_.Platform -eq \"Rooms\" -and $_.Type -eq \"msi\" -and $_.Architecture -eq \"x64\" } | Select-Object -First 1; Title=Zoom Rooms Client; Language=en-US; Architecture=x64}",
+            "PackageInformation": "@{SetupType=MSI; SetupFile=zoomrooms-6.7.5.7278-x64.msi; Version=6.7.5.7278; SourceFolder=Source; OutputFolder=Package; IconFile=https://github.com/aaronparker/icons/raw/main/companyportal/ZoomRooms.png}",
+            "Information": "@{DisplayName=Zoom Rooms Client x64; Description=Conference rooms that make it easy to run or join video meetings with a tap of a button.; Publisher=Zoom; InformationURL=https://explore.zoom.us/en/products/zoom-rooms/; PrivacyURL=https://explore.zoom.us/privacy; Categories=System.Object[]; PSPackageFactoryGuid=a918abe7-620c-438f-b9ee-000383ad5f9e}",
+            "Program": "@{InstallTemplate=powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1; InstallCommand=powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1; UninstallCommand=powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Uninstall.ps1; InstallExperience=system; DeviceRestartBehavior=suppress; AllowAvailableUninstall=False}",
+            "RequirementRule": "@{MinimumRequiredOperatingSystem=W10_1809; Architecture=x64}",
+            "CustomRequirementRule": "",
+            "DetectionRule": "",
+            "Dependencies": "",
+            "Supersedence": "",
+            "Assignments": ""
+        },
+        "Source": "intune",
+        "Path": "C:\\projects\\_EUCPilots\\evergreen-packages\\intune\\ZoomRooms",
+        "AppJsonPath": "C:\\projects\\_EUCPilots\\evergreen-packages\\intune\\ZoomRooms\\App.json",
+        "Folder": "ZoomRooms",
+        "Publisher": "Zoom"
+    }
+]
