@@ -1,0 +1,48 @@
+{
+    "ShellApp":  {
+                     "isPublic":  true,
+                     "versions":  "",
+                     "uninstallScript":  "#uninstallScript",
+                     "installScript":  "#installScript",
+                     "detectScript":  "#detectScript",
+                     "fileUnzip":  false
+                 },
+    "Supersedence":  [
+
+                     ],
+    "RequirementRule":  {
+                            "Architecture":  "x64",
+                            "MinimumRequiredOperatingSystem":  "W10_1809"
+                        },
+    "PackageInformation":  {
+                               "SourceFolder":  "Source",
+                               "Version":  "auto",
+                               "OutputFolder":  "Package",
+                               "SetupFile":  "",
+                               "SetupType":  "EXE",
+                               "IconFile":  ""
+                           },
+    "DetectionRule":  [
+
+                      ],
+    "CustomRequirementRule":  [
+
+                              ],
+    "Information":  {
+                        "DisplayName":  "Visual Studio Code",
+                        "Publisher":  "Microsoft",
+                        "Description":  null,
+                        "InformationURL":  "",
+                        "Categories":  [
+
+                                       ],
+                        "PrivacyURL":  ""
+                    },
+    "Application":  {
+                        "source":  "@{import=True; type=Evergreen; app=MicrosoftVisualStudioCode; filter=$_.Architecture -eq \"x64\" -and $_.Channel -eq \"Stable\" -and $_.Platform -eq \"win32-x64\"}",
+                        "Title":  "Visual Studio Code",
+                        "Architecture":  "x64",
+                        "Name":  "VisualStudioCode",
+                        "Language":  "en-US"
+                    }
+}

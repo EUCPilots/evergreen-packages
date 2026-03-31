@@ -1,0 +1,48 @@
+{
+    "ShellApp":  {
+                     "isPublic":  true,
+                     "versions":  "",
+                     "uninstallScript":  "#uninstallScript",
+                     "installScript":  "#installScript",
+                     "detectScript":  "#detectScript",
+                     "fileUnzip":  false
+                 },
+    "Supersedence":  [
+
+                     ],
+    "RequirementRule":  {
+                            "Architecture":  "x64",
+                            "MinimumRequiredOperatingSystem":  "W10_1809"
+                        },
+    "PackageInformation":  {
+                               "SourceFolder":  "Source",
+                               "Version":  "auto",
+                               "OutputFolder":  "Package",
+                               "SetupFile":  "",
+                               "SetupType":  "EXE",
+                               "IconFile":  ""
+                           },
+    "DetectionRule":  [
+
+                      ],
+    "CustomRequirementRule":  [
+
+                              ],
+    "Information":  {
+                        "DisplayName":  "OneDrive",
+                        "Publisher":  "Microsoft",
+                        "Description":  null,
+                        "InformationURL":  "",
+                        "Categories":  [
+
+                                       ],
+                        "PrivacyURL":  ""
+                    },
+    "Application":  {
+                        "source":  "@{import=True; type=Evergreen; app=MicrosoftOneDrive; filter=$_.Ring -eq \"Production\" -and $_.Architecture -eq \"x64\" -and $_.Throttle -eq \"100\"}",
+                        "Title":  "OneDrive",
+                        "Architecture":  "x64",
+                        "Name":  "OneDrive",
+                        "Language":  "en-US"
+                    }
+}

@@ -1,0 +1,48 @@
+{
+    "ShellApp":  {
+                     "isPublic":  true,
+                     "versions":  "",
+                     "uninstallScript":  "#uninstallScript",
+                     "installScript":  "#installScript",
+                     "detectScript":  "#detectScript",
+                     "fileUnzip":  false
+                 },
+    "Supersedence":  [
+
+                     ],
+    "RequirementRule":  {
+                            "Architecture":  "x64",
+                            "MinimumRequiredOperatingSystem":  "W10_1809"
+                        },
+    "PackageInformation":  {
+                               "SourceFolder":  "Source",
+                               "Version":  "auto",
+                               "OutputFolder":  "Package",
+                               "SetupFile":  "",
+                               "SetupType":  "EXE",
+                               "IconFile":  ""
+                           },
+    "DetectionRule":  [
+
+                      ],
+    "CustomRequirementRule":  [
+
+                              ],
+    "Information":  {
+                        "DisplayName":  ".NET LTS",
+                        "Publisher":  "Microsoft",
+                        "Description":  null,
+                        "InformationURL":  "",
+                        "Categories":  [
+
+                                       ],
+                        "PrivacyURL":  ""
+                    },
+    "Application":  {
+                        "source":  "@{import=True; type=Evergreen; app=Microsoft.NET; filter=$_.Installer -eq \"windowsdesktop\" -and $_.Architecture -eq \"x64\" -and $_.Channel -match \"LTS\"}",
+                        "Title":  ".NET LTS",
+                        "Architecture":  "x64",
+                        "Name":  "NETLTS",
+                        "Language":  "en-US"
+                    }
+}

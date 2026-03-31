@@ -1,0 +1,48 @@
+{
+    "ShellApp":  {
+                     "isPublic":  true,
+                     "versions":  "",
+                     "uninstallScript":  "#uninstallScript",
+                     "installScript":  "#installScript",
+                     "detectScript":  "#detectScript",
+                     "fileUnzip":  false
+                 },
+    "Supersedence":  [
+
+                     ],
+    "RequirementRule":  {
+                            "Architecture":  "x64",
+                            "MinimumRequiredOperatingSystem":  "W10_1809"
+                        },
+    "PackageInformation":  {
+                               "SourceFolder":  "Source",
+                               "Version":  "auto",
+                               "OutputFolder":  "Package",
+                               "SetupFile":  "",
+                               "SetupType":  "EXE",
+                               "IconFile":  ""
+                           },
+    "DetectionRule":  [
+
+                      ],
+    "CustomRequirementRule":  [
+
+                              ],
+    "Information":  {
+                        "DisplayName":  "PowerShell LTS",
+                        "Publisher":  "Microsoft",
+                        "Description":  null,
+                        "InformationURL":  "",
+                        "Categories":  [
+
+                                       ],
+                        "PrivacyURL":  ""
+                    },
+    "Application":  {
+                        "source":  "@{import=True; type=Evergreen; app=MicrosoftPowerShell; filter=$_.Architecture -eq \"x64\" -and $_.Type -eq \"msi\" -and $_.Release -eq \"LTS\"}",
+                        "Title":  "PowerShell LTS",
+                        "Architecture":  "x64",
+                        "Name":  "PowerShell",
+                        "Language":  "en-US"
+                    }
+}

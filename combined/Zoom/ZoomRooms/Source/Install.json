@@ -1,0 +1,16 @@
+{
+  "PackageInformation": {
+    "SetupType": "MSI",
+    "SetupFile": "zoomrooms-6.7.5.7278-x64.msi",
+    "Version": "6.7.5.7278"
+  },
+  "LogPath": "C:\\ProgramData\\Microsoft\\IntuneManagementExtension\\Logs",
+  "InstallTasks": {
+    "StopProcess": [],
+    "ArgumentList": "/package \"#SetupFile\" /quiet Silent=true EnableSSLVerification=true AcceptGDPR=true SystemOption=495 /log \"#LogPath\\#LogName.log\""
+  },
+  "PostInstall": {
+    "Remove": [],
+    "CopyFile": []
+  }
+}

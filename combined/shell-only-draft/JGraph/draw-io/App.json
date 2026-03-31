@@ -1,0 +1,48 @@
+{
+    "ShellApp":  {
+                     "isPublic":  true,
+                     "versions":  "",
+                     "uninstallScript":  "#uninstallScript",
+                     "installScript":  "#installScript",
+                     "detectScript":  "#detectScript",
+                     "fileUnzip":  false
+                 },
+    "Supersedence":  [
+
+                     ],
+    "RequirementRule":  {
+                            "Architecture":  "x64",
+                            "MinimumRequiredOperatingSystem":  "W10_1809"
+                        },
+    "PackageInformation":  {
+                               "SourceFolder":  "Source",
+                               "Version":  "auto",
+                               "OutputFolder":  "Package",
+                               "SetupFile":  "",
+                               "SetupType":  "EXE",
+                               "IconFile":  ""
+                           },
+    "DetectionRule":  [
+
+                      ],
+    "CustomRequirementRule":  [
+
+                              ],
+    "Information":  {
+                        "DisplayName":  "draw.io",
+                        "Publisher":  "JGraph",
+                        "Description":  null,
+                        "InformationURL":  "",
+                        "Categories":  [
+
+                                       ],
+                        "PrivacyURL":  ""
+                    },
+    "Application":  {
+                        "source":  "@{import=True; type=Evergreen; app=JGraphDrawIO; filter=$_.Architecture -eq \"x86\" -and $_.Type -eq \"msi\"}",
+                        "Title":  "draw.io",
+                        "Architecture":  "x64",
+                        "Name":  "draw-io",
+                        "Language":  "en-US"
+                    }
+}
