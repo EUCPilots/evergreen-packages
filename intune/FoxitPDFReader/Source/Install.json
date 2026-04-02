@@ -1,0 +1,15 @@
+{
+  "PackageInformation": {
+    "SetupType": "EXE",
+    "SetupFile": "FoxitPDFReader20261_L10N_Setup_Prom_x64.exe",
+    "Version": "2025.2.0.33046"
+  },
+  "LogPath": "C:\\ProgramData\\Microsoft\\IntuneManagementExtension\\Logs",
+  "InstallTasks": {
+    "ArgumentList": "/lang en /noshortcut /DISABLE_UNINSTALL_SURVEY /DisableInternet /quiet /log \"#LogPath\\#LogName.log\""
+  },
+  "PostInstall": {
+    "Remove": [],
+    "CopyFile": []
+  }
+}

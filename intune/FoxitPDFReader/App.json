@@ -7,8 +7,8 @@
     "Architecture": "x86"
   },
   "PackageInformation": {
-    "SetupType": "MSI",
-    "SetupFile": "FoxitPDFReader20251_enu_Setup.msi",
+    "SetupType": "EXE",
+    "SetupFile": "FoxitPDFReader20261_L10N_Setup_Prom_x64.exe",
     "Version": "2025.2.0.33046",
     "SourceFolder": "Source",
     "OutputFolder": "Package",
@@ -26,7 +26,7 @@
   "Program": {
     "InstallTemplate": "powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1",
     "InstallCommand": "powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1",
-    "UninstallCommand": "MsiExec.exe /X \"{F398C64A-E282-11EC-8A9F-54BF64A63C26}\" /quiet",
+    "UninstallCommand": "powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Uninstall.ps1",
     "InstallExperience": "system",
     "DeviceRestartBehavior": "suppress",
     "AllowAvailableUninstall": false
