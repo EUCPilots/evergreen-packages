@@ -45,6 +45,15 @@
       "Operator": "greaterThanOrEqual",
       "VersionValue": "3.7.7",
       "Check32BitOn64System": "false"
+    },
+    {
+      "Type": "File",
+      "DetectionMethod": "Version",
+      "Path": "C:\\Program Files (x86)\\Audacity",
+      "FileOrFolder": "Audacity.exe",
+      "Operator": "greaterThanOrEqual",
+      "VersionValue": "3.7.7",
+      "Check32BitOn64System": "false"
     }
   ],
   "Dependencies": [],
@@ -61,4 +70,3 @@
     }
   ]
 }
-
