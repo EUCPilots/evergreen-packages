@@ -1,0 +1,27 @@
+{
+    "name": "Microsoft 365 Apps",
+    "description": "Microsoft 365 Apps for enterprise including Word, Excel, PowerPoint, Outlook (new), OneNote, Visio and Project. Shared computer licensing and hardware acceleration configured for virtual desktop environments. Install OneDrive and Teams separately.",
+    "isPublic": true,
+    "publisher": "Microsoft",
+    "detectScript": "#detectScript",
+    "installScript": "#installScript",
+    "uninstallScript": "#uninstallScript",
+    "fileUnzip": false,
+    "versions": [
+        {
+            "name": "#version",
+            "isPreview": false,
+            "installScriptOverride": null,
+            "file": {
+                "sourceUrl": "#sourceUrl",
+                "sha256": "#sha256"
+            }
+        }
+    ],
+    "source": {
+        "import": true,
+        "type": "Evergreen",
+        "app": "Microsoft365Apps",
+        "filter": "$_.Channel -eq \"Current\""
+    }
+}   
