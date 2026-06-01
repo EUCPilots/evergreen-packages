@@ -8,8 +8,8 @@
   },
   "PackageInformation": {
     "SetupType": "MSI",
-    "SetupFile": "PowerShell-7.5.3-win-x64.exe",
-    "Version": "7.5.3",
+    "SetupFile": "PowerShell-7.6.2-win-x64.msi",
+    "Version": "7.6.2",
     "SourceFolder": "Source",
     "OutputFolder": "Package",
     "IconFile": "https://github.com/aaronparker/icons/raw/main/companyportal/Microsoft-PowerShellCore.png"
@@ -43,7 +43,7 @@
       "Path": "C:\\Program Files\\PowerShell\\7",
       "FileOrFolder": "pwsh.exe",
       "Operator": "greaterThanOrEqual",
-      "VersionValue": "7.5.3",
+      "VersionValue": "7.6.2",
       "Check32BitOn64System": "false"
     }
   ],
@@ -51,4 +51,3 @@
   "Supersedence": [],
   "Assignments": []
 }
-

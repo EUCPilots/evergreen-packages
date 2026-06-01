@@ -1,13 +1,7 @@
 {
   "PackageInformation": {
     "SetupType": "EXE",
-    "SetupFile": [
-      "fslogix.adml",
-      "fslogix.admx",
-      "README.txt",
-      "x64/Release/FSLogixAppsRuleEditorSetup.exe",
-      "x64/Release/FSLogixAppsSetup.exe"
-    ],
+    "SetupFile": "FSLogix_26.01_CU1.zip",
     "Version": "26.01"
   },
   "LogPath": "C:\\ProgramData\\Microsoft\\IntuneManagementExtension\\Logs",

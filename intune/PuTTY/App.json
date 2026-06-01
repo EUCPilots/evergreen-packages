@@ -8,8 +8,8 @@
   },
   "PackageInformation": {
     "SetupType": "MSI",
-    "SetupFile": "putty-64bit-0.83-installer.msi",
-    "Version": "0.83",
+    "SetupFile": "putty-64bit-0.84-installer.msi",
+    "Version": "0.84",
     "SourceFolder": "Source",
     "OutputFolder": "Package",
     "IconFile": "https://github.com/aaronparker/icons/raw/main/companyportal/NotepadPP.png"
@@ -43,7 +43,7 @@
       "Path": "C:\\Program Files\\PuTTY",
       "FileOrFolder": "putty.exe",
       "Operator": "greaterThanOrEqual",
-      "VersionValue": "0.83",
+      "VersionValue": "0.84",
       "Check32BitOn64System": "false"
     }
   ],
@@ -51,4 +51,3 @@
   "Supersedence": [],
   "Assignments": []
 }
-

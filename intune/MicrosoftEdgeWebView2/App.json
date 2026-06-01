@@ -9,7 +9,7 @@
   "PackageInformation": {
     "SetupType": "MSI",
     "SetupFile": "MicrosoftEdgeWebView2RuntimeInstallerX64.exe",
-    "Version": "145.0.3800.97",
+    "Version": "148.0.3967.96",
     "SourceFolder": "Source",
     "OutputFolder": "Package",
     "IconFile": "https://github.com/aaronparker/icons/raw/main/companyportal/Microsoft-Edge.png"
@@ -43,7 +43,7 @@
       "KeyPath": "HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\Microsoft\\EdgeUpdate\\Clients\\{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}",
       "ValueName": "pv",
       "Operator": "greaterThanOrEqual",
-      "Value": "145.0.3800.97",
+      "Value": "148.0.3967.96",
       "Check32BitOn64System": "false"
     }
   ],
@@ -61,4 +61,3 @@
     }
   ]
 }
-

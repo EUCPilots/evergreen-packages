@@ -8,8 +8,8 @@
   },
   "PackageInformation": {
     "SetupType": "EXE",
-    "SetupFile": "AcroRdrDCx642500121288_MUI.exe",
-    "Version": "25.001.21288",
+    "SetupFile": "AcroRdrDCx642600121529_MUI.exe",
+    "Version": "26.001.21529",
     "SourceFolder": "Source",
     "OutputFolder": "Package",
     "IconFile": "https://github.com/aaronparker/icons/raw/main/companyportal/Adobe-AcrobatReader.png"
@@ -44,7 +44,7 @@
       "Path": "C:\\Program Files\\Adobe\\Acrobat DC\\Acrobat",
       "FileOrFolder": "Acrobat.exe",
       "Operator": "greaterThanOrEqual",
-      "VersionValue": "25.001.21288",
+      "VersionValue": "26.001.21529",
       "Check32BitOn64System": "false"
     }
   ],
@@ -62,4 +62,3 @@
     }
   ]
 }
-

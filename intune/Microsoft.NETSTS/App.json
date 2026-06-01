@@ -8,8 +8,8 @@
   },
   "PackageInformation": {
     "SetupType": "EXE",
-    "SetupFile": "windowsdesktop-runtime-9.0.14-win-x64.exe",
-    "Version": "9.0.14",
+    "SetupFile": "windowsdesktop-runtime-9.0.16-win-x64.exe",
+    "Version": "9.0.16",
     "SourceFolder": "Source",
     "OutputFolder": "Package",
     "IconFile": "https://github.com/aaronparker/icons/raw/main/companyportal/Microsoft-NET.png"
@@ -68,4 +68,3 @@
     }
   ]
 }
-

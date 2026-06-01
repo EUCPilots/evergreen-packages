@@ -8,8 +8,8 @@
   },
   "PackageInformation": {
     "SetupType": "MSI",
-    "SetupFile": "Firefox Setup 140.0.4.msi",
-    "Version": "140.0.4",
+    "SetupFile": "Firefox Setup 151.0.2.msi",
+    "Version": "151.0.2",
     "SourceFolder": "Source",
     "OutputFolder": "Package",
     "IconFile": "https://github.com/aaronparker/icons/raw/main/companyportal/Mozilla-Firefox.png"
@@ -43,7 +43,7 @@
       "Path": "C:\\Program Files\\Mozilla Firefox",
       "FileOrFolder": "firefox.exe",
       "Operator": "greaterThanOrEqual",
-      "VersionValue": "140.0.4",
+      "VersionValue": "151.0.2",
       "Check32BitOn64System": "false"
     }
   ],
@@ -51,4 +51,3 @@
   "Supersedence": [],
   "Assignments": []
 }
-

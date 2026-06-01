@@ -8,7 +8,7 @@
   },
   "PackageInformation": {
     "SetupType": "EXE",
-    "SetupFile": "Install-Defaults.ps1",
+    "SetupFile": "Install-Defaults.intunewin",
     "Version": "2510.27.242",
     "SourceFolder": "Source",
     "OutputFolder": "Package",
@@ -57,4 +57,3 @@
     }
   ]
 }
-

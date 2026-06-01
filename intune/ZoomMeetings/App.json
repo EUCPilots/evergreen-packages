@@ -9,7 +9,7 @@
   "PackageInformation": {
     "SetupType": "MSI",
     "SetupFile": "ZoomInstallerFull.msi",
-    "Version": "6.7.8.32670",
+    "Version": "7.0.5.38856",
     "SourceFolder": "Source",
     "OutputFolder": "Package",
     "IconFile": "https://github.com/aaronparker/icons/raw/main/companyportal/Zoom.png"
@@ -43,7 +43,7 @@
       "Path": "C:\\Program Files\\Zoom\\bin",
       "FileOrFolder": "Zoom.exe",
       "Operator": "greaterThanOrEqual",
-      "VersionValue": "6.7.8.32670",
+      "VersionValue": "7.0.5.38856",
       "Check32BitOn64System": "false"
     }
   ],
@@ -51,4 +51,3 @@
   "Supersedence": [],
   "Assignments": []
 }
-

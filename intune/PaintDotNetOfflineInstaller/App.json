@@ -8,7 +8,7 @@
   },
   "PackageInformation": {
     "SetupType": "MSI",
-    "SetupFile": "paint.net.5.1.12.winmsi.x64.msi",
+    "SetupFile": "paint.net.5.1.12.winmsi.x64.zip",
     "Version": "5.1.12",
     "SourceFolder": "Source",
     "OutputFolder": "Package",
@@ -51,4 +51,3 @@
   "Supersedence": [],
   "Assignments": []
 }
-
