@@ -1,10 +1,10 @@
 {
   "Application": {
     "Name": "MicrosoftOneDrive",
-    "Filter": "Get-EvergreenApp -Name \"MicrosoftOneDrive\" | Where-Object { $_.Architecture -eq \"x64\" -and $_.Ring -eq \"Production\" -and $_.Throttle -eq \"100\" } | Select-Object -First 1",
-    "Title": "Microsoft OneDrive (VDI install)",
+    "Filter": "Get-EvergreenApp -Name \"MicrosoftOneDrive\" | Where-Object { $_.Architecture -eq \"arm64\" -and $_.Ring -eq \"Production\" -and $_.Throttle -eq \"100\" } | Select-Object -First 1",
+    "Title": "Microsoft OneDrive",
     "Language": "en-US",
-    "Architecture": "x64"
+    "Architecture": "arm64"
   },
   "PackageInformation": {
     "SetupType": "EXE",
@@ -15,13 +15,13 @@
     "IconFile": "https://github.com/aaronparker/icons/raw/main/companyportal/Microsoft-OneDrive.png"
   },
   "Information": {
-    "DisplayName": "Microsoft OneDrive (VDI install) AMD64",
-    "Description": "Per-machine install for virtual desktop infrastructure. With Microsoft OneDrive, you can easily and securely store and access your files from all your devices. You can work with others regardless of whether they're inside or outside your organization and terminate that sharing whenever you want.",
+    "DisplayName": "Microsoft OneDrive arm64",
+    "Description": "Per-machine install. With Microsoft OneDrive, you can easily and securely store and access your files from all your devices. You can work with others regardless of whether they're inside or outside your organization and terminate that sharing whenever you want.",
     "Publisher": "Microsoft",
-    "InformationURL": "https://learn.microsoft.com/en-us/sharepoint/per-machine-installation",
+    "InformationURL": "https://support.microsoft.com/en-us/onedrive",
     "PrivacyURL": "https://privacy.microsoft.com/privacystatement",
     "Categories": [],
-    "PSPackageFactoryGuid": "17d5ae82-382e-4f2f-92d9-130fec56964b"
+    "PSPackageFactoryGuid": "e1e03083-2e07-43c4-948a-34e43f4d9440"
   },
   "Program": {
     "InstallTemplate": "powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1",
@@ -33,7 +33,7 @@
   },
   "RequirementRule": {
     "MinimumRequiredOperatingSystem": "W10_1809",
-    "Architecture": "x64"
+    "Architecture": "arm64"
   },
   "CustomRequirementRule": [],
   "DetectionRule": [
@@ -44,15 +44,6 @@
       "FileOrFolder": "OneDrive.exe",
       "Operator": "greaterThanOrEqual",
       "VersionValue": "26.084.0504.0007",
-      "Check32BitOn64System": "false"
-    },
-    {
-      "Type": "Registry",
-      "DetectionMethod": "VersionComparison",
-      "KeyPath": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\OneDrive",
-      "ValueName": "Version",
-      "Operator": "greaterThanOrEqual",
-      "Value": "26.084.0504.0007",
       "Check32BitOn64System": "false"
     }
   ],

@@ -9,7 +9,7 @@
     "StopProcess": [
       "C:\\Program Files\\Microsoft OneDrive\\*.exe"
     ],
-    "ArgumentList": "/install /quiet /norestart /log \"#LogPath\\#LogName.log\""
+    "ArgumentList": "/allusers /quiet /norestart /log \"#LogPath\\#LogName.log\""
   },
   "PostInstall": {
     "Remove": [],
