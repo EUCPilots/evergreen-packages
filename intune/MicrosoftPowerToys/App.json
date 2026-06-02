@@ -4,7 +4,7 @@
     "Filter": "Get-EvergreenApp -Name \"MicrosoftPowerToys\" | Where-Object { $_.Architecture -eq \"x64\" } | Select-Object -First 1",
     "Title": "Microsoft PowerToys",
     "Language": "en-US",
-    "Architecture": "AllWithARM64"
+    "Architecture": "x64"
   },
   "PackageInformation": {
     "SetupType": "EXE",
@@ -33,7 +33,7 @@
   },
   "RequirementRule": {
     "MinimumRequiredOperatingSystem": "W10_1809",
-    "Architecture": "AllWithARM64"
+    "Architecture": "x86,x64,arm64"
   },
   "CustomRequirementRule": [],
   "DetectionRule": [

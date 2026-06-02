@@ -4,7 +4,7 @@
     "Filter": "Get-EvergreenApp -Name \"FoxitReader\" -ErrorAction \"SilentlyContinue\" | Where-Object { $_.Type -eq \"exe\" } | Select-Object -First 1",
     "Title": "Foxit PDF Reader",
     "Language": "en-US",
-    "Architecture": "AllWithARM64"
+    "Architecture": "x64"
   },
   "PackageInformation": {
     "SetupType": "EXE",
