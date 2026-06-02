@@ -8,14 +8,14 @@
   },
   "PackageInformation": {
     "SetupType": "MSI",
-    "SetupFile": "googlechromeenterprisebundle_arm64.zip",
+    "SetupFile": "googlechromestandaloneenterprise_arm64.msi",
     "Version": "149.0.7827.54",
     "SourceFolder": "Source",
     "OutputFolder": "Package",
     "IconFile": "https://github.com/aaronparker/icons/raw/main/companyportal/Google-Chrome.png"
   },
   "Information": {
-    "DisplayName": "Google Chrome ARM64",
+    "DisplayName": "Google Chrome arm64",
     "Description": "The browser built by Google. Browse with the power of Google. With Google apps like Gmail, Google Pay, and Google Assistant, Chrome can help you stay productive and get more out of your browser.",
     "Publisher": "Google",
     "InformationURL": "https://www.google.com/chrome/",

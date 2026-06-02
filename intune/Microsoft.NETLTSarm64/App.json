@@ -1,27 +1,27 @@
 {
   "Application": {
     "Name": "Microsoft.NETLTS",
-    "Filter": "Get-EvergreenApp -Name \"Microsoft.NET\" | Where-Object { $_.Installer -eq \"windowsdesktop\" -and $_.Architecture -eq \"x64\" -and $_.Channel -eq \"LTS\" } | Select-Object -First 1",
+    "Filter": "Get-EvergreenApp -Name \"Microsoft.NET\" | Where-Object { $_.Installer -eq \"windowsdesktop\" -and $_.Architecture -eq \"arm64\" -and $_.Channel -eq \"LTS\" } | Select-Object -First 1",
     "Title": "Microsoft .NET Desktop Runtime LTS",
     "Language": "en-US",
-    "Architecture": "x64"
+    "Architecture": "arm64"
   },
   "PackageInformation": {
     "SetupType": "EXE",
-    "SetupFile": "windowsdesktop-runtime-10.0.8-win-x64.exe",
+    "SetupFile": "windowsdesktop-runtime-10.0.8-win-arm64.exe",
     "Version": "10.0.8",
     "SourceFolder": "Source",
     "OutputFolder": "Package",
     "IconFile": "https://github.com/aaronparker/icons/raw/main/companyportal/Microsoft-NET.png"
   },
   "Information": {
-    "DisplayName": "Microsoft .NET Desktop Runtime LTS x64",
+    "DisplayName": "Microsoft .NET Desktop Runtime LTS arm64",
     "Description": "The .NET Desktop Runtime LTS enables you to run existing Windows desktop applications. This release includes the .NET Runtime; you don't need to install it separately.",
     "Publisher": "Microsoft",
     "InformationURL": "https://dotnet.microsoft.com/en-us/",
     "PrivacyURL": "https://privacy.microsoft.com/privacystatement",
     "Categories": [],
-    "PSPackageFactoryGuid": "a91c2def-1212-44c6-8b10-91a0aefac41c"
+    "PSPackageFactoryGuid": "57f495dd-c95d-4bfa-94c5-1e0e6d5665fb"
   },
   "Program": {
     "InstallTemplate": "powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1",
@@ -33,7 +33,7 @@
   },
   "RequirementRule": {
     "MinimumRequiredOperatingSystem": "W10_1809",
-    "Architecture": "x64"
+    "Architecture": "arm64"
   },
   "CustomRequirementRule": [],
   "DetectionRule": [

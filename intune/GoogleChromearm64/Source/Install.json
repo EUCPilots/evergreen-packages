@@ -1,7 +1,7 @@
 {
   "PackageInformation": {
     "SetupType": "MSI",
-    "SetupFile": "googlechromeenterprisebundle_arm64.zip",
+    "SetupFile": "googlechromestandaloneenterprise_arm64.msi",
     "Version": "149.0.7827.54"
   },
   "LogPath": "C:\\ProgramData\\Microsoft\\IntuneManagementExtension\\Logs",
