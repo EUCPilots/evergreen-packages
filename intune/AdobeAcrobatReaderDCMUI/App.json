@@ -4,7 +4,7 @@
     "Filter": "Get-EvergreenApp -Name \"AdobeAcrobatReaderDC\" | Where-Object { $_.Language -eq \"MUI\" -and $_.Architecture -eq \"x64\" } | Select-Object -First 1",
     "Title": "Adobe Acrobat Reader DC",
     "Language": "English",
-    "Architecture": "x86,x64,arm64"
+    "Architecture": "x64"
   },
   "PackageInformation": {
     "SetupType": "EXE",

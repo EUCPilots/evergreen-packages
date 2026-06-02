@@ -1,0 +1,53 @@
+{
+  "Application": {
+    "Name": "MicrosoftPowerToys",
+    "Filter": "Get-EvergreenApp -Name \"MicrosoftPowerToys\" | Where-Object { $_.Architecture -eq \"arm64\" } | Select-Object -First 1",
+    "Title": "Microsoft PowerToys",
+    "Language": "en-US",
+    "Architecture": "arm64"
+  },
+  "PackageInformation": {
+    "SetupType": "EXE",
+    "SetupFile": "PowerToysSetup-0.99.1-arm64.exe",
+    "Version": "0.99.1",
+    "SourceFolder": "Source",
+    "OutputFolder": "Package",
+    "IconFile": "https://github.com/microsoft/PowerToys/raw/v0.58.0/installer/MSIX/Images/logo.png"
+  },
+  "Information": {
+    "DisplayName": "Microsoft PowerToys ARM64",
+    "Description": "Microsoft PowerToys is a set of utilities for power users to tune and streamline their Windows experience for greater productivity.",
+    "Publisher": "Microsoft",
+    "InformationURL": "https://aka.ms/powertoys-docs",
+    "PrivacyURL": "https://privacy.microsoft.com/privacystatement",
+    "Categories": [],
+    "PSPackageFactoryGuid": "3db1a7c1-164a-4927-af1b-f0ebab0b3218"
+  },
+  "Program": {
+    "InstallTemplate": "powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1",
+    "InstallCommand": "powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1",
+    "UninstallCommand": "powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Uninstall.ps1",
+    "InstallExperience": "system",
+    "DeviceRestartBehavior": "suppress",
+    "AllowAvailableUninstall": false
+  },
+  "RequirementRule": {
+    "MinimumRequiredOperatingSystem": "W10_1809",
+    "Architecture": "arm64"
+  },
+  "CustomRequirementRule": [],
+  "DetectionRule": [
+    {
+      "Type": "File",
+      "DetectionMethod": "Version",
+      "Path": "C:\\Program Files\\PowerToys",
+      "FileOrFolder": "PowerToys.exe",
+      "Operator": "greaterThanOrEqual",
+      "VersionValue": "0.99.1",
+      "Check32BitOn64System": "false"
+    }
+  ],
+  "Dependencies": [],
+  "Supersedence": [],
+  "Assignments": []
+}

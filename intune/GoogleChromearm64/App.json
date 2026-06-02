@@ -1,27 +1,27 @@
 {
   "Application": {
     "Name": "GoogleChrome",
-    "Filter": "Get-EvergreenApp -Name \"GoogleChrome\" | Where-Object { $_.Channel -eq \"stable\" -and $_.Architecture -eq \"x64\" -and $_.Type -eq \"msi\" } | Select-Object -First 1",
+    "Filter": "Get-EvergreenApp -Name \"GoogleChrome\" | Where-Object { $_.Channel -eq \"stable\" -and $_.Architecture -eq \"arm64\" -and $_.Type -eq \"msi\" } | Select-Object -First 1",
     "Title": "Google Chrome",
     "Language": "en-US",
-    "Architecture": "x64"
+    "Architecture": "arm64"
   },
   "PackageInformation": {
     "SetupType": "MSI",
-    "SetupFile": "googlechromestandaloneenterprise64.msi",
+    "SetupFile": "googlechromeenterprisebundle_arm64.zip",
     "Version": "149.0.7827.54",
     "SourceFolder": "Source",
     "OutputFolder": "Package",
     "IconFile": "https://github.com/aaronparker/icons/raw/main/companyportal/Google-Chrome.png"
   },
   "Information": {
-    "DisplayName": "Google Chrome x64",
+    "DisplayName": "Google Chrome ARM64",
     "Description": "The browser built by Google. Browse with the power of Google. With Google apps like Gmail, Google Pay, and Google Assistant, Chrome can help you stay productive and get more out of your browser.",
     "Publisher": "Google",
     "InformationURL": "https://www.google.com/chrome/",
     "PrivacyURL": "https://www.google.com.au/intl/en_au/chrome/privacy/",
     "Categories": [],
-    "PSPackageFactoryGuid": "8c8cc1f6-398c-4c0c-b285-b9141dc60a75"
+    "PSPackageFactoryGuid": "66d1e84d-1be2-4678-9bb5-554421a649e3"
   },
   "Program": {
     "InstallTemplate": "powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1",
@@ -33,7 +33,7 @@
   },
   "RequirementRule": {
     "MinimumRequiredOperatingSystem": "W10_1809",
-    "Architecture": "x86,x64,arm64"
+    "Architecture": "arm64"
   },
   "CustomRequirementRule": [],
   "DetectionRule": [
