@@ -5,7 +5,7 @@
     "Title": "Adobe Acrobat Reader DC (VDI install)",
     "PrePackageCmd": " -sfx_o\"#Path\" -sfx_ne",
     "Language": "English",
-    "Architecture": "x64"
+    "Architecture": "AllWithARM64"
   },
   "PackageInformation": {
     "SetupType": "EXE",
@@ -35,7 +35,7 @@
   },
   "RequirementRule": {
     "MinimumRequiredOperatingSystem": "W10_1809",
-    "Architecture": "x64"
+    "Architecture": "AllWithARM64"
   },
   "CustomRequirementRule": [],
   "DetectionRule": [

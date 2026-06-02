@@ -4,7 +4,7 @@
     "Filter": "Get-EvergreenApp -Name \"RDAnalyzer\" | Select-Object -First 1",
     "Title": "Remote Display Analyzer",
     "Language": "en-US",
-    "Architecture": "x64"
+    "Architecture": "AllWithARM64"
   },
   "PackageInformation": {
     "SetupType": "EXE",
@@ -33,7 +33,7 @@
   },
   "RequirementRule": {
     "MinimumRequiredOperatingSystem": "W10_1809",
-    "Architecture": "x64"
+    "Architecture": "AllWithARM64"
   },
   "CustomRequirementRule": [],
   "DetectionRule": [

@@ -4,7 +4,7 @@
     "Filter": "Get-EvergreenApp -Name \"WindowsEnterpriseDefaults\" | Where-Object { $_.Type -eq \"intunewin\" } | Select-Object -First 1",
     "Title": "Windows Enterprise Defaults",
     "Language": "en-US",
-    "Architecture": "x64"
+    "Architecture": "AllWithARM64"
   },
   "PackageInformation": {
     "SetupType": "EXE",

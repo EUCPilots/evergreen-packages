@@ -4,7 +4,7 @@
     "Filter": "Get-EvergreenApp -Name \"Zoom\" | Where-Object { $_.Platform -eq \"Rooms\" -and $_.Type -eq \"msi\" -and $_.Architecture -eq \"x64\" } | Select-Object -First 1",
     "Title": "Zoom Rooms Client",
     "Language": "en-US",
-    "Architecture": "x64"
+    "Architecture": "AllWithARM64"
   },
   "PackageInformation": {
     "SetupType": "MSI",
@@ -33,7 +33,7 @@
   },
   "RequirementRule": {
     "MinimumRequiredOperatingSystem": "W10_1809",
-    "Architecture": "x64"
+    "Architecture": "AllWithARM64"
   },
   "CustomRequirementRule": [],
   "DetectionRule": [

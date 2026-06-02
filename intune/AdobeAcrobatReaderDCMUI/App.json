@@ -4,7 +4,7 @@
     "Filter": "Get-EvergreenApp -Name \"AdobeAcrobatReaderDC\" | Where-Object { $_.Language -eq \"MUI\" -and $_.Architecture -eq \"x64\" } | Select-Object -First 1",
     "Title": "Adobe Acrobat Reader DC",
     "Language": "English",
-    "Architecture": "x64"
+    "Architecture": "AllWithARM64"
   },
   "PackageInformation": {
     "SetupType": "EXE",
@@ -34,7 +34,7 @@
   },
   "RequirementRule": {
     "MinimumRequiredOperatingSystem": "W10_1809",
-    "Architecture": "x64"
+    "Architecture": "AllWithARM64"
   },
   "CustomRequirementRule": [],
   "DetectionRule": [
