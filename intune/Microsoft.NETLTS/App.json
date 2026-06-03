@@ -48,7 +48,7 @@
     {
       "Type": "File",
       "DetectionMethod": "Existence",
-      "Path": "C:\\Program Files\\dotnet\\host\\fxr\\10.0.4",
+      "Path": "C:\\Program Files\\dotnet\\host\\fxr\\10.0.8",
       "FileOrFolder": "hostfxr.dll",
       "DetectionType": "exists",
       "Check32BitOn64System": "false"
