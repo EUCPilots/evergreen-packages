@@ -8,8 +8,8 @@
   },
   "PackageInformation": {
     "SetupType": "EXE",
-    "SetupFile": "VSCodeSetup-arm64-1.122.1.exe",
-    "Version": "1.122.1",
+    "SetupFile": "VSCodeSetup-arm64-1.123.0.exe",
+    "Version": "1.123.0",
     "SourceFolder": "Source",
     "OutputFolder": "Package",
     "IconFile": "https://github.com/aaronparker/icons/raw/main/companyportal/Microsoft-VSCode.png"
@@ -43,7 +43,7 @@
       "KeyPath": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\{EA457B21-F73E-494C-ACAB-524FDE069978}_is1",
       "ValueName": "DisplayVersion",
       "Operator": "greaterThanOrEqual",
-      "Value": "1.122.1",
+      "Value": "1.123.0",
       "Check32BitOn64System": "false"
     }
   ],

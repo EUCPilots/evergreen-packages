@@ -8,8 +8,8 @@
   },
   "PackageInformation": {
     "SetupType": "EXE",
-    "SetupFile": "npp.8.9.6.2.Installer.x64.exe",
-    "Version": "8.9.6.2",
+    "SetupFile": "npp.8.9.6.4.Installer.x64.exe",
+    "Version": "8.9.6.4",
     "SourceFolder": "Source",
     "OutputFolder": "Package",
     "IconFile": "https://github.com/aaronparker/icons/raw/main/companyportal/NotepadPP.png"
@@ -43,7 +43,7 @@
       "Path": "C:\\Program Files\\Notepad++",
       "FileOrFolder": "Notepad++.exe",
       "Operator": "greaterThanOrEqual",
-      "VersionValue": "8.9.6.2",
+      "VersionValue": "8.9.6.4",
       "Check32BitOn64System": "false"
     }
   ],
