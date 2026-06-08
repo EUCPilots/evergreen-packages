@@ -33,7 +33,7 @@
   },
   "RequirementRule": {
     "MinimumRequiredOperatingSystem": "W10_1809",
-    "Architecture": "All"
+    "Architecture": "x64,arm64"
   },
   "CustomRequirementRule": [],
   "DetectionRule": [
