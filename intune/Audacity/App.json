@@ -8,8 +8,8 @@
   },
   "PackageInformation": {
     "SetupType": "EXE",
-    "SetupFile": "audacity-win-3.7.7-64bit.exe",
-    "Version": "3.7.7",
+    "SetupFile": "audacity-win-3.7.8-64bit.exe",
+    "Version": "3.7.8",
     "SourceFolder": "Source",
     "OutputFolder": "Package",
     "IconFile": "https://github.com/aaronparker/icons/raw/main/companyportal/Audacity.png"
@@ -43,7 +43,7 @@
       "Path": "C:\\Program Files\\Audacity",
       "FileOrFolder": "Audacity.exe",
       "Operator": "greaterThanOrEqual",
-      "VersionValue": "3.7.7",
+      "VersionValue": "3.7.8",
       "Check32BitOn64System": "false"
     },
     {
@@ -52,7 +52,7 @@
       "Path": "C:\\Program Files (x86)\\Audacity",
       "FileOrFolder": "Audacity.exe",
       "Operator": "greaterThanOrEqual",
-      "VersionValue": "3.7.7",
+      "VersionValue": "3.7.8",
       "Check32BitOn64System": "false"
     }
   ],

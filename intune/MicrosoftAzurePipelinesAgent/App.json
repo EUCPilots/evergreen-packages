@@ -8,8 +8,8 @@
   },
   "PackageInformation": {
     "SetupType": "EXE",
-    "SetupFile": "vsts-agent-win-x64-4.273.0.zip",
-    "Version": "4.273.0",
+    "SetupFile": "vsts-agent-win-x64-4.274.1.zip",
+    "Version": "4.274.1",
     "SourceFolder": "Source",
     "OutputFolder": "Package",
     "IconFile": "https://github.com/aaronparker/icons/raw/main/companyportal/Microsoft-AzurePipelines.png"
@@ -43,7 +43,7 @@
       "Path": "C:\\agents\\bin",
       "FileOrFolder": "Agent.Worker.exe",
       "Operator": "greaterThanOrEqual",
-      "VersionValue": "4.273.0",
+      "VersionValue": "4.274.1",
       "Check32BitOn64System": "false"
     }
   ],
