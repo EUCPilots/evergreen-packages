@@ -8,8 +8,8 @@
   },
   "PackageInformation": {
     "SetupType": "EXE",
-    "SetupFile": "CitrixWorkspaceApp26.3.1.194.exe",
-    "Version": "0.0.0.0",
+    "SetupFile": "CitrixWorkspaceApp26.3.10.69.exe",
+    "Version": "26.3.10.69",
     "SourceFolder": "Source",
     "OutputFolder": "Package",
     "IconFile": "https://github.com/aaronparker/icons/raw/main/companyportal/Citrix-WorkspaceApp.png"
@@ -43,7 +43,7 @@
       "KeyPath": "HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\CitrixOnlinePluginPackWeb",
       "ValueName": "DisplayVersion",
       "Operator": "greaterThanOrEqual",
-      "Value": "0.0.0.0",
+      "Value": "26.3.10.69",
       "Check32BitOn64System": "false"
     },
     {
@@ -61,7 +61,7 @@
       "Path": "C:\\Program Files (x86)\\Citrix\\ICA Client",
       "FileOrFolder": "wfica32.exe",
       "Operator": "greaterThanOrEqual",
-      "VersionValue": "0.0.0.0",
+      "VersionValue": "26.3.10.69",
       "Check32BitOn64System": "false"
     }
   ],
