@@ -13,7 +13,6 @@
     </Product>
     <Product ID="VisioProRetail">
       <Language ID="MatchOS" />
-      <ExcludeApp ID="Groove" />
     </Product>
     <Product ID="ProjectProRetail">
       <Language ID="MatchOS" />

@@ -1,5 +1,5 @@
 <Configuration ID="acd50efa-8a95-41f0-bdb6-2f749f9a95ae">
-  <Info Description="Microsoft 365 Apps for enterprise including Word, Excel, PowerPoint." />
+  <Info Description="Microsoft 365 Apps for enterprise including Word, Excel, PowerPoint (minimal install)." />
   <Add OfficeClientEdition="64" Channel="Current" MigrateArch="TRUE">
     <Product ID="O365ProPlusRetail">
       <Language ID="MatchOS" />
