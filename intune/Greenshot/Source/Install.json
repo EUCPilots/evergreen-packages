@@ -6,7 +6,7 @@
   },
   "LogPath": "C:\\ProgramData\\Microsoft\\IntuneManagementExtension\\Logs",
   "InstallTasks": {
-    "ArgumentList": "/SP- /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /LOG=\"#LogPath\\#LogName.log\""
+    "ArgumentList": "/SP- /ALLUSERS /VERYSILENT /SUPPRESSMSGBOXES /CLOSEAPPLICATIONS/NORESTART /LOG=\"#LogPath\\#LogName.log\""
   },
   "PostInstall": {
     "StopPath": [

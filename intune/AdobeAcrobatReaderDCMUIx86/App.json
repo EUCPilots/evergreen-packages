@@ -41,8 +41,8 @@
     {
       "Type": "File",
       "DetectionMethod": "Version",
-      "Path": "C:\\Program Files\\Adobe\\Acrobat DC\\Acrobat",
-      "FileOrFolder": "Acrobat.exe",
+      "Path": "C:\\Program Files (x86)\\Adobe\\Acrobat Reader DC\\Reader",
+      "FileOrFolder": "AcroRd32.exe",
       "Operator": "greaterThanOrEqual",
       "VersionValue": "26.001.21662",
       "Check32BitOn64System": "false"
