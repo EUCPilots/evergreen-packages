@@ -6,7 +6,8 @@
   },
   "LogPath": "C:\\ProgramData\\Microsoft\\IntuneManagementExtension\\Logs",
   "InstallTasks": {
-    "ArgumentList": "/SP- /ALLUSERS /VERYSILENT /SUPPRESSMSGBOXES /CLOSEAPPLICATIONS/NORESTART /LOG=\"#LogPath\\#LogName.log\""
+    "ArgumentList": "/SP- /ALLUSERS /VERYSILENT /SUPPRESSMSGBOXES /CLOSEAPPLICATIONS/NORESTART /LOG=\"#LogPath\\#LogName.log\"",
+    "Wait": 60
   },
   "PostInstall": {
     "StopPath": [
@@ -14,9 +15,9 @@
     ],
     "Remove": [
       "C:\\Users\\Public\\Desktop\\Greenshot.lnk",
-      "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Greenshot\\License.txt.lnk",
-      "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Greenshot\\Readme.txt.lnk",
-      "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Greenshot\\Uninstall Greenshot.lnk"
+      "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Greenshot\\Uninstall Greenshot.lnk",
+      "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Greenshot\\Show license.lnk",
+      "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Greenshot\\Show Readme.lnk"
     ],
     "CopyFile": [
       {
