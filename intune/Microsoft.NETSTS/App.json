@@ -15,7 +15,7 @@
     "IconFile": "https://github.com/aaronparker/icons/raw/main/companyportal/Microsoft-NET.png"
   },
   "Information": {
-    "DisplayName": "Microsoft Windows Desktop Runtime Current x64",
+    "DisplayName": "Microsoft Windows Desktop Runtime Current",
     "Description": "The Microsoft Windows Desktop Runtime Current enables you to run existing Windows desktop applications. This release includes the .NET Runtime; you don't need to install it separately.",
     "Publisher": "Microsoft",
     "InformationURL": "https://dotnet.microsoft.com/en-us/",

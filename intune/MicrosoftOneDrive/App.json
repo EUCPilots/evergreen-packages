@@ -15,7 +15,7 @@
     "IconFile": "https://github.com/aaronparker/icons/raw/main/companyportal/Microsoft-OneDrive.png"
   },
   "Information": {
-    "DisplayName": "Microsoft OneDrive x64",
+    "DisplayName": "Microsoft OneDrive",
     "Description": "Per-machine install. With Microsoft OneDrive, you can easily and securely store and access your files from all your devices. You can work with others regardless of whether they're inside or outside your organization and terminate that sharing whenever you want.",
     "Publisher": "Microsoft",
     "InformationURL": "https://support.microsoft.com/en-us/onedrive",

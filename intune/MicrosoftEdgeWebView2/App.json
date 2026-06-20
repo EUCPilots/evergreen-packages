@@ -15,7 +15,7 @@
     "IconFile": "https://github.com/aaronparker/icons/raw/main/companyportal/Microsoft-Edge.png"
   },
   "Information": {
-    "DisplayName": "Microsoft Edge WebView2 Runtime x64",
+    "DisplayName": "Microsoft Edge WebView2 Runtime",
     "Description": "Embed web content (HTML, CSS, and JavaScript) in your native applications with Microsoft Edge WebView2",
     "Publisher": "Microsoft",
     "InformationURL": "https://developer.microsoft.com/en-us/microsoft-edge/webview2",

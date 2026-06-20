@@ -1,7 +1,7 @@
 {
   "Application": {
     "Name": "MozillaFirefox",
-    "Filter": "Get-EvergreenApp -Name \"MozillaFirefox\" -ErrorAction \"SilentlyContinue\" -WarningAction \"SilentlyContinue\" | Where-Object { $_.Channel -eq \"Current\" -and $_.Architecture -eq \"x64\" -and $_.Type -eq \"msi\" -and $_.Language -eq \"en-US\" }",
+    "Filter": "Get-EvergreenApp -Name \"MozillaFirefox\" | Where-Object { $_.Channel -eq \"Current\" -and $_.Architecture -eq \"x64\" -and $_.Type -eq \"msi\" -and $_.Language -eq \"en-US\" }",
     "Title": "Mozilla Firefox",
     "Language": "en-US",
     "Architecture": "x64"
@@ -15,7 +15,7 @@
     "IconFile": "https://github.com/aaronparker/icons/raw/main/companyportal/Mozilla-Firefox.png"
   },
   "Information": {
-    "DisplayName": "Mozilla Firefox x64",
+    "DisplayName": "Mozilla Firefox",
     "Description": "Get the browser that protects what's important. No shady privacy policies or back doors for advertisers. Just a lightning fast browser that doesn't sell you out.",
     "Publisher": "Mozilla",
     "InformationURL": "https://www.mozilla.org/firefox/new/",

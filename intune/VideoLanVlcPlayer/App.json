@@ -15,7 +15,7 @@
     "IconFile": "https://github.com/aaronparker/icons/raw/main/companyportal/VLC.png"
   },
   "Information": {
-    "DisplayName": "VideoLAN VLC media player x64",
+    "DisplayName": "VideoLAN VLC media player",
     "Description": "VLC is a free and open source cross-platform multimedia player and framework that plays most multimedia files as well as DVDs, Audio CDs, VCDs, and various streaming protocols.",
     "Publisher": "VideoLAN",
     "InformationURL": "https://www.videolan.org/vlc/features.html",

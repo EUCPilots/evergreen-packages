@@ -15,7 +15,7 @@
     "IconFile": "https://github.com/aaronparker/icons/raw/main/companyportal/Microsoft-PowerShellCore.png"
   },
   "Information": {
-    "DisplayName": "Microsoft PowerShell x64",
+    "DisplayName": "Microsoft PowerShell",
     "Description": "PowerShell is a cross-platform task automation solution made up of a command-line shell, a scripting language, and a configuration management framework. PowerShell runs on Windows, Linux, and macOS.",
     "Publisher": "Microsoft",
     "InformationURL": "https://aka.ms/PowerShell-docs",

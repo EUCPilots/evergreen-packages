@@ -15,7 +15,7 @@
     "IconFile": "https://github.com/aaronparker/icons/raw/main/companyportal/Display.png"
   },
   "Information": {
-    "DisplayName": "Remote Display Analyzer x86",
+    "DisplayName": "Remote Display Analyzer",
     "Description": "The easiest tool to analyze and change display protocol settings on the fly.",
     "Publisher": "Bram Wolfs",
     "InformationURL": "https://rdanalyzer.com/",

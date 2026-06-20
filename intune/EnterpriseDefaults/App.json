@@ -15,7 +15,7 @@
     "IconFile": "https://github.com/aaronparker/icons/raw/main/companyportal/Package.png"
   },
   "Information": {
-    "DisplayName": "Windows Enterprise Defaults x86",
+    "DisplayName": "Windows Enterprise Defaults",
     "Description": "Customisations to **make Windows 10 & Windows 11 enterprise-ready** by configuring a clean OS default state, uninstalling unnecessary in-box AppX apps, and improving the end-user experience by updating the default user profile and default Start menu. Includes support for localising Windows and setting a time zone.",
     "Publisher": "stealthpuppy",
     "InformationURL": "https://stealthpuppy.com/image-customise/",

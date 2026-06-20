@@ -15,7 +15,7 @@
     "IconFile": "https://github.com/aaronparker/icons/raw/main/companyportal/Microsoft-AzurePipelines.png"
   },
   "Information": {
-    "DisplayName": "Microsoft Azure Pipelines Agent x64",
+    "DisplayName": "Microsoft Azure Pipelines Agent",
     "Description": "The Microsoft Azure Pipelines Agent used to deploy to target machines and create a self hosted pipelines runner in Azure Pipelines.",
     "Publisher": "Microsoft",
     "InformationURL": "https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/agents",

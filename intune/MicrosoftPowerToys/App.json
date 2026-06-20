@@ -15,7 +15,7 @@
     "IconFile": "https://github.com/microsoft/PowerToys/raw/v0.58.0/installer/MSIX/Images/logo.png"
   },
   "Information": {
-    "DisplayName": "Microsoft PowerToys x64",
+    "DisplayName": "Microsoft PowerToys",
     "Description": "Microsoft PowerToys is a set of utilities for power users to tune and streamline their Windows experience for greater productivity.",
     "Publisher": "Microsoft",
     "InformationURL": "https://aka.ms/powertoys-docs",
@@ -33,7 +33,7 @@
   },
   "RequirementRule": {
     "MinimumRequiredOperatingSystem": "W10_1809",
-    "Architecture": "x86,x64,arm64"
+    "Architecture": "x64"
   },
   "CustomRequirementRule": [],
   "DetectionRule": [
