@@ -9,7 +9,7 @@
   "PackageInformation": {
     "SetupType": "EXE",
     "SetupFile": "OneDriveSetup.exe",
-    "Version": "26.095.0519.0003",
+    "Version": "26.098.0524.0004",
     "SourceFolder": "Source",
     "OutputFolder": "Package",
     "IconFile": "https://github.com/aaronparker/icons/raw/main/companyportal/Microsoft-OneDrive.png"
@@ -43,7 +43,7 @@
       "Path": "C:\\Program Files\\Microsoft OneDrive",
       "FileOrFolder": "OneDrive.exe",
       "Operator": "greaterThanOrEqual",
-      "VersionValue": "26.095.0519.0003",
+      "VersionValue": "26.098.0524.0004",
       "Check32BitOn64System": "false"
     }
   ],

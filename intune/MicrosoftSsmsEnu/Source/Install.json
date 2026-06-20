@@ -2,7 +2,7 @@
   "PackageInformation": {
     "SetupType": "EXE",
     "SetupFile": "vs_SSMS.exe",
-    "Version": "22.6.0"
+    "Version": "22.7.1"
   },
   "LogPath": "C:\\ProgramData\\Microsoft\\IntuneManagementExtension\\Logs",
   "InstallTasks": {

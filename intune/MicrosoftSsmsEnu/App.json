@@ -9,7 +9,7 @@
   "PackageInformation": {
     "SetupType": "EXE",
     "SetupFile": "vs_SSMS.exe",
-    "Version": "22.6.0",
+    "Version": "22.7.1",
     "SourceFolder": "Source",
     "OutputFolder": "Package",
     "IconFile": "https://github.com/aaronparker/icons/raw/main/companyportal/Microsoft-SSMS.png"
@@ -43,7 +43,7 @@
       "Path": "C:\\Program Files (x86)\\Microsoft SQL Server Management Studio 18\\Common7\\IDE",
       "FileOrFolder": "Ssms.exe",
       "Operator": "greaterThanOrEqual",
-      "VersionValue": "22.6.0",
+      "VersionValue": "22.7.1",
       "Check32BitOn64System": "false"
     }
   ],
