@@ -125,12 +125,10 @@ function Get-InstallConfig {
         $InstallFile = Join-Path -Path $Path -ChildPath $File
         Write-LogFile -Message "Read package install config: $InstallFile"
         $Config = Get-Content -Path $InstallFile -Raw | ConvertFrom-Json
-        $Config.PackageInformation.LogPath = $Config.PackageInformation.LogPath ?? ""
+        $Config.LogPath = $Config.LogPath ?? ""
         $Config.InstallTasks = $Config.InstallTasks ?? [PSCustomObject]@{}
         $Config.InstallTasks.ArgumentList = $Config.InstallTasks.ArgumentList ?? ""
-        $Config.InstallTasks.StopPath = $Config.InstallTasks.StopPath ?? @()
         $Config.InstallTasks.UninstallMsi = $Config.InstallTasks.UninstallMsi ?? @()
-        $Config.InstallTasks.Remove = $Config.InstallTasks.Remove ?? @()
         $Config.InstallTasks.Wait = $Config.InstallTasks.Wait ?? 0
         $Config.PostInstall = $Config.PostInstall ?? [PSCustomObject]@{}
         $Config.PostInstall.StopPath = $Config.PostInstall.StopPath ?? @()
@@ -315,22 +313,22 @@ else {
     if ($null -ne $Install.InstallTasks.StopPath -and $Install.InstallTasks.StopPath.Count -gt 0) { Stop-PathProcess -Path $Install.InstallTasks.StopPath }
 
     # Uninstall the application
-    if ($null -ne $Install.InstallTasks.UninstallMsi -and $Install.InstallTasks.UninstallMsi.Count -gt 0) { Uninstall-Msi -ProductName $Install.InstallTasks.UninstallMsi -LogPath $Install.PackageInformation.LogPath }
+    if ($null -ne $Install.InstallTasks.UninstallMsi -and $Install.InstallTasks.UninstallMsi.Count -gt 0) { Uninstall-Msi -ProductName $Install.InstallTasks.UninstallMsi -LogPath $Install.LogPath }
     if ($null -ne $Install.InstallTasks.Remove -and $Install.InstallTasks.Remove.Count -gt 0) { Remove-Path -Path $Install.InstallTasks.Remove }
 
     # Create the log folder
-    if (Test-Path -Path $Install.PackageInformation.LogPath -PathType "Container") {
-        Write-LogFile -Message "Directory exists: $($Install.PackageInformation.LogPath)"
+    if (Test-Path -Path $Install.LogPath -PathType "Container") {
+        Write-LogFile -Message "Directory exists: $($Install.LogPath)"
     }
     else {
-        Write-LogFile -Message "Create directory: $($Install.PackageInformation.LogPath)"
-        New-Item -Path $Install.PackageInformation.LogPath -ItemType "Directory" | Out-Null
+        Write-LogFile -Message "Create directory: $($Install.LogPath)"
+        New-Item -Path $Install.LogPath -ItemType "Directory" | Out-Null
     }
 
     # Build the argument list
     $ArgumentList = $Install.InstallTasks.ArgumentList -replace "#SetupFile", $Installer
     $ArgumentList = $ArgumentList -replace "#LogName", $Install.PackageInformation.SetupFile
-    $ArgumentList = $ArgumentList -replace "#LogPath", $Install.PackageInformation.LogPath
+    $ArgumentList = $ArgumentList -replace "#LogPath", $Install.LogPath
     $ArgumentList = $ArgumentList -replace "#PWD", $PWD.Path
     $ArgumentList = $ArgumentList -replace "#SetupDirectory", ([System.IO.Path]::GetDirectoryName($Installer))
 
