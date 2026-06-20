@@ -13,6 +13,7 @@
   },
   "PostInstall": {
     "Remove": [],
-    "CopyFile": []
+    "CopyFile": [],
+    "Run": []
   }
 }

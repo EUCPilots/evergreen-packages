@@ -14,6 +14,7 @@
       "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\ImageGlass\\ImageGlass' LICENSE.lnk",
       "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\ImageGlass\\Uninstall ImageGlass*.lnk"
     ],
-    "CopyFile": []
+    "CopyFile": [],
+    "Run": []
   }
 }

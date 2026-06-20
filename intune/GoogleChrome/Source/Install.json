@@ -19,6 +19,7 @@
         "Source": "initial_preferences.txt",
         "Destination": "C:\\Program Files\\Google\\Chrome\\Application\\initial_preferences"
       }
-    ]
+    ],
+    "Run": []
   }
 }

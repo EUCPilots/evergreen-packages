@@ -18,6 +18,7 @@
         "Source": "initial_preferences.txt",
         "Destination": "C:\\Program Files\\Microsoft\\Edge\\Application\\initial_preferences"
       }
-    ]
+    ],
+    "Run": []
   }
 }

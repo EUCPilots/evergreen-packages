@@ -24,6 +24,7 @@
         "Source": "greenshot-defaults.ini",
         "Destination": "C:\\Program Files\\Greenshot\\greenshot-defaults.ini"
       }
-    ]
+    ],
+    "Run": []
   }
 }
