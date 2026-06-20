@@ -125,3 +125,26 @@ Evergreen commands are central to how package versions and binaries are sourced:
 
 In practice, definitions pair Evergreen discovery metadata with local detection,
 install, and uninstall scripts to produce repeatable, updateable app packaging.
+
+## Contributing Package Definitions
+
+This repository accepts contributions for Intune Win32 packages, Microsoft 365
+ODT XML profiles, and Nerdio shell app definitions.
+
+Start here:
+
+- [Contribution guide](CONTRIBUTING.md)
+- [Definition validation script](tools/Test-PackageDefinitions.ps1)
+
+Before opening a pull request:
+
+1. Follow the structure and naming guidance in [CONTRIBUTING.md](CONTRIBUTING.md).
+2. Run the validation script:
+
+  ```powershell
+  pwsh -File ./tools/Test-PackageDefinitions.ps1
+  ```
+
+3. Confirm your new or changed definitions include all required files and that
+  PowerShell scripts in package source folders execute cleanly in your target
+  packaging flow.
