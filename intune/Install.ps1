@@ -125,16 +125,38 @@ function Get-InstallConfig {
         $InstallFile = Join-Path -Path $Path -ChildPath $File
         Write-LogFile -Message "Read package install config: $InstallFile"
         $Config = Get-Content -Path $InstallFile -Raw | ConvertFrom-Json
-        $Config.LogPath = $Config.LogPath ?? ""
-        $Config.InstallTasks = $Config.InstallTasks ?? [PSCustomObject]@{}
-        $Config.InstallTasks.ArgumentList = $Config.InstallTasks.ArgumentList ?? ""
-        $Config.InstallTasks.UninstallMsi = $Config.InstallTasks.UninstallMsi ?? @()
-        $Config.InstallTasks.Wait = $Config.InstallTasks.Wait ?? 0
-        $Config.PostInstall = $Config.PostInstall ?? [PSCustomObject]@{}
-        $Config.PostInstall.StopPath = $Config.PostInstall.StopPath ?? @()
-        $Config.PostInstall.Remove = $Config.PostInstall.Remove ?? @()
-        $Config.PostInstall.CopyFile = $Config.PostInstall.CopyFile ?? @()
-        $Config.PostInstall.Run = $Config.PostInstall.Run ?? @()
+        if ($null -eq $Config.PSObject.Properties["LogPath"] -or $null -eq $Config.LogPath) {
+            $Config | Add-Member -MemberType NoteProperty -Name "LogPath" -Value "" -Force
+        }
+
+        if ($null -eq $Config.PSObject.Properties["InstallTasks"] -or $null -eq $Config.InstallTasks) {
+            $Config | Add-Member -MemberType NoteProperty -Name "InstallTasks" -Value ([PSCustomObject]@{}) -Force
+        }
+        if ($null -eq $Config.InstallTasks.PSObject.Properties["ArgumentList"] -or $null -eq $Config.InstallTasks.ArgumentList) {
+            $Config.InstallTasks | Add-Member -MemberType NoteProperty -Name "ArgumentList" -Value "" -Force
+        }
+        if ($null -eq $Config.InstallTasks.PSObject.Properties["UninstallMsi"] -or $null -eq $Config.InstallTasks.UninstallMsi) {
+            $Config.InstallTasks | Add-Member -MemberType NoteProperty -Name "UninstallMsi" -Value @() -Force
+        }
+        if ($null -eq $Config.InstallTasks.PSObject.Properties["Wait"] -or $null -eq $Config.InstallTasks.Wait) {
+            $Config.InstallTasks | Add-Member -MemberType NoteProperty -Name "Wait" -Value 0 -Force
+        }
+
+        if ($null -eq $Config.PSObject.Properties["PostInstall"] -or $null -eq $Config.PostInstall) {
+            $Config | Add-Member -MemberType NoteProperty -Name "PostInstall" -Value ([PSCustomObject]@{}) -Force
+        }
+        if ($null -eq $Config.PostInstall.PSObject.Properties["StopPath"] -or $null -eq $Config.PostInstall.StopPath) {
+            $Config.PostInstall | Add-Member -MemberType NoteProperty -Name "StopPath" -Value @() -Force
+        }
+        if ($null -eq $Config.PostInstall.PSObject.Properties["Remove"] -or $null -eq $Config.PostInstall.Remove) {
+            $Config.PostInstall | Add-Member -MemberType NoteProperty -Name "Remove" -Value @() -Force
+        }
+        if ($null -eq $Config.PostInstall.PSObject.Properties["CopyFile"] -or $null -eq $Config.PostInstall.CopyFile) {
+            $Config.PostInstall | Add-Member -MemberType NoteProperty -Name "CopyFile" -Value @() -Force
+        }
+        if ($null -eq $Config.PostInstall.PSObject.Properties["Run"] -or $null -eq $Config.PostInstall.Run) {
+            $Config.PostInstall | Add-Member -MemberType NoteProperty -Name "Run" -Value @() -Force
+        }
         return $Config
     }
     catch {
