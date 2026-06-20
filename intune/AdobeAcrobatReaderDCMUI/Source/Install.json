@@ -6,9 +6,15 @@
   },
   "LogPath": "C:\\ProgramData\\Microsoft\\IntuneManagementExtension\\Logs",
   "InstallTasks": {
-    "ArgumentList": "/sALL /rps /l /msi \"TRANSFORMS=#PWD\\Reader-MUI-x64.mst EULA_ACCEPT=YES ROAMIDENTITY=1 ROAMLICENSING=1 ENABLE_CHROMEEXT=0 DISABLE_BROWSER_INTEGRATION=1 ENABLE_OPTIMIZATION=YES ADD_THUMBNAILPREVIEW=0 DISABLEDESKTOPSHORTCUT=1\" /log \"#LogPath\\#LogName.log\""
+    "ArgumentList": "/sALL /rps /l /msi \"TRANSFORMS=#PWD\\Reader-MUI-x64.mst EULA_ACCEPT=YES ROAMIDENTITY=1 ROAMLICENSING=1 ENABLE_CHROMEEXT=0 DISABLE_BROWSER_INTEGRATION=1 ENABLE_OPTIMIZATION=YES ADD_THUMBNAILPREVIEW=0 DISABLEDESKTOPSHORTCUT=1\" /log \"#LogPath\\#LogName.log\"",
+    "Remove": [],
+    "StopProcess": [],
+    "StopPath": [],
+    "UninstallMsi": [],
+    "Wait": 0
   },
   "PostInstall": {
+    "StopPath": [],
     "Remove": [
       "C:\\Users\\Public\\Desktop\\Adobe Acrobat.lnk"
     ],

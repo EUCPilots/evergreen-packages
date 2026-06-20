@@ -7,9 +7,14 @@
   "LogPath": "C:\\ProgramData\\Microsoft\\IntuneManagementExtension\\Logs",
   "InstallTasks": {
     "ArgumentList": "/package \"#SetupFile\" ALLUSERS=1 /quiet /log \"#LogPath\\#LogName.log\"",
+    "Remove": [],
+    "StopProcess": [],
+    "StopPath": [],
+    "UninstallMsi": [],
     "Wait": 10
   },
   "PostInstall": {
+    "StopPath": [],
     "Remove": [
       "C:\\Users\\Public\\Desktop\\Google Chrome.lnk",
       "C:\\Program Files\\Google\\Chrome\\Application\\initial_preferences"

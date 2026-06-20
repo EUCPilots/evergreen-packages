@@ -6,9 +6,15 @@
   },
   "LogPath": "C:\\ProgramData\\Microsoft\\IntuneManagementExtension\\Logs",
   "InstallTasks": {
-    "ArgumentList": "/silent /install"
+    "ArgumentList": "/silent /install",
+    "Remove": [],
+    "StopProcess": [],
+    "StopPath": [],
+    "UninstallMsi": [],
+    "Wait": 0
   },
   "PostInstall": {
+    "StopPath": [],
     "Remove": [],
     "CopyFile": [],
     "Run": []

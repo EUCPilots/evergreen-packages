@@ -6,9 +6,15 @@
   },
   "LogPath": "C:\\ProgramData\\Microsoft\\IntuneManagementExtension\\Logs",
   "InstallTasks": {
-    "ArgumentList": "/silent /noreboot /includeSSON /AutoUpdateCheck=auto /AutoUpdateStream=Current /DeferUpdateCount=3 /AURolloutPriority=Auto EnableCEIP=False"
+    "ArgumentList": "/silent /noreboot /includeSSON /AutoUpdateCheck=auto /AutoUpdateStream=Current /DeferUpdateCount=3 /AURolloutPriority=Auto EnableCEIP=False",
+    "Remove": [],
+    "StopProcess": [],
+    "StopPath": [],
+    "UninstallMsi": [],
+    "Wait": 0
   },
   "PostInstall": {
+    "StopPath": [],
     "Remove": [],
     "CopyFile": [],
     "Run": []

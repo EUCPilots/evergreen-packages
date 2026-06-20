@@ -6,12 +6,17 @@
   },
   "LogPath": "C:\\ProgramData\\Microsoft\\IntuneManagementExtension\\Logs",
   "InstallTasks": {
+    "ArgumentList": "/allusers /quiet /norestart /log \"#LogPath\\#LogName.log\"",
+    "Remove": [],
     "StopProcess": [
       "C:\\Program Files\\Microsoft OneDrive\\*.exe"
     ],
-    "ArgumentList": "/allusers /quiet /norestart /log \"#LogPath\\#LogName.log\""
+    "StopPath": [],
+    "UninstallMsi": [],
+    "Wait": 0
   },
   "PostInstall": {
+    "StopPath": [],
     "Remove": [],
     "CopyFile": [],
     "Run": []

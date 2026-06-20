@@ -7,6 +7,10 @@
   "LogPath": "C:\\ProgramData\\Microsoft\\IntuneManagementExtension\\Logs",
   "InstallTasks": {
     "ArgumentList": "/SP- /ALLUSERS /VERYSILENT /SUPPRESSMSGBOXES /CLOSEAPPLICATIONS/NORESTART /LOG=\"#LogPath\\#LogName.log\"",
+    "Remove": [],
+    "StopProcess": [],
+    "StopPath": [],
+    "UninstallMsi": [],
     "Wait": 60
   },
   "PostInstall": {

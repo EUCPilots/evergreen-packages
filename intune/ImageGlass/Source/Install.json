@@ -6,9 +6,15 @@
   },
   "LogPath": "C:\\ProgramData\\Microsoft\\IntuneManagementExtension\\Logs",
   "InstallTasks": {
-    "ArgumentList": "/package \"#SetupFile\" RUNAPPLICATION=0 ALLUSERS=1 /quiet /log \"#LogPath\\#LogName.log\""
+    "ArgumentList": "/package \"#SetupFile\" RUNAPPLICATION=0 ALLUSERS=1 /quiet /log \"#LogPath\\#LogName.log\"",
+    "Remove": [],
+    "StopProcess": [],
+    "StopPath": [],
+    "UninstallMsi": [],
+    "Wait": 0
   },
   "PostInstall": {
+    "StopPath": [],
     "Remove": [
       "C:\\Users\\Public\\Desktop\\ImageGlass.lnk",
       "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\ImageGlass\\ImageGlass' LICENSE.lnk",

@@ -6,9 +6,15 @@
   },
   "LogPath": "C:\\ProgramData\\Microsoft\\IntuneManagementExtension\\Logs",
   "InstallTasks": {
-    "ArgumentList": "/package \"#SetupFile\" /quiet /norestart SET_AS_DEFAULT=\"0\" VIEW_IN_BROWSERS=\"0\" DESKTOP_SHORTCUTS=\"0\" /log \"#LogPath\\#LogName.log\""
+    "ArgumentList": "/package \"#SetupFile\" /quiet /norestart SET_AS_DEFAULT=\"0\" VIEW_IN_BROWSERS=\"0\" DESKTOP_SHORTCUTS=\"0\" /log \"#LogPath\\#LogName.log\"",
+    "Remove": [],
+    "StopProcess": [],
+    "StopPath": [],
+    "UninstallMsi": [],
+    "Wait": 0
   },
   "PostInstall": {
+    "StopPath": [],
     "Remove": [
       "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Tracker Software\\PDF-XChange Editor",
       "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Tracker Software\\PDF-XChange Lite"
