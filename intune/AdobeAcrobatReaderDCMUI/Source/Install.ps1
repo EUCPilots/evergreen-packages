@@ -1,11 +1,11 @@
 #Requires -RunAsAdministrator
 <#
     .SYNOPSIS
-        Installs Adobe Acrobat Reader DC MUI x86 silently from packaged media.
+        Installs Adobe Acrobat Reader DC MUI x64 silently from packaged media.
 
     .DESCRIPTION
         This script locates the bundled Acrobat installer executable (Acro*.exe), extracts its contents,
-        and installs Acrobat Reader using AcroRead.msi with the Reader-MUI-x86.mst transform and
+        and installs Acrobat Reader using AcroRead.msi with the Reader-MUI-x64.mst transform and
         AcroRdrDCUpd*.msp patch. The install is performed silently with configured MSI properties and
         logging enabled.
 
@@ -181,7 +181,7 @@ else {
         # Get the extracted MSI, MST and MSP files
         $MsiFile = Get-Installer -File "AcroRead.msi"
         Write-LogFile -Message "MSI file: $MsiFile"
-        $MsiTransform = Get-Installer -File "Reader-MUI-x86.mst"
+        $MsiTransform = Get-Installer -File "Reader-MUI-x64.mst"
         Write-LogFile -Message "MST file: $MsiTransform"
         $MsiPath = Get-Installer -File "AcroRdrDCUpd*.msp"
         Write-LogFile -Message "MSP file: $MsiPath"
