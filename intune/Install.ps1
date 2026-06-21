@@ -404,7 +404,7 @@ else {
 
         # Execute run tasks
         if ($null -ne $Install.PostInstall.Run -and $Install.PostInstall.Run.Count -gt 0) {
-            foreach ($Task in $Install.PostInstall.Run) { Invoke-Expression -Command $Task }
+            foreach ($Task in $Install.PostInstall.Run) { & $Task }
         }
     }
     catch {
