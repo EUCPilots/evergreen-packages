@@ -8,8 +8,8 @@
   },
   "PackageInformation": {
     "SetupType": "EXE",
-    "SetupFile": "Cyberduck-Installer-9.4.1.44384.exe",
-    "Version": "9.4.1.44384",
+    "SetupFile": "Cyberduck-Installer-9.5.0.45237.exe",
+    "Version": "9.5.0.45237",
     "SourceFolder": "Source",
     "OutputFolder": "Package",
     "IconFile": "https://github.com/aaronparker/icons/raw/main/companyportal/Iterate-Cyberduck1.png"
@@ -43,7 +43,7 @@
       "Path": "C:\\Program Files\\Cyberduck",
       "FileOrFolder": "Cyberduck.exe",
       "Operator": "greaterThanOrEqual",
-      "VersionValue": "9.4.1.44384",
+      "VersionValue": "9.5.0.45237",
       "Check32BitOn64System": "false"
     }
   ],
@@ -51,4 +51,3 @@
   "Supersedence": [],
   "Assignments": []
 }
-
