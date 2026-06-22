@@ -62,9 +62,9 @@
   "Supersedence": [],
   "Assignments": [
     {
-      "Type": "AllUsers",
-      "Intent": "available",
-      "Notification": "showAll",
+      "Type": "AllDevices",
+      "Intent": "required",
+      "Notification": "hidden",
       "EnableRestartGracePeriod": true,
       "RestartGracePeriod": 1440,
       "RestartCountDownDisplay": 15,
