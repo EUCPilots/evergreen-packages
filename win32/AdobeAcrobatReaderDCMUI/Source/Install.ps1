@@ -183,7 +183,7 @@ else {
         Write-LogFile -Message "MSI file: $MsiFile"
         $MsiTransform = Get-Installer -File "Reader-MUI-x64.mst"
         Write-LogFile -Message "MST file: $MsiTransform"
-        $MsiPath = Get-Installer -File "AcroRdrDCUpd*.msp"
+        $MsiPath = Get-Installer -File "AcroRdrDCx64Upd*.msp"
         Write-LogFile -Message "MSP file: $MsiPath"
 
         # Install the MSI with the MST and MSP
