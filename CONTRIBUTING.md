@@ -4,9 +4,9 @@ Thanks for contributing to Evergreen package definitions.
 
 This guide focuses on adding and updating definitions in:
 
-- [intune](intune)
+- [win32](win32)
 - [m365](m365)
-- [shell-apps](shell-apps)
+- [shell](shell)
 
 ## Quick Start
 

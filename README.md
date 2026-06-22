@@ -7,15 +7,16 @@ profiles, and Nerdio Manager Shell Apps used by Evergreen Workbench.
 
 This repository is organised into three main definition sets:
 
-- `intune/`: Win32 app package definitions and source content for Intune.
-- `m365/`: Office Deployment Tool XML profiles for Microsoft 365 Apps.
-- `shell-apps/`: Nerdio Manager Shell App definitions and scripts.
+- `m365/`: Office Deployment Tool XML profiles for Microsoft 365 Apps for importing into Microsoft Intune or Nerdio Manager Shell Apps
+- `shell/`: Nerdio Manager Shell App definitions and scripts.
+- `win32/`: Win32 app package definitions and source content for importing app packages into Microsoft Intune or installing locally.
+- `tools/`: Script for validating package definitions
 
 High-level structure:
 
 ```text
 .
-├── intune/
+├── win32/
 │   ├── Install.ps1
 │   └── <AppName>/
 │       ├── App.json
@@ -28,7 +29,7 @@ High-level structure:
 │   ├── O365*.xml
 │   ├── Uninstall-Microsoft365Apps.xml
 │   └── shell-app/
-└── shell-apps/
+└── shell/
     └── <Vendor>/<AppName>/
         ├── Definition.json
         ├── Detect.ps1
@@ -36,9 +37,9 @@ High-level structure:
         └── Uninstall.ps1
 ```
 
-## Intune Definitions (`intune/`)
+## Intune Definitions (`win32/`)
 
-Each app folder under `intune/` defines one Win32 app package.
+Each app folder under `win32/` defines one Win32 app package.
 
 Important files:
 
@@ -90,9 +91,9 @@ Key XML elements and attributes:
 Several templates include placeholder values such as `#Channel`, `#TenantId`,
 and `#Company`, intended to be replaced by upstream automation.
 
-## Nerdio Shell App Definitions (`shell-apps/`)
+## Nerdio Shell App Definitions (`shell/`)
 
-The `shell-apps/` folder contains app definitions used by Nerdio Manager shell
+The `shell/` folder contains app definitions used by Nerdio Manager shell
 app workflows, grouped by vendor and application.
 
 Important files per app:
