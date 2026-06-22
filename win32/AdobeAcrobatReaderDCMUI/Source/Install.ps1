@@ -5,7 +5,7 @@
 
     .DESCRIPTION
         This script locates the bundled Acrobat installer executable (Acro*.exe), extracts its contents,
-        and installs Acrobat Reader using AcroRead.msi with the Reader-MUI-x64.mst transform and
+        and installs Acrobat Reader using AcroPro.msi with the Reader-MUI-x64.mst transform and
         AcroRdrDCUpd*.msp patch. The install is performed silently with configured MSI properties and
         logging enabled.
 
@@ -15,7 +15,7 @@
 
     .EXAMPLE
         PS C:\> .\Install.ps1
-        Installs Adobe Acrobat Reader DC MUI x86 from the current package source.
+        Installs Adobe Acrobat Reader DC MUI x64 from the current package source.
 
     .OUTPUTS
         System.Int32
@@ -179,7 +179,7 @@ else {
         $result = Start-Process @params
 
         # Get the extracted MSI, MST and MSP files
-        $MsiFile = Get-Installer -File "AcroRead.msi"
+        $MsiFile = Get-Installer -File "AcroPro.msi"
         Write-LogFile -Message "MSI file: $MsiFile"
         $MsiTransform = Get-Installer -File "Reader-MUI-x64.mst"
         Write-LogFile -Message "MST file: $MsiTransform"
