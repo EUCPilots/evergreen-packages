@@ -1,0 +1,74 @@
+{
+  "Application": {
+    "Name": "AdobeAcrobatDC",
+    "Filter": "Get-EvergreenApp -Name \"AdobeAcrobatDC\" | Where-Object { $_.Architecture -eq \"x64\" -and $_.Product -eq \"ReaderMUI\" } | Select-Object -First 1",
+    "Title": "Adobe Acrobat Reader DC Update x64",
+    "Language": "English",
+    "Architecture": "x64"
+  },
+  "PackageInformation": {
+    "SetupType": "EXE",
+    "SetupFile": "AcroRdrDC2600121662_MUI.exe",
+    "Version": "26.001.21662",
+    "SourceFolder": "Source",
+    "OutputFolder": "Package",
+    "IconFile": "https://github.com/aaronparker/icons/raw/main/companyportal/Adobe-AcrobatReader.png"
+  },
+  "Information": {
+    "DisplayName": "Adobe Acrobat Reader DC Update x64",
+    "Description": "Adobe Acrobat Reader DC x64 update patch. This package will update Adobe Acrobat Reader DC x64.",
+    "Publisher": "Adobe",
+    "InformationURL": "https://www.adobe.com/acrobat/pdf-reader.html",
+    "PrivacyURL": "https://www.adobe.com/privacy.html",
+    "FeaturedApp": false,
+    "Categories": [],
+    "PSPackageFactoryGuid": "a799b262-f00b-4cbc-8ded-603f3766c0b5"
+  },
+  "Program": {
+    "InstallTemplate": "powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1",
+    "InstallCommand": "powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1",
+    "UninstallCommand": "powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Unnstall.ps1",
+    "InstallExperience": "system",
+    "DeviceRestartBehavior": "basedOnReturnCode",
+    "AllowAvailableUninstall": false
+  },
+  "RequirementRule": {
+    "MinimumRequiredOperatingSystem": "W10_1809",
+    "Architecture": "x64"
+  },
+  "CustomRequirementRule": [
+    {
+      "Type": "File",
+      "DetectionMethod": "Version",
+      "Path": "C:\\Program Files\\Adobe\\Acrobat DC\\Acrobat",
+      "FileOrFolder": "Acrobat.exe",
+      "Operator": "lessThan",
+      "VersionValue": "26.001.21662",
+      "Check32BitOn64System": "false"
+    }
+  ],
+  "DetectionRule": [
+    {
+      "Type": "File",
+      "DetectionMethod": "Version",
+      "Path": "C:\\Program Files\\Adobe\\Acrobat DC\\Acrobat",
+      "FileOrFolder": "Acrobat.exe",
+      "Operator": "greaterThanOrEqual",
+      "VersionValue": "26.001.21662",
+      "Check32BitOn64System": "false"
+    }
+  ],
+  "Dependencies": [],
+  "Supersedence": [],
+  "Assignments": [
+    {
+      "Type": "AllUsers",
+      "Intent": "available",
+      "Notification": "showAll",
+      "EnableRestartGracePeriod": true,
+      "RestartGracePeriod": 1440,
+      "RestartCountDownDisplay": 15,
+      "RestartNotificationSnooze": 240
+    }
+  ]
+}
