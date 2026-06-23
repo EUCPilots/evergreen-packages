@@ -38,12 +38,12 @@
   "CustomRequirementRule": [],
   "DetectionRule": [
     {
-      "Type": "Registry",
-      "DetectionMethod": "VersionComparison",
-      "KeyPath": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\{EA457B21-F73E-494C-ACAB-524FDE069978}_is1",
-      "ValueName": "DisplayVersion",
+      "Type": "File",
+      "DetectionMethod": "Version",
+      "Path": "C:\\Program Files\\Microsoft VS Code",
+      "FileOrFolder": "Code.exe",
       "Operator": "greaterThanOrEqual",
-      "Value": "1.125.1",
+      "VersionValue": "1.125.1",
       "Check32BitOn64System": "false"
     }
   ],
