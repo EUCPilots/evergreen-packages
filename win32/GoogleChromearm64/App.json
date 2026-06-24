@@ -43,7 +43,7 @@
       "Path": "C:\\Program Files\\Google\\Chrome\\Application",
       "FileOrFolder": "chrome.exe",
       "Operator": "greaterThanOrEqual",
-      "VersionValue": "150.0.7871.24",
+      "VersionValue": "149.0.7827.103",
       "Check32BitOn64System": "false"
     }
   ],
