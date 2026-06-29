@@ -187,7 +187,7 @@ else {
         Write-LogFile -Message "MSP file: $MsiPath"
 
         # Install the MSI with the MST and MSP
-        $Properties = "EULA_ACCEPT=YES ROAMIDENTITY=1 ROAMLICENSING=1 ENABLE_CHROMEEXT=0 DISABLE_BROWSER_INTEGRATION=1 ENABLE_OPTIMIZATION=YES ADD_THUMBNAILPREVIEW=0 DISABLEDESKTOPSHORTCUT=1"
+        $Properties = "EULA_ACCEPT=YES ENABLE_READER_MODE=1 ROAMIDENTITY=1 ROAMLICENSING=1 ENABLE_CHROMEEXT=0 DISABLE_BROWSER_INTEGRATION=1 ENABLE_OPTIMIZATION=YES ADD_THUMBNAILPREVIEW=0 DISABLEDESKTOPSHORTCUT=1"
         $MsiExec = "$Env:SystemRoot\System32\msiexec.exe"
         Write-LogFile -Message "Execute: $MsiExec"
         $Arguments = "/package `"$MsiFile`" TRANSFORMS=`"$MsiTransform`" /update `"$MsiPath`" $Properties /qn /norestart /log `"$MsiLogFile`""
