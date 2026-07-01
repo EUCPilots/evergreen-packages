@@ -1,15 +1,15 @@
 {
   "Application": {
     "Name": "AdobeAcrobatDC",
-    "Filter": "Get-EvergreenApp -Name \"AdobeAcrobatDC\" | Where-Object { $_.Architecture -eq \"x64\" -and $_.Product -eq \"ReaderMUI\" } | Select-Object -First 1",
+    "Filter": "Get-EvergreenApp -Name \"AdobeAcrobat\" | Where-Object { $_.Track -eq \"DC\" -and $_.Product -eq \"Reader\" -and $_.Language -eq \"Multi\" -and $_.Architecture -eq \"x64\" }",
     "Title": "Adobe Acrobat Reader DC Update x64",
     "Language": "English",
     "Architecture": "x64"
   },
   "PackageInformation": {
     "SetupType": "MSI",
-    "SetupFile": "AcroRdrDCx64Upd2600121662_MUI.msp",
-    "Version": "26.001.21662",
+    "SetupFile": "AcroRdrDCx64Upd2600121691_MUI.msp",
+    "Version": "26.001.21691",
     "SourceFolder": "Source",
     "OutputFolder": "Package",
     "IconFile": "https://github.com/aaronparker/icons/raw/main/companyportal/Adobe-AcrobatReader.png"
@@ -54,7 +54,7 @@
       "Path": "C:\\Program Files\\Adobe\\Acrobat DC\\Acrobat",
       "FileOrFolder": "Acrobat.exe",
       "Operator": "greaterThanOrEqual",
-      "VersionValue": "26.001.21662",
+      "VersionValue": "26.001.21691",
       "Check32BitOn64System": "false"
     }
   ],
