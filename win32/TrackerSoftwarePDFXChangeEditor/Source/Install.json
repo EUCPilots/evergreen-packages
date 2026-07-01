@@ -1,8 +1,8 @@
 {
   "PackageInformation": {
     "SetupType": "MSI",
-    "SetupFile": "EditorV10.x64.msi",
-    "Version": "10.8.5.410"
+    "SetupFile": "EditorV11.x64.msi",
+    "Version": "11.0.1.0"
   },
   "LogPath": "C:\\ProgramData\\Microsoft\\IntuneManagementExtension\\Logs",
   "InstallTasks": {

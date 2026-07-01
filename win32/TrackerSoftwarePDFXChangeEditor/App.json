@@ -8,8 +8,8 @@
   },
   "PackageInformation": {
     "SetupType": "MSI",
-    "SetupFile": "EditorV10.x64.msi",
-    "Version": "10.8.5.410",
+    "SetupFile": "EditorV11.x64.msi",
+    "Version": "11.0.1.0",
     "SourceFolder": "Source",
     "OutputFolder": "Package",
     "IconFile": "https://github.com/aaronparker/icons/raw/main/companyportal/PDFXChangeEditor.png"
@@ -43,7 +43,7 @@
       "Path": "C:\\Program Files\\Tracker Software\\PDF Editor",
       "FileOrFolder": "PDFXEdit.exe",
       "Operator": "greaterThanOrEqual",
-      "VersionValue": "10.8.5.410",
+      "VersionValue": "11.0.1.0",
       "Check32BitOn64System": "false"
     }
   ],
@@ -51,4 +51,3 @@
   "Supersedence": [],
   "Assignments": []
 }
-
