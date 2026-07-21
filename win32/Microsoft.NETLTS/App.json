@@ -8,8 +8,8 @@
   },
   "PackageInformation": {
     "SetupType": "EXE",
-    "SetupFile": "windowsdesktop-runtime-10.0.9-win-x64.exe",
-    "Version": "10.0.9",
+    "SetupFile": "windowsdesktop-runtime-10.0.10-win-x64.exe",
+    "Version": "10.0.10",
     "SourceFolder": "Source",
     "OutputFolder": "Package",
     "IconFile": "https://github.com/aaronparker/icons/raw/main/companyportal/Microsoft-NET.png"
@@ -51,7 +51,7 @@
       "KeyPath": "HKEY_LOCAL_MACHINE\\SOFTWARE\\dotnet\\Setup\\InstalledVersions\\x64\\sharedhost",
       "ValueName": "Version",
       "Operator": "greaterThanOrEqual",
-      "Value": "10.0.9",
+      "Value": "10.0.10",
       "Check32BitOn64System": "false"
     }
   ],

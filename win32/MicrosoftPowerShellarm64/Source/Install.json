@@ -1,8 +1,8 @@
 {
   "PackageInformation": {
     "SetupType": "MSI",
-    "SetupFile": "PowerShell-7.6.3-win-arm64.msi",
-    "Version": "7.6.3"
+    "SetupFile": "PowerShell-7.6.4-win-arm64.msi",
+    "Version": "7.6.4"
   },
   "LogPath": "C:\\ProgramData\\Microsoft\\IntuneManagementExtension\\Logs",
   "InstallTasks": {

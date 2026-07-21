@@ -9,7 +9,7 @@
   "PackageInformation": {
     "SetupType": "MSI",
     "SetupFile": "googlechromestandaloneenterprise_arm64.msi",
-    "Version": "150.0.7871.47",
+    "Version": "151.0.7922.34",
     "SourceFolder": "Source",
     "OutputFolder": "Package",
     "IconFile": "https://github.com/aaronparker/icons/raw/main/companyportal/Google-Chrome.png"
@@ -43,7 +43,7 @@
       "Path": "C:\\Program Files\\Google\\Chrome\\Application",
       "FileOrFolder": "chrome.exe",
       "Operator": "greaterThanOrEqual",
-      "VersionValue": "150.0.7871.47",
+      "VersionValue": "151.0.7922.34",
       "Check32BitOn64System": "false"
     }
   ],
