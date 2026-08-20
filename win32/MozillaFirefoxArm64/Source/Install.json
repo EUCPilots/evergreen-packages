@@ -1,12 +1,12 @@
 {
   "PackageInformation": {
-    "SetupType": "EXE",
-    "SetupFile": "vs_SSMS.exe",
-    "Version": "22.9.1"
+    "SetupType": "MSI",
+    "SetupFile": "Firefox Setup 154.0.exe",
+    "Version": "154.0"
   },
   "LogPath": "C:\\ProgramData\\Microsoft\\IntuneManagementExtension\\Logs",
   "InstallTasks": {
-    "ArgumentList": "/install /quiet /norestart /log \"#LogPath\\#LogName.log\"",
+    "ArgumentList": "/package \"#SetupFile\" DESKTOP_SHORTCUT=false TASKBAR_SHORTCUT=false /quiet /log \"#LogPath\\#LogName.log\"",
     "Remove": [],
     "StopProcess": [],
     "StopPath": [],

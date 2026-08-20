@@ -1,8 +1,8 @@
 {
   "PackageInformation": {
     "SetupType": "MSI",
-    "SetupFile": "ImageGlass_9.5.0.515_x64.msi",
-    "Version": "9.5.0.515"
+    "SetupFile": "ImageGlass_9.6.1.807_x64.msi",
+    "Version": "9.6.1.807"
   },
   "LogPath": "C:\\ProgramData\\Microsoft\\IntuneManagementExtension\\Logs",
   "InstallTasks": {

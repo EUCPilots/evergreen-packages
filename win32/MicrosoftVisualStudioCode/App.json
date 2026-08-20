@@ -8,8 +8,8 @@
   },
   "PackageInformation": {
     "SetupType": "EXE",
-    "SetupFile": "VSCodeSetup-x64-1.129.1.exe",
-    "Version": "1.129.1",
+    "SetupFile": "VSCodeSetup-x64-1.134.0.exe",
+    "Version": "1.134.0",
     "SourceFolder": "Source",
     "OutputFolder": "Package",
     "IconFile": "https://github.com/aaronparker/icons/raw/main/companyportal/Microsoft-VSCode.png"
@@ -43,7 +43,7 @@
       "Path": "C:\\Program Files\\Microsoft VS Code",
       "FileOrFolder": "Code.exe",
       "Operator": "greaterThanOrEqual",
-      "VersionValue": "1.129.1",
+      "VersionValue": "1.134.0",
       "Check32BitOn64System": "false"
     }
   ],

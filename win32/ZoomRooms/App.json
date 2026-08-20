@@ -8,8 +8,8 @@
   },
   "PackageInformation": {
     "SetupType": "MSI",
-    "SetupFile": "zoomrooms-7.1.0.7866-x64.msi",
-    "Version": "7.1.0.7866",
+    "SetupFile": "zoomrooms-7.1.6.8048-x64.msi",
+    "Version": "7.1.6.8048",
     "SourceFolder": "Source",
     "OutputFolder": "Package",
     "IconFile": "https://github.com/aaronparker/icons/raw/main/companyportal/ZoomRooms.png"
@@ -43,7 +43,7 @@
       "Path": "C:\\Program Files\\ZoomRooms\\bin",
       "FileOrFolder": "ZoomRooms.exe",
       "Operator": "greaterThanOrEqual",
-      "VersionValue": "7.1.0.7866",
+      "VersionValue": "7.1.6.8048",
       "Check32BitOn64System": "false"
     }
   ],

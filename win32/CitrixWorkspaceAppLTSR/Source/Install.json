@@ -1,8 +1,8 @@
 {
   "PackageInformation": {
     "SetupType": "EXE",
-    "SetupFile": "CitrixWorkspaceApp25.7.2000.2020.exe",
-    "Version": "25.7.2000.2020"
+    "SetupFile": "CitrixWorkspaceApp25.7.3000.3034.exe",
+    "Version": "25.7.3000.3034"
   },
   "LogPath": "C:\\ProgramData\\Microsoft\\IntuneManagementExtension\\Logs",
   "InstallTasks": {

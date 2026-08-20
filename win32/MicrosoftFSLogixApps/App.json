@@ -9,7 +9,7 @@
   "PackageInformation": {
     "SetupType": "EXE",
     "SetupFile": "FSLogix_26.01_CU1.zip",
-    "Version": "26.01",
+    "Version": "3.26.126.19110",
     "SourceFolder": "Source",
     "OutputFolder": "Package",
     "IconFile": "https://github.com/aaronparker/icons/raw/main/companyportal/MicrosoftFSLogixApps.png"
@@ -43,7 +43,7 @@
       "Path": "C:\\Program Files\\FSLogix\\Apps",
       "FileOrFolder": "frx.exe",
       "Operator": "greaterThanOrEqual",
-      "VersionValue": "26.01",
+      "VersionValue": "3.26.126.19110",
       "Check32BitOn64System": "false"
     },
     {
@@ -52,7 +52,7 @@
       "Path": "C:\\Program Files\\FSLogix\\Apps",
       "FileOrFolder": "frxshell.exe",
       "Operator": "greaterThanOrEqual",
-      "VersionValue": "26.01",
+      "VersionValue": "3.26.126.19110",
       "Check32BitOn64System": "false"
     },
     {
@@ -61,7 +61,7 @@
       "Path": "C:\\Program Files\\FSLogix\\Apps",
       "FileOrFolder": "frxsvc.exe",
       "Operator": "greaterThanOrEqual",
-      "VersionValue": "26.01",
+      "VersionValue": "3.26.126.19110",
       "Check32BitOn64System": "false"
     }
   ],

@@ -1,14 +1,14 @@
 {
   "Application": {
     "Name": "MozillaFirefox",
-    "Filter": "Get-EvergreenApp -Name \"MozillaFirefox\" | Where-Object { $_.Channel -eq \"Current\" -and $_.Architecture -eq \"x64\" -and $_.Type -eq \"msi\" -and $_.Language -eq \"en-US\" }",
+    "Filter": "Get-EvergreenApp -Name \"MozillaFirefox\" | Where-Object { $_.Channel -eq \"Current\" -and $_.Architecture -eq \"ARM64\" -and $_.Type -eq \"exe\" -and $_.Language -eq \"en-US\" }",
     "Title": "Mozilla Firefox",
     "Language": "en-US",
-    "Architecture": "x64"
+    "Architecture": "arm64"
   },
   "PackageInformation": {
-    "SetupType": "MSI",
-    "SetupFile": "Firefox Setup 154.0.msi",
+    "SetupType": "EXE",
+    "SetupFile": "Firefox Setup 154.0.exe",
     "Version": "154.0",
     "SourceFolder": "Source",
     "OutputFolder": "Package",
@@ -21,7 +21,7 @@
     "InformationURL": "https://www.mozilla.org/firefox/new/",
     "PrivacyURL": "https://www.mozilla.org/en-US/privacy/",
     "Categories": [],
-    "PSPackageFactoryGuid": "f06d95c9-d407-4852-a0b8-0fdb1db80a50"
+    "PSPackageFactoryGuid": "7868d3bc-66fc-4dbb-90ee-8ba5bd0d02a1"
   },
   "Program": {
     "InstallTemplate": "powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1",
@@ -33,7 +33,7 @@
   },
   "RequirementRule": {
     "MinimumRequiredOperatingSystem": "W10_1809",
-    "Architecture": "x64"
+    "Architecture": "arm64"
   },
   "CustomRequirementRule": [],
   "DetectionRule": [
