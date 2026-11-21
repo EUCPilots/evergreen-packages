@@ -1,22 +1,38 @@
-{
-  "PackageInformation": {
-    "SetupType": "EXE",
-    "SetupFile": "Cyberduck-Installer-9.5.3.45464.exe",
-    "Version": "9.5.3.45464"
-  },
-  "LogPath": "C:\\ProgramData\\Microsoft\\IntuneManagementExtension\\Logs",
-  "InstallTasks": {
-    "ArgumentList": "/quiet /norestart /log \"#LogPath\\#LogName.log\"",
-    "Remove": [],
-    "StopProcess": [],
-    "StopPath": [],
-    "UninstallMsi": [],
-    "Wait": 0
-  },
-  "PostInstall": {
-    "StopPath": [],
-    "Remove": [],
-    "CopyFile": [],
-    "Run": []
-  }
+﻿{
+    "PackageInformation":  {
+                               "SetupType":  "EXE",
+                               "SetupFile":  "Cyberduck-Installer-9.6.0.46406.exe",
+                               "Version":  "9.6.0.46406"
+                           },
+    "LogPath":  "C:\\ProgramData\\Microsoft\\IntuneManagementExtension\\Logs",
+    "InstallTasks":  {
+                         "ArgumentList":  "/quiet /norestart /log \"#LogPath\\#LogName.log\"",
+                         "Remove":  [
+
+                                    ],
+                         "StopProcess":  [
+
+                                         ],
+                         "StopPath":  [
+
+                                      ],
+                         "UninstallMsi":  [
+
+                                          ],
+                         "Wait":  0
+                     },
+    "PostInstall":  {
+                        "StopPath":  [
+
+                                     ],
+                        "Remove":  [
+
+                                   ],
+                        "CopyFile":  [
+
+                                     ],
+                        "Run":  [
+
+                                ]
+                    }
 }

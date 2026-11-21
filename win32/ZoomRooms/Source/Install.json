@@ -1,22 +1,38 @@
-{
-  "PackageInformation": {
-    "SetupType": "MSI",
-    "SetupFile": "zoomrooms-7.1.6.8048-x64.msi",
-    "Version": "7.1.6.8048"
-  },
-  "LogPath": "C:\\ProgramData\\Microsoft\\IntuneManagementExtension\\Logs",
-  "InstallTasks": {
-    "ArgumentList": "/package \"#SetupFile\" /quiet Silent=true EnableSSLVerification=true AcceptGDPR=true SystemOption=495 /log \"#LogPath\\#LogName.log\"",
-    "Remove": [],
-    "StopProcess": [],
-    "StopPath": [],
-    "UninstallMsi": [],
-    "Wait": 0
-  },
-  "PostInstall": {
-    "StopPath": [],
-    "Remove": [],
-    "CopyFile": [],
-    "Run": []
-  }
+﻿{
+    "PackageInformation":  {
+                               "SetupType":  "MSI",
+                               "SetupFile":  "zoomrooms-7.2.5.8613-x64.msi",
+                               "Version":  "7.2.5.8613"
+                           },
+    "LogPath":  "C:\\ProgramData\\Microsoft\\IntuneManagementExtension\\Logs",
+    "InstallTasks":  {
+                         "ArgumentList":  "/package \"#SetupFile\" /quiet Silent=true EnableSSLVerification=true AcceptGDPR=true SystemOption=495 /log \"#LogPath\\#LogName.log\"",
+                         "Remove":  [
+
+                                    ],
+                         "StopProcess":  [
+
+                                         ],
+                         "StopPath":  [
+
+                                      ],
+                         "UninstallMsi":  [
+
+                                          ],
+                         "Wait":  0
+                     },
+    "PostInstall":  {
+                        "StopPath":  [
+
+                                     ],
+                        "Remove":  [
+
+                                   ],
+                        "CopyFile":  [
+
+                                     ],
+                        "Run":  [
+
+                                ]
+                    }
 }

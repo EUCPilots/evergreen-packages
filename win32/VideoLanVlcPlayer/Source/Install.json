@@ -1,27 +1,41 @@
-{
-  "PackageInformation": {
-    "SetupType": "MSI",
-    "SetupFile": "vlc-3.0.23-win64.msi",
-    "Version": "3.0.23"
-  },
-  "LogPath": "C:\\ProgramData\\Microsoft\\IntuneManagementExtension\\Logs",
-  "InstallTasks": {
-    "ArgumentList": "/package \"#SetupFile\" ALLUSERS=1 /quiet /log \"#LogPath\\#LogName.log\"",
-    "Remove": [],
-    "StopProcess": [],
-    "StopPath": [],
-    "UninstallMsi": [],
-    "Wait": 5
-  },
-  "PostInstall": {
-    "StopPath": [],
-    "Remove": [
-      "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\VideoLAN\\VLC\\VideoLAN website.lnk",
-      "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\VideoLAN\\VLC\\Release Notes.lnk",
-      "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\VideoLAN\\VLC\\Documentation.lnk",
-      "C:\\Users\\Public\\Desktop\\VLC media player.lnk"
-    ],
-    "CopyFile": [],
-    "Run": []
-  }
+﻿{
+    "PackageInformation":  {
+                               "SetupType":  "MSI",
+                               "SetupFile":  "vlc-3.0.24-win64.msi",
+                               "Version":  "3.0.24"
+                           },
+    "LogPath":  "C:\\ProgramData\\Microsoft\\IntuneManagementExtension\\Logs",
+    "InstallTasks":  {
+                         "ArgumentList":  "/package \"#SetupFile\" ALLUSERS=1 /quiet /log \"#LogPath\\#LogName.log\"",
+                         "Remove":  [
+
+                                    ],
+                         "StopProcess":  [
+
+                                         ],
+                         "StopPath":  [
+
+                                      ],
+                         "UninstallMsi":  [
+
+                                          ],
+                         "Wait":  5
+                     },
+    "PostInstall":  {
+                        "StopPath":  [
+
+                                     ],
+                        "Remove":  [
+                                       "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\VideoLAN\\VLC\\VideoLAN website.lnk",
+                                       "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\VideoLAN\\VLC\\Release Notes.lnk",
+                                       "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\VideoLAN\\VLC\\Documentation.lnk",
+                                       "C:\\Users\\Public\\Desktop\\VLC media player.lnk"
+                                   ],
+                        "CopyFile":  [
+
+                                     ],
+                        "Run":  [
+
+                                ]
+                    }
 }

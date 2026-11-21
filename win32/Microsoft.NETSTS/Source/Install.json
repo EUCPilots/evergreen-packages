@@ -1,22 +1,38 @@
-{
-  "PackageInformation": {
-    "SetupType": "EXE",
-    "SetupFile": "windowsdesktop-runtime-9.0.19-win-x64.exe",
-    "Version": "9.0.19"
-  },
-  "LogPath": "C:\\ProgramData\\Microsoft\\IntuneManagementExtension\\Logs",
-  "InstallTasks": {
-    "ArgumentList": "/install /quiet /norestart /log \"#LogPath\\#LogName.log\"",
-    "Remove": [],
-    "StopProcess": [],
-    "StopPath": [],
-    "UninstallMsi": [],
-    "Wait": 0
-  },
-  "PostInstall": {
-    "StopPath": [],
-    "Remove": [],
-    "CopyFile": [],
-    "Run": []
-  }
+﻿{
+    "PackageInformation":  {
+                               "SetupType":  "EXE",
+                               "SetupFile":  "windowsdesktop-runtime-11.0.0-win-x64.exe",
+                               "Version":  "11.0.0"
+                           },
+    "LogPath":  "C:\\ProgramData\\Microsoft\\IntuneManagementExtension\\Logs",
+    "InstallTasks":  {
+                         "ArgumentList":  "/install /quiet /norestart /log \"#LogPath\\#LogName.log\"",
+                         "Remove":  [
+
+                                    ],
+                         "StopProcess":  [
+
+                                         ],
+                         "StopPath":  [
+
+                                      ],
+                         "UninstallMsi":  [
+
+                                          ],
+                         "Wait":  0
+                     },
+    "PostInstall":  {
+                        "StopPath":  [
+
+                                     ],
+                        "Remove":  [
+
+                                   ],
+                        "CopyFile":  [
+
+                                     ],
+                        "Run":  [
+
+                                ]
+                    }
 }

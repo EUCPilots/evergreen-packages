@@ -1,22 +1,38 @@
-{
-  "PackageInformation": {
-    "SetupType": "EXE",
-    "SetupFile": "audacity-win-3.7.8-64bit.exe",
-    "Version": "3.7.8"
-  },
-  "LogPath": "C:\\ProgramData\\Microsoft\\IntuneManagementExtension\\Logs",
-  "InstallTasks": {
-    "ArgumentList": "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP- /MERGETASKS=\"!desktopicon\" /log \"#LogPath\\#LogName.log\"",
-    "Remove": [],
-    "StopProcess": [],
-    "StopPath": [],
-    "UninstallMsi": [],
-    "Wait": 0
-  },
-  "PostInstall": {
-    "StopPath": [],
-    "Remove": [],
-    "CopyFile": [],
-    "Run": []
-  }
+﻿{
+    "PackageInformation":  {
+                               "SetupType":  "EXE",
+                               "SetupFile":  "audacity-win-4.0.2-x86_64.msi",
+                               "Version":  "4.0.2"
+                           },
+    "LogPath":  "C:\\ProgramData\\Microsoft\\IntuneManagementExtension\\Logs",
+    "InstallTasks":  {
+                         "ArgumentList":  "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP- /MERGETASKS=\"!desktopicon\" /log \"#LogPath\\#LogName.log\"",
+                         "Remove":  [
+
+                                    ],
+                         "StopProcess":  [
+
+                                         ],
+                         "StopPath":  [
+
+                                      ],
+                         "UninstallMsi":  [
+
+                                          ],
+                         "Wait":  0
+                     },
+    "PostInstall":  {
+                        "StopPath":  [
+
+                                     ],
+                        "Remove":  [
+
+                                   ],
+                        "CopyFile":  [
+
+                                     ],
+                        "Run":  [
+
+                                ]
+                    }
 }

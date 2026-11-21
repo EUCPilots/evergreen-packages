@@ -1,53 +1,63 @@
-{
-  "Application": {
-    "Name": "MicrosoftOneDrive",
-    "Filter": "Get-EvergreenApp -Name \"MicrosoftOneDrive\" | Where-Object { $_.Architecture -eq \"arm64\" -and $_.Ring -eq \"Production\" -and $_.Throttle -eq \"100\" } | Select-Object -First 1",
-    "Title": "Microsoft OneDrive",
-    "Language": "en-US",
-    "Architecture": "arm64"
-  },
-  "PackageInformation": {
-    "SetupType": "EXE",
-    "SetupFile": "OneDriveSetup.exe",
-    "Version": "26.139.0720.0007",
-    "SourceFolder": "Source",
-    "OutputFolder": "Package",
-    "IconFile": "https://github.com/aaronparker/icons/raw/main/companyportal/Microsoft-OneDrive.png"
-  },
-  "Information": {
-    "DisplayName": "Microsoft OneDrive arm64",
-    "Description": "Per-machine install. With Microsoft OneDrive, you can easily and securely store and access your files from all your devices. You can work with others regardless of whether they're inside or outside your organization and terminate that sharing whenever you want.",
-    "Publisher": "Microsoft",
-    "InformationURL": "https://support.microsoft.com/en-us/onedrive",
-    "PrivacyURL": "https://privacy.microsoft.com/privacystatement",
-    "Categories": [],
-    "PSPackageFactoryGuid": "e1e03083-2e07-43c4-948a-34e43f4d9440"
-  },
-  "Program": {
-    "InstallTemplate": "powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1",
-    "InstallCommand": "powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1",
-    "UninstallCommand": "powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Uninstall.ps1",
-    "InstallExperience": "system",
-    "DeviceRestartBehavior": "suppress",
-    "AllowAvailableUninstall": false
-  },
-  "RequirementRule": {
-    "MinimumRequiredOperatingSystem": "W10_1809",
-    "Architecture": "arm64"
-  },
-  "CustomRequirementRule": [],
-  "DetectionRule": [
-    {
-      "Type": "File",
-      "DetectionMethod": "Version",
-      "Path": "C:\\Program Files\\Microsoft OneDrive",
-      "FileOrFolder": "OneDrive.exe",
-      "Operator": "greaterThanOrEqual",
-      "VersionValue": "26.139.0720.0007",
-      "Check32BitOn64System": "false"
-    }
-  ],
-  "Dependencies": [],
-  "Supersedence": [],
-  "Assignments": []
+﻿{
+    "Application":  {
+                        "Name":  "MicrosoftOneDrive",
+                        "Filter":  "Get-EvergreenApp -Name \"MicrosoftOneDrive\" | Where-Object { $_.Architecture -eq \"arm64\" -and $_.Ring -eq \"Production\" -and $_.Throttle -eq \"100\" } | Select-Object -First 1",
+                        "Title":  "Microsoft OneDrive",
+                        "Language":  "en-US",
+                        "Architecture":  "arm64"
+                    },
+    "PackageInformation":  {
+                               "SetupType":  "EXE",
+                               "SetupFile":  "OneDriveSetup.exe",
+                               "Version":  "26.212.1029.0006",
+                               "SourceFolder":  "Source",
+                               "OutputFolder":  "Package",
+                               "IconFile":  "https://github.com/aaronparker/icons/raw/main/companyportal/Microsoft-OneDrive.png"
+                           },
+    "Information":  {
+                        "DisplayName":  "Microsoft OneDrive arm64",
+                        "Description":  "Per-machine install. With Microsoft OneDrive, you can easily and securely store and access your files from all your devices. You can work with others regardless of whether they\u0027re inside or outside your organization and terminate that sharing whenever you want.",
+                        "Publisher":  "Microsoft",
+                        "InformationURL":  "https://support.microsoft.com/en-us/onedrive",
+                        "PrivacyURL":  "https://privacy.microsoft.com/privacystatement",
+                        "Categories":  [
+
+                                       ],
+                        "PSPackageFactoryGuid":  "e1e03083-2e07-43c4-948a-34e43f4d9440"
+                    },
+    "Program":  {
+                    "InstallTemplate":  "powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1",
+                    "InstallCommand":  "powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1",
+                    "UninstallCommand":  "powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Uninstall.ps1",
+                    "InstallExperience":  "system",
+                    "DeviceRestartBehavior":  "suppress",
+                    "AllowAvailableUninstall":  false
+                },
+    "RequirementRule":  {
+                            "MinimumRequiredOperatingSystem":  "W10_1809",
+                            "Architecture":  "arm64"
+                        },
+    "CustomRequirementRule":  [
+
+                              ],
+    "DetectionRule":  [
+                          {
+                              "Type":  "File",
+                              "DetectionMethod":  "Version",
+                              "Path":  "C:\\Program Files\\Microsoft OneDrive",
+                              "FileOrFolder":  "OneDrive.exe",
+                              "Operator":  "greaterThanOrEqual",
+                              "VersionValue":  "26.212.1029.0006",
+                              "Check32BitOn64System":  "false"
+                          }
+                      ],
+    "Dependencies":  [
+
+                     ],
+    "Supersedence":  [
+
+                     ],
+    "Assignments":  [
+
+                    ]
 }

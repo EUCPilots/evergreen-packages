@@ -1,26 +1,40 @@
-{
-  "PackageInformation": {
-    "SetupType": "MSI",
-    "SetupFile": "ImageGlass_9.6.1.807_x64.msi",
-    "Version": "9.6.1.807"
-  },
-  "LogPath": "C:\\ProgramData\\Microsoft\\IntuneManagementExtension\\Logs",
-  "InstallTasks": {
-    "ArgumentList": "/package \"#SetupFile\" RUNAPPLICATION=0 ALLUSERS=1 /quiet /log \"#LogPath\\#LogName.log\"",
-    "Remove": [],
-    "StopProcess": [],
-    "StopPath": [],
-    "UninstallMsi": [],
-    "Wait": 0
-  },
-  "PostInstall": {
-    "StopPath": [],
-    "Remove": [
-      "C:\\Users\\Public\\Desktop\\ImageGlass.lnk",
-      "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\ImageGlass\\ImageGlass' LICENSE.lnk",
-      "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\ImageGlass\\Uninstall ImageGlass*.lnk"
-    ],
-    "CopyFile": [],
-    "Run": []
-  }
+﻿{
+    "PackageInformation":  {
+                               "SetupType":  "MSI",
+                               "SetupFile":  "ImageGlass_10.0.6.906_win-x64.msi",
+                               "Version":  "10.0.6.906"
+                           },
+    "LogPath":  "C:\\ProgramData\\Microsoft\\IntuneManagementExtension\\Logs",
+    "InstallTasks":  {
+                         "ArgumentList":  "/package \"#SetupFile\" RUNAPPLICATION=0 ALLUSERS=1 /quiet /log \"#LogPath\\#LogName.log\"",
+                         "Remove":  [
+
+                                    ],
+                         "StopProcess":  [
+
+                                         ],
+                         "StopPath":  [
+
+                                      ],
+                         "UninstallMsi":  [
+
+                                          ],
+                         "Wait":  0
+                     },
+    "PostInstall":  {
+                        "StopPath":  [
+
+                                     ],
+                        "Remove":  [
+                                       "C:\\Users\\Public\\Desktop\\ImageGlass.lnk",
+                                       "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\ImageGlass\\ImageGlass\u0027 LICENSE.lnk",
+                                       "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\ImageGlass\\Uninstall ImageGlass*.lnk"
+                                   ],
+                        "CopyFile":  [
+
+                                     ],
+                        "Run":  [
+
+                                ]
+                    }
 }

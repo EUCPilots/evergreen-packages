@@ -1,24 +1,38 @@
-{
-  "PackageInformation": {
-    "SetupType": "MSI",
-    "SetupFile": "ZoomInstallerFull.msi",
-    "Version": "7.1.5.43453"
-  },
-  "LogPath": "C:\\ProgramData\\Microsoft\\IntuneManagementExtension\\Logs",
-  "InstallTasks": {
-    "ArgumentList": "/package \"#SetupFile\" ALLUSERS=1 zSilentStart=false zNoDesktopShortCut=true /quiet /log \"#LogPath\\#LogName.log\"",
-    "Remove": [],
-    "StopProcess": [],
-    "StopPath": [],
-    "UninstallMsi": [],
-    "Wait": 0
-  },
-  "PostInstall": {
-    "StopPath": [],
-    "Remove": [
-      "C:\\Users\\Public\\Desktop\\Zoom.lnk"
-    ],
-    "CopyFile": [],
-    "Run": []
-  }
+﻿{
+    "PackageInformation":  {
+                               "SetupType":  "MSI",
+                               "SetupFile":  "ZoomInstallerFull.msi",
+                               "Version":  "7.2.5.51704"
+                           },
+    "LogPath":  "C:\\ProgramData\\Microsoft\\IntuneManagementExtension\\Logs",
+    "InstallTasks":  {
+                         "ArgumentList":  "/package \"#SetupFile\" ALLUSERS=1 zSilentStart=false zNoDesktopShortCut=true /quiet /log \"#LogPath\\#LogName.log\"",
+                         "Remove":  [
+
+                                    ],
+                         "StopProcess":  [
+
+                                         ],
+                         "StopPath":  [
+
+                                      ],
+                         "UninstallMsi":  [
+
+                                          ],
+                         "Wait":  0
+                     },
+    "PostInstall":  {
+                        "StopPath":  [
+
+                                     ],
+                        "Remove":  [
+                                       "C:\\Users\\Public\\Desktop\\Zoom.lnk"
+                                   ],
+                        "CopyFile":  [
+
+                                     ],
+                        "Run":  [
+
+                                ]
+                    }
 }
