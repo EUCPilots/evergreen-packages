@@ -1,15 +1,15 @@
 {
   "Application": {
     "Name": "MicrosoftPowerShell",
-    "Filter": "Get-EvergreenApp -Name \"MicrosoftPowerShell\" | Where-Object { $_.Release -eq \"Stable\" -and $_.Architecture -eq \"x64\" -and $_.Type -eq \"msi\" }",
+    "Filter": "Get-EvergreenApp -Name \"MicrosoftPowerShell\" | Where-Object { $_.Release -eq \"LTS\" -and $_.Architecture -eq \"x64\" -and $_.Type -eq \"msi\" }",
     "Title": "Microsoft PowerShell",
     "Language": "en-US",
     "Architecture": "x64"
   },
   "PackageInformation": {
     "SetupType": "MSI",
-    "SetupFile": "PowerShell-7.6.4-win-x64.msi",
-    "Version": "7.6.4",
+    "SetupFile": "PowerShell-7.6.10-win-x64.msi",
+    "Version": "7.6.10",
     "SourceFolder": "Source",
     "OutputFolder": "Package",
     "IconFile": "https://github.com/aaronparker/icons/raw/main/companyportal/Microsoft-PowerShellCore.png"
@@ -43,7 +43,7 @@
       "Path": "C:\\Program Files\\PowerShell\\7",
       "FileOrFolder": "pwsh.exe",
       "Operator": "greaterThanOrEqual",
-      "VersionValue": "7.6.4",
+      "VersionValue": "7.6.10",
       "Check32BitOn64System": "false"
     }
   ],
