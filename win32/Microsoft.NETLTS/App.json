@@ -1,79 +1,71 @@
 ﻿{
-    "Application":  {
-                        "Name":  "Microsoft.NETLTS",
-                        "Filter":  "Get-EvergreenApp -Name \"Microsoft.NET\" | Where-Object { $_.Installer -eq \"windowsdesktop\" -and $_.Architecture -eq \"x64\" -and $_.Channel -eq \"LTS\" } | Select-Object -First 1",
-                        "Title":  "Microsoft Windows Desktop Runtime LTS",
-                        "Language":  "en-US",
-                        "Architecture":  "x64"
-                    },
-    "PackageInformation":  {
-                               "SetupType":  "EXE",
-                               "SetupFile":  "windowsdesktop-runtime-10.0.15-win-x64.exe",
-                               "Version":  "10.0.15",
-                               "SourceFolder":  "Source",
-                               "OutputFolder":  "Package",
-                               "IconFile":  "https://github.com/aaronparker/icons/raw/main/companyportal/Microsoft-NET.png"
-                           },
-    "Information":  {
-                        "DisplayName":  "Microsoft Windows Desktop Runtime LTS",
-                        "Description":  "The Microsoft Windows Desktop Runtime LTS enables you to run existing Windows desktop applications. This release includes the .NET Runtime; you don\u0027t need to install it separately.",
-                        "Publisher":  "Microsoft",
-                        "InformationURL":  "https://dotnet.microsoft.com/en-us/",
-                        "PrivacyURL":  "https://privacy.microsoft.com/privacystatement",
-                        "Categories":  [
-
-                                       ],
-                        "PSPackageFactoryGuid":  "a91c2def-1212-44c6-8b10-91a0aefac41c"
-                    },
-    "Program":  {
-                    "InstallTemplate":  "powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1",
-                    "InstallCommand":  "powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1",
-                    "UninstallCommand":  "MsiExec.exe /X \"{089A177D-98AE-4195-A115-D3C45613B875}\" /quiet",
-                    "InstallExperience":  "system",
-                    "DeviceRestartBehavior":  "basedOnReturnCode",
-                    "AllowAvailableUninstall":  false
-                },
-    "RequirementRule":  {
-                            "MinimumRequiredOperatingSystem":  "W10_1809",
-                            "Architecture":  "x64"
-                        },
-    "CustomRequirementRule":  [
-
-                              ],
-    "DetectionRule":  [
-                          {
-                              "Type":  "File",
-                              "DetectionMethod":  "Existence",
-                              "Path":  "C:\\Program Files\\dotnet",
-                              "FileOrFolder":  "dotnet.exe",
-                              "DetectionType":  "exists",
-                              "Check32BitOn64System":  "false"
-                          },
-                          {
-                              "Type":  "Registry",
-                              "DetectionMethod":  "VersionComparison",
-                              "KeyPath":  "HKEY_LOCAL_MACHINE\\SOFTWARE\\dotnet\\Setup\\InstalledVersions\\x64\\sharedhost",
-                              "ValueName":  "Version",
-                              "Operator":  "greaterThanOrEqual",
-                              "Value":  "10.0.15",
-                              "Check32BitOn64System":  "false"
-                          }
-                      ],
-    "Dependencies":  [
-
-                     ],
-    "Supersedence":  [
-
-                     ],
-    "Assignments":  [
-                        {
-                            "Type":  "AllDevices",
-                            "Intent":  "required",
-                            "Notification":  "showReboot",
-                            "EnableRestartGracePeriod":  true,
-                            "RestartGracePeriod":  1440,
-                            "RestartCountDownDisplay":  15,
-                            "RestartNotificationSnooze":  240
-                        }
-                    ]
+    "Application": {
+        "Name": "Microsoft.NETLTS",
+        "Filter": "Get-EvergreenApp -Name \"Microsoft.NET\" | Where-Object { $_.Installer -eq \"windowsdesktop\" -and $_.Architecture -eq \"x64\" -and $_.Channel -eq \"LTS\" } | Select-Object -First 1",
+        "Title": "Microsoft Windows Desktop Runtime LTS x64",
+        "Language": "en-US",
+        "Architecture": "x64"
+    },
+    "PackageInformation": {
+        "SetupType": "EXE",
+        "SetupFile": "windowsdesktop-runtime-10.0.15-win-x64.exe",
+        "Version": "10.0.15",
+        "SourceFolder": "Source",
+        "OutputFolder": "Package",
+        "IconFile": "https://github.com/aaronparker/icons/raw/main/companyportal/Microsoft-NET.png"
+    },
+    "Information": {
+        "DisplayName": "Microsoft Windows Desktop Runtime LTS x64",
+        "Description": "The Microsoft Windows Desktop Runtime LTS enables you to run existing Windows desktop applications. This release includes the .NET Runtime; you don\u0027t need to install it separately.",
+        "Publisher": "Microsoft",
+        "InformationURL": "https://dotnet.microsoft.com/en-us/",
+        "PrivacyURL": "https://privacy.microsoft.com/privacystatement",
+        "Categories": [],
+        "PSPackageFactoryGuid": "a91c2def-1212-44c6-8b10-91a0aefac41c"
+    },
+    "Program": {
+        "InstallTemplate": "powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1",
+        "InstallCommand": "powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1",
+        "UninstallCommand": "MsiExec.exe /X \"{089A177D-98AE-4195-A115-D3C45613B875}\" /quiet",
+        "InstallExperience": "system",
+        "DeviceRestartBehavior": "basedOnReturnCode",
+        "AllowAvailableUninstall": false
+    },
+    "RequirementRule": {
+        "MinimumRequiredOperatingSystem": "W10_1809",
+        "Architecture": "x64"
+    },
+    "CustomRequirementRule": [],
+    "DetectionRule": [
+        {
+            "Type": "File",
+            "DetectionMethod": "Existence",
+            "Path": "C:\\Program Files\\dotnet",
+            "FileOrFolder": "dotnet.exe",
+            "DetectionType": "exists",
+            "Check32BitOn64System": "false"
+        },
+        {
+            "Type": "Registry",
+            "DetectionMethod": "VersionComparison",
+            "KeyPath": "HKEY_LOCAL_MACHINE\\SOFTWARE\\dotnet\\Setup\\InstalledVersions\\x64\\sharedhost",
+            "ValueName": "Version",
+            "Operator": "greaterThanOrEqual",
+            "Value": "10.0.15",
+            "Check32BitOn64System": "false"
+        }
+    ],
+    "Dependencies": [],
+    "Supersedence": [],
+    "Assignments": [
+        {
+            "Type": "AllDevices",
+            "Intent": "required",
+            "Notification": "showReboot",
+            "EnableRestartGracePeriod": true,
+            "RestartGracePeriod": 1440,
+            "RestartCountDownDisplay": 15,
+            "RestartNotificationSnooze": 240
+        }
+    ]
 }

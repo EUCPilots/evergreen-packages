@@ -2,7 +2,7 @@
     "Application":  {
                         "Name":  "MozillaFirefox",
                         "Filter":  "Get-EvergreenApp -Name \"MozillaFirefox\" | Where-Object { $_.Channel -eq \"Current\" -and $_.Architecture -eq \"ARM64\" -and $_.Type -eq \"exe\" -and $_.Language -eq \"en-US\" }",
-                        "Title":  "Mozilla Firefox",
+                        "Title":  "Mozilla Firefox arm64",
                         "Language":  "en-US",
                         "Architecture":  "arm64"
                     },
@@ -15,7 +15,7 @@
                                "IconFile":  "https://github.com/aaronparker/icons/raw/main/companyportal/Mozilla-Firefox.png"
                            },
     "Information":  {
-                        "DisplayName":  "Mozilla Firefox",
+                        "DisplayName":  "Mozilla Firefox arm64",
                         "Description":  "Get the browser that protects what\u0027s important. No shady privacy policies or back doors for advertisers. Just a lightning fast browser that doesn\u0027t sell you out.",
                         "Publisher":  "Mozilla",
                         "InformationURL":  "https://www.mozilla.org/firefox/new/",

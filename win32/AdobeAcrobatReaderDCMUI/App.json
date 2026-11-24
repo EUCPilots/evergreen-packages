@@ -1,72 +1,64 @@
 ﻿{
-    "Application":  {
-                        "Name":  "AdobeAcrobatReaderDC",
-                        "Filter":  "Get-EvergreenApp -Name \"AdobeAcrobatReaderDC\" | Where-Object { $_.Language -eq \"MUI\" -and $_.Architecture -eq \"x64\" } | Select-Object -First 1",
-                        "Title":  "Adobe Acrobat Reader DC",
-                        "Language":  "English",
-                        "Architecture":  "x64"
-                    },
-    "PackageInformation":  {
-                               "SetupType":  "EXE",
-                               "SetupFile":  "AcroRdrDCx642600322110_MUI.exe",
-                               "Version":  "26.003.22110",
-                               "SourceFolder":  "Source",
-                               "OutputFolder":  "Package",
-                               "IconFile":  "https://github.com/aaronparker/icons/raw/main/companyportal/Adobe-AcrobatReader.png"
-                           },
-    "Information":  {
-                        "DisplayName":  "Adobe Acrobat Reader DC",
-                        "Description":  "Adobe Acrobat Reader is the free, trusted global standard for viewing, printing, e-signing, sharing, and annotating PDFs. View PDFs, Leave comments or annotate PDFs, Fill, e-sign, and lock your forms, Collaborate better with PDFs. This package enforces Reader mode, disables online services, and prevents automatic updates.",
-                        "Publisher":  "Adobe",
-                        "InformationURL":  "https://www.adobe.com/acrobat/pdf-reader.html",
-                        "PrivacyURL":  "https://www.adobe.com/privacy.html",
-                        "FeaturedApp":  false,
-                        "Categories":  [
-
-                                       ],
-                        "PSPackageFactoryGuid":  "a0042672-7240-4312-892e-39623320c0a3"
-                    },
-    "Program":  {
-                    "InstallTemplate":  "powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1",
-                    "InstallCommand":  "powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1",
-                    "UninstallCommand":  "powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Unnstall.ps1",
-                    "InstallExperience":  "system",
-                    "DeviceRestartBehavior":  "basedOnReturnCode",
-                    "AllowAvailableUninstall":  false
-                },
-    "RequirementRule":  {
-                            "MinimumRequiredOperatingSystem":  "W10_1809",
-                            "Architecture":  "x64"
-                        },
-    "CustomRequirementRule":  [
-
-                              ],
-    "DetectionRule":  [
-                          {
-                              "Type":  "File",
-                              "DetectionMethod":  "Version",
-                              "Path":  "C:\\Program Files\\Adobe\\Acrobat DC\\Acrobat",
-                              "FileOrFolder":  "Acrobat.exe",
-                              "Operator":  "greaterThanOrEqual",
-                              "VersionValue":  "26.003.22110",
-                              "Check32BitOn64System":  "false"
-                          }
-                      ],
-    "Dependencies":  [
-
-                     ],
-    "Supersedence":  [
-
-                     ],
-    "Assignments":  [
-                        {
-                            "Type":  "AllUsers",
-                            "Intent":  "available",
-                            "Notification":  "showAll",
-                            "EnableRestartGracePeriod":  true,
-                            "RestartGracePeriod":  1440,
-                            "RestartCountDownDisplay":  15,
-                            "RestartNotificationSnooze":  240
-                        }
-                    ]
+    "Application": {
+        "Name": "AdobeAcrobatReaderDC",
+        "Filter": "Get-EvergreenApp -Name \"AdobeAcrobatReaderDC\" | Where-Object { $_.Language -eq \"MUI\" -and $_.Architecture -eq \"x64\" } | Select-Object -First 1",
+        "Title": "Adobe Acrobat Reader DC x64",
+        "Language": "English",
+        "Architecture": "x64"
+    },
+    "PackageInformation": {
+        "SetupType": "EXE",
+        "SetupFile": "AcroRdrDCx642600322110_MUI.exe",
+        "Version": "26.003.22110",
+        "SourceFolder": "Source",
+        "OutputFolder": "Package",
+        "IconFile": "https://github.com/aaronparker/icons/raw/main/companyportal/Adobe-AcrobatReader.png"
+    },
+    "Information": {
+        "DisplayName": "Adobe Acrobat Reader DC x64",
+        "Description": "Adobe Acrobat Reader is the free, trusted global standard for viewing, printing, e-signing, sharing, and annotating PDFs. View PDFs, Leave comments or annotate PDFs, Fill, e-sign, and lock your forms, Collaborate better with PDFs. This package enforces Reader mode, disables online services, and prevents automatic updates.",
+        "Publisher": "Adobe",
+        "InformationURL": "https://www.adobe.com/acrobat/pdf-reader.html",
+        "PrivacyURL": "https://www.adobe.com/privacy.html",
+        "FeaturedApp": false,
+        "Categories": [],
+        "PSPackageFactoryGuid": "a0042672-7240-4312-892e-39623320c0a3"
+    },
+    "Program": {
+        "InstallTemplate": "powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1",
+        "InstallCommand": "powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Install.ps1",
+        "UninstallCommand": "powershell.exe -ExecutionPolicy Bypass -NonInteractive -WindowStyle Hidden -File .\\Unnstall.ps1",
+        "InstallExperience": "system",
+        "DeviceRestartBehavior": "basedOnReturnCode",
+        "AllowAvailableUninstall": false
+    },
+    "RequirementRule": {
+        "MinimumRequiredOperatingSystem": "W10_1809",
+        "Architecture": "x64"
+    },
+    "CustomRequirementRule": [],
+    "DetectionRule": [
+        {
+            "Type": "File",
+            "DetectionMethod": "Version",
+            "Path": "C:\\Program Files\\Adobe\\Acrobat DC\\Acrobat",
+            "FileOrFolder": "Acrobat.exe",
+            "Operator": "greaterThanOrEqual",
+            "VersionValue": "26.003.22110",
+            "Check32BitOn64System": "false"
+        }
+    ],
+    "Dependencies": [],
+    "Supersedence": [],
+    "Assignments": [
+        {
+            "Type": "AllUsers",
+            "Intent": "available",
+            "Notification": "showAll",
+            "EnableRestartGracePeriod": true,
+            "RestartGracePeriod": 1440,
+            "RestartCountDownDisplay": 15,
+            "RestartNotificationSnooze": 240
+        }
+    ]
 }
