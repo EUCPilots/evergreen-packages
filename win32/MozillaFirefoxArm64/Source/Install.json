@@ -1,38 +1,22 @@
-﻿{
-    "PackageInformation":  {
-                               "SetupType":  "MSI",
-                               "SetupFile":  "Firefox Setup 160.0.1.exe",
-                               "Version":  "160.0.1"
-                           },
-    "LogPath":  "C:\\ProgramData\\Microsoft\\IntuneManagementExtension\\Logs",
-    "InstallTasks":  {
-                         "ArgumentList":  "/package \"#SetupFile\" DESKTOP_SHORTCUT=false TASKBAR_SHORTCUT=false /quiet /log \"#LogPath\\#LogName.log\"",
-                         "Remove":  [
-
-                                    ],
-                         "StopProcess":  [
-
-                                         ],
-                         "StopPath":  [
-
-                                      ],
-                         "UninstallMsi":  [
-
-                                          ],
-                         "Wait":  0
-                     },
-    "PostInstall":  {
-                        "StopPath":  [
-
-                                     ],
-                        "Remove":  [
-
-                                   ],
-                        "CopyFile":  [
-
-                                     ],
-                        "Run":  [
-
-                                ]
-                    }
+{
+  "PackageInformation": {
+    "SetupType": "MSI",
+    "SetupFile": "Firefox Setup 161.0.exe",
+    "Version": "161.0"
+  },
+  "LogPath": "C:\\ProgramData\\Microsoft\\IntuneManagementExtension\\Logs",
+  "InstallTasks": {
+    "ArgumentList": "/package \"#SetupFile\" DESKTOP_SHORTCUT=false TASKBAR_SHORTCUT=false /quiet /log \"#LogPath\\#LogName.log\"",
+    "Remove": [],
+    "StopProcess": [],
+    "StopPath": [],
+    "UninstallMsi": [],
+    "Wait": 0
+  },
+  "PostInstall": {
+    "StopPath": [],
+    "Remove": [],
+    "CopyFile": [],
+    "Run": []
+  }
 }

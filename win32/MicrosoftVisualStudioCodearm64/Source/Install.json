@@ -1,38 +1,22 @@
-﻿{
-    "PackageInformation":  {
-                               "SetupType":  "EXE",
-                               "SetupFile":  "VSCodeSetup-arm64-1.147.0.exe",
-                               "Version":  "1.147.0"
-                           },
-    "LogPath":  "C:\\ProgramData\\Microsoft\\IntuneManagementExtension\\Logs",
-    "InstallTasks":  {
-                         "ArgumentList":  "/VERYSILENT /NOCLOSEAPPLICATIONS /NORESTARTAPPLICATIONS /NORESTART /SP- /SUPPRESSMSGBOXES /MERGETASKS=!runcode /LOG=\"#LogPath\\#LogName.log\"",
-                         "Remove":  [
-
-                                    ],
-                         "StopProcess":  [
-
-                                         ],
-                         "StopPath":  [
-
-                                      ],
-                         "UninstallMsi":  [
-
-                                          ],
-                         "Wait":  0
-                     },
-    "PostInstall":  {
-                        "StopPath":  [
-
-                                     ],
-                        "Remove":  [
-
-                                   ],
-                        "CopyFile":  [
-
-                                     ],
-                        "Run":  [
-
-                                ]
-                    }
+{
+  "PackageInformation": {
+    "SetupType": "EXE",
+    "SetupFile": "VSCodeSetup-arm64-1.148.0.exe",
+    "Version": "1.148.0"
+  },
+  "LogPath": "C:\\ProgramData\\Microsoft\\IntuneManagementExtension\\Logs",
+  "InstallTasks": {
+    "ArgumentList": "/VERYSILENT /NOCLOSEAPPLICATIONS /NORESTARTAPPLICATIONS /NORESTART /SP- /SUPPRESSMSGBOXES /MERGETASKS=!runcode /LOG=\"#LogPath\\#LogName.log\"",
+    "Remove": [],
+    "StopProcess": [],
+    "StopPath": [],
+    "UninstallMsi": [],
+    "Wait": 0
+  },
+  "PostInstall": {
+    "StopPath": [],
+    "Remove": [],
+    "CopyFile": [],
+    "Run": []
+  }
 }

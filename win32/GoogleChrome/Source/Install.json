@@ -1,42 +1,30 @@
-﻿{
-    "PackageInformation":  {
-                               "SetupType":  "MSI",
-                               "SetupFile":  "googlechromestandaloneenterprise64.msi",
-                               "Version":  "158.0.8127.37"
-                           },
-    "LogPath":  "C:\\ProgramData\\Microsoft\\IntuneManagementExtension\\Logs",
-    "InstallTasks":  {
-                         "ArgumentList":  "/package \"#SetupFile\" ALLUSERS=1 /quiet /log \"#LogPath\\#LogName.log\"",
-                         "Remove":  [
-
-                                    ],
-                         "StopProcess":  [
-
-                                         ],
-                         "StopPath":  [
-
-                                      ],
-                         "UninstallMsi":  [
-
-                                          ],
-                         "Wait":  10
-                     },
-    "PostInstall":  {
-                        "StopPath":  [
-
-                                     ],
-                        "Remove":  [
-                                       "C:\\Users\\Public\\Desktop\\Google Chrome.lnk",
-                                       "C:\\Program Files\\Google\\Chrome\\Application\\initial_preferences"
-                                   ],
-                        "CopyFile":  [
-                                         {
-                                             "Source":  "initial_preferences.txt",
-                                             "Destination":  "C:\\Program Files\\Google\\Chrome\\Application\\initial_preferences"
-                                         }
-                                     ],
-                        "Run":  [
-
-                                ]
-                    }
+{
+  "PackageInformation": {
+    "SetupType": "MSI",
+    "SetupFile": "googlechromestandaloneenterprise64.msi",
+    "Version": "158.0.8127.89"
+  },
+  "LogPath": "C:\\ProgramData\\Microsoft\\IntuneManagementExtension\\Logs",
+  "InstallTasks": {
+    "ArgumentList": "/package \"#SetupFile\" ALLUSERS=1 /quiet /log \"#LogPath\\#LogName.log\"",
+    "Remove": [],
+    "StopProcess": [],
+    "StopPath": [],
+    "UninstallMsi": [],
+    "Wait": 10
+  },
+  "PostInstall": {
+    "StopPath": [],
+    "Remove": [
+      "C:\\Users\\Public\\Desktop\\Google Chrome.lnk",
+      "C:\\Program Files\\Google\\Chrome\\Application\\initial_preferences"
+    ],
+    "CopyFile": [
+      {
+        "Source": "initial_preferences.txt",
+        "Destination": "C:\\Program Files\\Google\\Chrome\\Application\\initial_preferences"
+      }
+    ],
+    "Run": []
+  }
 }

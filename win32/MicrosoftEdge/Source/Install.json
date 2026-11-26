@@ -1,42 +1,30 @@
-﻿{
-    "PackageInformation":  {
-                               "SetupType":  "MSI",
-                               "SetupFile":  "MicrosoftEdgeEnterpriseX64.msi",
-                               "Version":  "158.0.4370.33"
-                           },
-    "LogPath":  "C:\\ProgramData\\Microsoft\\IntuneManagementExtension\\Logs",
-    "InstallTasks":  {
-                         "ArgumentList":  "/package \"#SetupFile\" ALLUSERS=1 DONOTCREATEDESKTOPSHORTCUT=true DONOTCREATETASKBARSHORTCUT=true /quiet /log \"#LogPath\\#LogName.log\"",
-                         "Remove":  [
-
-                                    ],
-                         "StopProcess":  [
-
-                                         ],
-                         "StopPath":  [
-
-                                      ],
-                         "UninstallMsi":  [
-
-                                          ],
-                         "Wait":  0
-                     },
-    "PostInstall":  {
-                        "StopPath":  [
-
-                                     ],
-                        "Remove":  [
-                                       "C:\\Users\\Public\\Desktop\\Microsoft Edge.lnk",
-                                       "C:\\Users\\Public\\Desktop\\Edge.lnk"
-                                   ],
-                        "CopyFile":  [
-                                         {
-                                             "Source":  "initial_preferences.txt",
-                                             "Destination":  "C:\\Program Files\\Microsoft\\Edge\\Application\\initial_preferences"
-                                         }
-                                     ],
-                        "Run":  [
-
-                                ]
-                    }
+{
+  "PackageInformation": {
+    "SetupType": "MSI",
+    "SetupFile": "MicrosoftEdgeEnterpriseX64.msi",
+    "Version": "158.0.4370.45"
+  },
+  "LogPath": "C:\\ProgramData\\Microsoft\\IntuneManagementExtension\\Logs",
+  "InstallTasks": {
+    "ArgumentList": "/package \"#SetupFile\" ALLUSERS=1 DONOTCREATEDESKTOPSHORTCUT=true DONOTCREATETASKBARSHORTCUT=true /quiet /log \"#LogPath\\#LogName.log\"",
+    "Remove": [],
+    "StopProcess": [],
+    "StopPath": [],
+    "UninstallMsi": [],
+    "Wait": 0
+  },
+  "PostInstall": {
+    "StopPath": [],
+    "Remove": [
+      "C:\\Users\\Public\\Desktop\\Microsoft Edge.lnk",
+      "C:\\Users\\Public\\Desktop\\Edge.lnk"
+    ],
+    "CopyFile": [
+      {
+        "Source": "initial_preferences.txt",
+        "Destination": "C:\\Program Files\\Microsoft\\Edge\\Application\\initial_preferences"
+      }
+    ],
+    "Run": []
+  }
 }

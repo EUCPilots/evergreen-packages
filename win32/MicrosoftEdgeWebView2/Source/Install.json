@@ -1,38 +1,22 @@
-﻿{
-    "PackageInformation":  {
-                               "SetupType":  "EXE",
-                               "SetupFile":  "MicrosoftEdgeWebView2RuntimeInstallerX64.exe",
-                               "Version":  "158.0.4370.33"
-                           },
-    "LogPath":  "C:\\ProgramData\\Microsoft\\IntuneManagementExtension\\Logs",
-    "InstallTasks":  {
-                         "ArgumentList":  "/silent /install",
-                         "Remove":  [
-
-                                    ],
-                         "StopProcess":  [
-
-                                         ],
-                         "StopPath":  [
-
-                                      ],
-                         "UninstallMsi":  [
-
-                                          ],
-                         "Wait":  0
-                     },
-    "PostInstall":  {
-                        "StopPath":  [
-
-                                     ],
-                        "Remove":  [
-
-                                   ],
-                        "CopyFile":  [
-
-                                     ],
-                        "Run":  [
-
-                                ]
-                    }
+{
+  "PackageInformation": {
+    "SetupType": "EXE",
+    "SetupFile": "MicrosoftEdgeWebView2RuntimeInstallerX64.exe",
+    "Version": "158.0.4370.45"
+  },
+  "LogPath": "C:\\ProgramData\\Microsoft\\IntuneManagementExtension\\Logs",
+  "InstallTasks": {
+    "ArgumentList": "/silent /install",
+    "Remove": [],
+    "StopProcess": [],
+    "StopPath": [],
+    "UninstallMsi": [],
+    "Wait": 0
+  },
+  "PostInstall": {
+    "StopPath": [],
+    "Remove": [],
+    "CopyFile": [],
+    "Run": []
+  }
 }
